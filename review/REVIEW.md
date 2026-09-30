@@ -1917,6 +1917,7 @@ Inventory scope: authored/runtime content under `art/`, `assets/`, `sounds/`, `l
 ## Known bugs and unfinished features
 
 - The Web build logs a Godot scene-tree error, `Condition "p_scene && p_scene->get_parent() != root" is true`, during the title-to-farm transition. The farm screen still appears and the chore scenes still open; the engine error remains unresolved.
+- The exported Web pack is about 190 MB. In the fresh incognito check it took roughly 52 seconds to reach the title screen on this connection; first-load time will vary with network speed.
 - The game is designed around a 1920×1080 landscape canvas. At the requested 390×844 portrait viewport, the farm composition and small HUD elements scale down substantially. These captures document the current behavior; no game-layout changes were made.
 - Existing Android 15 emulator QA records gray/black rendering with SwiftShader. A physical Android device render/touch/audio review is still outstanding; emulator TTS also lacked voice data.
 - Generated voice clips still need a real-device clarity and volume review. Human replacement recordings are optional and not implemented.
