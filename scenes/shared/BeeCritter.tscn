@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dyar5tnrf0t7"]
+
+[ext_resource type="Script" uid="uid://dr734kokmeiju" path="res://scripts/ui/BeeCritter.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c2m0cbn6l4k37" path="res://art/animals/bee_idle.png" id="2"]
+[ext_resource type="AudioStream" path="res://sounds/bee_buzz.wav" id="3"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 111.44954
+
+[node name="BeeCritter" type="Area2D" unique_id=533215410]
+script = ExtResource("1")
+icon_sprite = NodePath("Icon")
+buzz_sound = ExtResource("3")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=2076790557]
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1136067603]
+position = Vector2(14, 22)
+shape = SubResource("1")

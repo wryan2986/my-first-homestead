@@ -1,0 +1,67 @@
+{
+  "source_audio": "_assets_archive/winter_audio_pond_polish_2026-06-19/sounds/325180__bollenator__santaclaus_hohoho.wav",
+  "laugh_start_seconds": 4.32,
+  "laugh_end_seconds": 5.42,
+  "pause_milliseconds": 30,
+  "pitch": "-4st",
+  "default_locale": "en-US",
+  "voice_name": "Charon",
+  "speaking_rate": 0.9,
+  "entries": {
+    "en-US": {
+      "text": "Merry Christmas!",
+      "google_tts_locale": "en-US",
+      "voice_name": "en-US-Chirp3-HD-Charon",
+      "translation_status": "source",
+      "needs_review": false
+    },
+    "es-US": {
+      "text": "¡Feliz navidad!",
+      "google_tts_locale": "es-US",
+      "voice_name": "es-US-Chirp3-HD-Charon",
+      "translation_status": "google_draft",
+      "needs_review": true
+    },
+    "fr-FR": {
+      "text": "Joyeux noël!",
+      "google_tts_locale": "fr-FR",
+      "voice_name": "fr-FR-Chirp3-HD-Charon",
+      "translation_status": "google_draft",
+      "needs_review": true
+    },
+    "de-DE": {
+      "text": "Frohe Weihnachten!",
+      "google_tts_locale": "de-DE",
+      "voice_name": "de-DE-Chirp3-HD-Charon",
+      "translation_status": "google_draft",
+      "needs_review": true
+    },
+    "it-IT": {
+      "text": "Buon Natale!",
+      "google_tts_locale": "it-IT",
+      "voice_name": "it-IT-Chirp3-HD-Charon",
+      "translation_status": "google_draft",
+      "needs_review": true
+    },
+    "pt-BR": {
+      "text": "Feliz Natal!",
+      "google_tts_locale": "pt-BR",
+      "voice_name": "pt-BR-Chirp3-HD-Charon",
+      "translation_status": "google_draft",
+      "needs_review": true
+    }
+  },
+  "fallback_chain": {
+    "es-MX": "es-US",
+    "es-AR": "es-US",
+    "es-ES": "es-US",
+    "fr-CA": "fr-FR",
+    "fr-BE": "fr-FR",
+    "de-AT": "de-DE",
+    "de-CH": "de-DE",
+    "it-CH": "it-IT",
+    "pt-PT": "pt-BR",
+    "en-GB": "en-US",
+    "en-AU": "en-US"
+  }
+}

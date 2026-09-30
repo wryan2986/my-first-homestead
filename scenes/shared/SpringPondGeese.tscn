@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/SpringPondGeese.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/animals/goose_swimming_idle.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/animals/goose_swimming_eating.png" id="3"]
+[ext_resource type="Texture2D" path="res://art/props/goose_food_crumb.png" id="4"]
+[ext_resource type="AudioStream" path="res://sounds/feed.wav" id="5"]
+[ext_resource type="Texture2D" path="res://art/props/spring_goose_pond_ripple.png" id="6"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(320, 170)
+
+[node name="SpringPondGeese" type="Node2D"]
+script = ExtResource("1")
+tap_area = NodePath("PondTapArea")
+pond_visual = NodePath("PondRipple")
+food_visual = NodePath("FoodCrumb")
+goose_nodes = Array[NodePath]([NodePath("GooseA"), NodePath("GooseB"), NodePath("GooseC")])
+idle_texture = ExtResource("2")
+eating_texture = ExtResource("3")
+feed_sound = ExtResource("5")
+pond_bounds = Rect2(-130, -55, 260, 110)
+food_target_bounds = Rect2(-90, -15, 180, 60)
+goose_bounds_inset = Vector2(22, 13)
+tap_margin = 40.0
+
+[node name="PondRipple" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(36, 0)
+scale = Vector2(0.74, 0.56)
+texture = ExtResource("6")
+
+[node name="FoodCrumb" type="Sprite2D" parent="."]
+visible = false
+z_index = 4
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("4")
+
+[node name="GooseA" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(-58, 9)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2")
+
+[node name="GooseB" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(0, -2)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("2")
+
+[node name="GooseC" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(58, 9)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2")
+
+[node name="PondTapArea" type="Area2D" parent="."]
+z_index = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PondTapArea"]
+shape = SubResource("1")

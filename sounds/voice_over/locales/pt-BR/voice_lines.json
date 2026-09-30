@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "pt-BR",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "pt-BR",
+    "google_tts_voice": "pt-BR-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "Toque no ovo no ninho.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "Toque no ovo no ninho.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "Os ovos vao na cesta.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "Os ovos vao na cesta.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "Toque no ubre para ajudar a encher o balde.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "Toque no ubre para ajudar a encher o balde.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "Toque perto da vaca para ajudar a tirar leite.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "Toque perto da vaca para ajudar a tirar leite.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "Toque na vaca para fazer um carinho gentil.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "Toque na vaca para fazer um carinho gentil.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "Toque neste animal para dar comida.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "Toque neste animal para dar comida.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "Toque neste animal para escova-lo.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "Toque neste animal para escova-lo.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "Toque em um animal e a escova vai ajudar.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "Toque em um animal e a escova vai ajudar.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "Toque neste canteiro para cuidar das plantas.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "Toque neste canteiro para cuidar das plantas.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "Toque na estufa baixa para cuidar da alface de inverno.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "Toque na estufa baixa para cuidar da alface de inverno.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "Que grande ajuda! As galinhas estao felizes.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "Bom trabalho! Os ovos estao seguros.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "Obrigado! O galinheiro esta aconchegante.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "Bom trabalho! A cesta esta cheia.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "Galinhas felizes! Voce ajudou muito.",
+      "path": "res://sounds/voice_over/locales/pt-BR/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "Bom trabalho! A vaca se sente cuidada.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "Que grande ajuda! O balde de leite esta cheio.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "Obrigado! A vaca esta feliz.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "Bom trabalho! O leite fresco esta pronto.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "Linda ajuda! O celeiro esta calmo.",
+      "path": "res://sounds/voice_over/locales/pt-BR/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "Hum! Os animais adoraram o lanche.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "Que grande ajuda! Todos os animais comeram.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "Bom trabalho! Hora feliz de comer.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "Obrigado! Os animais estao satisfeitos.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "Bom trabalho! O cercado esta feliz.",
+      "path": "res://sounds/voice_over/locales/pt-BR/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "Tudo limpo! Os animais se sentem melhor.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "Bom trabalho! Todos foram escovados.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "Que grande ajuda! Pelos macios e brilhantes.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "Obrigado! Os animais estao confortaveis.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "Bom trabalho! Os amigos do celeiro estao limpos.",
+      "path": "res://sounds/voice_over/locales/pt-BR/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "Otima jardinagem! As plantas estao cuidadas.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "Bom trabalho! O jardim esta feliz.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "Obrigado! Cada canteiro recebeu cuidado.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "Bom trabalho! As plantas estao bonitas.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "Linda ajuda! O jardim esta aconchegante.",
+      "path": "res://sounds/voice_over/locales/pt-BR/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

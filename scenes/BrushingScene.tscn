@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://dmp5v78s4kxa8"]
+
+[ext_resource type="Script" uid="uid://b7sko6pt3r4s5" path="res://scripts/chores/BrushingScene.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/shared/FarmAnimalCard.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://dp0wvm7uwdcqa" path="res://art/props/grooming_brush.png" id="3"]
+[ext_resource type="AudioStream" path="res://sounds/brush.ogg" id="4"]
+[ext_resource type="AudioStream" path="res://sounds/complete.ogg" id="5"]
+[ext_resource type="Texture2D" uid="uid://bjdrv1dwsumu6" path="res://art/animals/pony_idle.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://c2vqhekso2f6a" path="res://art/animals/pony_happy.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c5ndhwil55hx3" path="res://art/animals/cow_idle.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bdrk4pc24ln5s" path="res://art/animals/cow_happy.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bl52jso3ri1wt" path="res://art/animals/sheep_idle.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cjw3ups6bffvc" path="res://art/animals/sheep_happy.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://4djurltt8i7i" path="res://art/animals/duck_idle.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://2hds3cs2k35w" path="res://art/animals/duck_happy.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dqeh7nletfkql" path="res://art/animals/pony_walking.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dkirktq7gioik" path="res://art/animals/cow_walking.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dancvxdgcuau8" path="res://art/animals/sheep_walking.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://can3uklv1l7kq" path="res://art/animals/duck_walking.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://d0vvtmx0725sy" path="res://art/ui/back_button.png" id="back_icon"]
+[ext_resource type="Texture2D" uid="uid://b4d3vg1mr3foe" path="res://art/backgrounds/brushing_barn_background_fall.png" id="bg_fall"]
+[ext_resource type="Texture2D" uid="uid://qyi4mncnccku" path="res://art/backgrounds/brushing_barn_background_spring.png" id="bg_spring"]
+[ext_resource type="Texture2D" uid="uid://dw6ngoikvprgx" path="res://art/backgrounds/brushing_barn_background_summer.png" id="bg_summer"]
+[ext_resource type="Texture2D" uid="uid://cyyadgb1fn6wp" path="res://art/backgrounds/brushing_barn_background_winter.png" id="bg_winter"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+[ext_resource type="Script" uid="uid://bg6ih6xf5wa5h" path="res://scripts/ui/SeasonalBackground.gd" id="seasonal_bg"]
+
+[node name="BrushingScene" type="Node2D" unique_id=1413926801]
+script = ExtResource("1")
+brush_button = NodePath("Hud/BrushButton")
+brush_visual = NodePath("BrushSource")
+brush_token_texture = ExtResource("3")
+feedback_label = NodePath("Hud/FeedbackLabel")
+completion_panel = NodePath("Hud/CompletionPanel")
+completion_label = NodePath("Hud/CompletionPanel/CompletionLabel")
+back_button = NodePath("Hud/BackButton")
+animal_card_paths = Array[NodePath]([NodePath("PonyCard"), NodePath("CowCard"), NodePath("SheepCard"), NodePath("DuckCard")])
+brush_sound = ExtResource("4")
+completion_sound = ExtResource("5")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2051102389]
+position = Vector2(960, 540)
+texture = ExtResource("bg_spring")
+script = ExtResource("seasonal_bg")
+spring_texture = ExtResource("bg_spring")
+summer_texture = ExtResource("bg_summer")
+fall_texture = ExtResource("bg_fall")
+winter_texture = ExtResource("bg_winter")
+
+[node name="BrushSource" type="Sprite2D" parent="." unique_id=1538732843]
+position = Vector2(83, 951.00006)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3")
+
+[node name="PonyCard" parent="." unique_id=1010147522 instance=ExtResource("2")]
+position = Vector2(358, 775)
+scale = Vector2(1.7, 1.7)
+animal_id = "pony"
+animal_name = "Pony"
+idle_texture = ExtResource("6")
+happy_texture = ExtResource("7")
+card_movement_texture = ExtResource("15")
+animal_art_faces_left = true
+card_roam_enabled = true
+card_roam_bounds = Rect2(-30, -42, 60, 24)
+card_roam_idle_range = Vector2(1.4, 3)
+
+[node name="CowCard" parent="." unique_id=1058383580 instance=ExtResource("2")]
+position = Vector2(775, 796)
+scale = Vector2(1.9, 1.9)
+animal_id = "cow"
+animal_name = "Cow"
+idle_texture = ExtResource("8")
+happy_texture = ExtResource("9")
+card_movement_texture = ExtResource("16")
+animal_art_faces_left = true
+card_roam_enabled = true
+card_roam_bounds = Rect2(-28, -42, 56, 24)
+card_roam_idle_range = Vector2(1.7, 3.3)
+card_roam_move_duration_range = Vector2(1.1, 1.9)
+
+[node name="SheepCard" parent="." unique_id=1765071358 instance=ExtResource("2")]
+position = Vector2(1197, 812)
+scale = Vector2(1.5, 1.5)
+animal_id = "sheep"
+animal_name = "Sheep"
+idle_texture = ExtResource("10")
+happy_texture = ExtResource("11")
+card_movement_texture = ExtResource("17")
+animal_art_faces_left = true
+card_roam_enabled = true
+card_roam_bounds = Rect2(-30, -42, 60, 24)
+card_roam_idle_range = Vector2(1.5, 3.2)
+card_roam_move_duration_range = Vector2(1, 1.75)
+
+[node name="DuckCard" parent="." unique_id=2035833458 instance=ExtResource("2")]
+position = Vector2(1561, 789)
+animal_id = "duck"
+animal_name = "Duck"
+idle_texture = ExtResource("12")
+happy_texture = ExtResource("13")
+card_movement_texture = ExtResource("18")
+animal_art_faces_left = true
+card_roam_enabled = true
+card_roam_bounds = Rect2(-28, -42, 56, 24)
+card_roam_idle_range = Vector2(1.3, 2.8)
+card_roam_move_duration_range = Vector2(0.95, 1.6)
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=869816122]
+
+[node name="BrushButton" type="Button" parent="Hud" unique_id=782021692]
+modulate = Color(0.48, 0.28, 0.17, 1)
+offset_left = 140.0
+offset_top = 862.0
+offset_right = 420.0
+offset_bottom = 960.0
+theme_override_colors/font_color = Color(1, 0.96, 0.84, 1)
+theme_override_font_sizes/font_size = 28
+flat = true
+
+[node name="BackButton" type="Button" parent="Hud" unique_id=1160691984]
+visible = false
+offset_left = 1677.0
+offset_top = -11.0
+offset_right = 1918.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(1, 0.96, 0.84, 1)
+theme_override_font_sizes/font_size = 28
+icon = ExtResource("back_icon")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FeedbackLabel" type="Label" parent="Hud" unique_id=196717537]
+visible = false
+offset_left = 392.0
+offset_top = 970.0
+offset_right = 1528.0
+offset_bottom = 1030.0
+theme_override_font_sizes/font_size = 28
+text = "Tap an animal to brush."
+horizontal_alignment = 1
+
+[node name="CompletionPanel" type="Panel" parent="Hud" unique_id=1887733076]
+visible = false
+self_modulate = Color(1, 0.98, 0.88, 0.96)
+offset_left = 558.0
+offset_top = 354.0
+offset_right = 1362.0
+offset_bottom = 616.0
+
+[node name="CompletionLabel" type="Label" parent="Hud/CompletionPanel" unique_id=1979401058]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 86.0
+offset_right = 738.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 38
+text = "Every animal looks shiny and cozy!"
+horizontal_alignment = 1
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=189405695]
+script = ExtResource("responsive_layout")
+fit_design_roots_to_viewport = true

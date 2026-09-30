@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://d55hac08g1bh"]
+
+[ext_resource type="Script" uid="uid://dgu13p6hs7hoq" path="res://scripts/chores/GardenScene.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/shared/GardenPlot.tscn" id="2"]
+[ext_resource type="AudioStream" path="res://sounds/water.ogg" id="3"]
+[ext_resource type="AudioStream" uid="uid://dny3irw0bfy3x" path="res://sounds/harvest.wav" id="4"]
+[ext_resource type="AudioStream" path="res://sounds/complete.ogg" id="5"]
+[ext_resource type="Texture2D" uid="uid://dvofnc2hy24wr" path="res://art/props/watering_can.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://thubuc8ovpqp" path="res://art/effects/water_drop.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dfoin3agxn6vd" path="res://art/garden/seed.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://d2mo5yea04lhn" path="res://art/props/seed_packet.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bwmwrpfeg1bmb" path="res://art/garden/harvest_ready.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://ccticjxjw0fv5" path="res://art/props/harvest_basket.png" id="12"]
+[ext_resource type="PackedScene" path="res://scenes/shared/GardenBasketFill.tscn" id="13"]
+[ext_resource type="Texture2D" uid="uid://bk21lkwgyvr0s" path="res://art/effects/sparkle.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://d0vvtmx0725sy" path="res://art/ui/back_button.png" id="back_icon"]
+[ext_resource type="Script" uid="uid://dbjooo3urqp4f" path="res://scripts/ui/ResponsiveCoverSprite2D.gd" id="cover_sprite"]
+[ext_resource type="Texture2D" uid="uid://dl5lt2b7ksjg" path="res://art/backgrounds/garden_care_background_fall.png" id="fall_bg"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+[ext_resource type="Texture2D" uid="uid://b1pgrunpukjm3" path="res://art/backgrounds/garden_care_background_spring.png" id="spring_bg"]
+[ext_resource type="Texture2D" uid="uid://crylmrq48fusi" path="res://art/backgrounds/garden_care_background_summer.png" id="summer_bg"]
+[ext_resource type="Texture2D" uid="uid://cfwuyf3kwrn0w" path="res://art/backgrounds/garden_care_background_winter.png" id="winter_bg"]
+
+[sub_resource type="RectangleShape2D" id="ColdFrameShape"]
+size = Vector2(1000, 560)
+
+[node name="GardenCareScene" type="Node2D" unique_id=1188866325]
+script = ExtResource("1")
+background_sprite = NodePath("Background")
+background_overlay = NodePath("Hud/BackgroundOverlay")
+feedback_label = NodePath("Hud/FeedbackLabel")
+completion_panel = NodePath("Hud/CompletionPanel")
+completion_label = NodePath("Hud/CompletionPanel/CompletionLabel")
+back_button = NodePath("Hud/BackButton")
+plot_paths = Array[NodePath]([NodePath("PlotA"), NodePath("PlotB"), NodePath("PlotC"), NodePath("PlotD")])
+water_sound = ExtResource("3")
+harvest_sound = ExtResource("4")
+completion_sound = ExtResource("5")
+watering_can_source = NodePath("WateringCanSource")
+seed_source = NodePath("SeedSource")
+harvest_basket = NodePath("HarvestBasket")
+harvest_basket_fill = NodePath("HarvestBasket/GardenBasketFill")
+harvest_drop_target = NodePath("HarvestBasket/HarvestDropTarget")
+action_animation_layer = NodePath("ActionAnimationLayer")
+winter_cold_frame_root = NodePath("WinterColdFrame")
+winter_cold_frame_tap_area = NodePath("WinterColdFrame/ColdFrameTapArea")
+watering_can_texture = ExtResource("7")
+water_drop_texture = ExtResource("8")
+seed_texture = ExtResource("9")
+seed_packet_texture = ExtResource("10")
+harvest_item_texture = ExtResource("11")
+harvest_sparkle_texture = ExtResource("14")
+spring_background_texture = ExtResource("spring_bg")
+summer_background_texture = ExtResource("summer_bg")
+fall_background_texture = ExtResource("fall_bg")
+winter_background_texture = ExtResource("winter_bg")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=568240377]
+position = Vector2(960, 540)
+texture = ExtResource("spring_bg")
+script = ExtResource("cover_sprite")
+
+[node name="PlotA" parent="." unique_id=499601085 instance=ExtResource("2")]
+z_index = 14
+position = Vector2(415, 490)
+plot_name = "Plot 1"
+
+[node name="PlotB" parent="." unique_id=2072633048 instance=ExtResource("2")]
+z_index = 14
+position = Vector2(870, 490)
+plot_index = 1
+plot_name = "Plot 2"
+
+[node name="PlotC" parent="." unique_id=1653971354 instance=ExtResource("2")]
+z_index = 14
+position = Vector2(415, 740)
+plot_index = 2
+plot_name = "Plot 3"
+
+[node name="PlotD" parent="." unique_id=749436938 instance=ExtResource("2")]
+z_index = 14
+position = Vector2(870, 740)
+plot_index = 3
+plot_name = "Plot 4"
+
+[node name="WateringCanSource" type="Node2D" parent="." unique_id=1652253872]
+position = Vector2(1581, 520)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="RestingWateringCan" type="Sprite2D" parent="WateringCanSource" unique_id=165891634]
+z_index = 18
+position = Vector2(1.4999999, -1.4999999)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("7")
+
+[node name="SeedSource" type="Node2D" parent="." unique_id=764603036]
+position = Vector2(1410, 710)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="SeedPacketVisual" type="Sprite2D" parent="SeedSource" unique_id=364170221]
+z_index = 18
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("10")
+
+[node name="HarvestBasket" type="Sprite2D" parent="." unique_id=1918939121]
+z_index = 18
+position = Vector2(1671.0001, 755.0)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("12")
+metadata/_edit_group_ = true
+
+[node name="HarvestDropTarget" type="Marker2D" parent="HarvestBasket" unique_id=1628291780]
+position = Vector2(-4.285714, 76)
+
+[node name="GardenBasketFill" parent="HarvestBasket" unique_id=893905082 instance=ExtResource("13")]
+z_index = 1
+position = Vector2(0, -22)
+crop_positions = Array[Vector2]([Vector2(-72, 0), Vector2(-34, -18), Vector2(4, -4), Vector2(42, -18), Vector2(78, 0)])
+crop_scale = Vector2(0.16, 0.16)
+
+[node name="WinterColdFrame" type="Node2D" parent="." unique_id=1584077204]
+visible = false
+z_index = 10
+position = Vector2(640, 700)
+
+[node name="ColdFrameTapArea" type="Area2D" parent="WinterColdFrame" unique_id=1502694330]
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinterColdFrame/ColdFrameTapArea" unique_id=1405296228]
+shape = SubResource("ColdFrameShape")
+
+[node name="ActionAnimationLayer" type="Node2D" parent="." unique_id=2125573243]
+z_index = 80
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=13928670]
+
+[node name="BackgroundOverlay" type="ColorRect" parent="Hud" unique_id=1121710591]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="BackButton" type="Button" parent="Hud" unique_id=1273906173]
+visible = false
+offset_left = 1700.0
+offset_top = 3.0
+offset_right = 1918.0
+offset_bottom = 213.0
+theme_override_colors/font_color = Color(1, 0.94, 0.8, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.94, 0.8, 1)
+theme_override_colors/font_hover_color = Color(1, 0.94, 0.8, 1)
+theme_override_font_sizes/font_size = 28
+icon = ExtResource("back_icon")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FeedbackLabel" type="Label" parent="Hud" unique_id=886222516]
+visible = false
+offset_left = 364.0
+offset_top = 970.0
+offset_right = 1556.0
+offset_bottom = 1030.0
+theme_override_colors/font_color = Color(0.22, 0.14, 0.09, 1)
+theme_override_font_sizes/font_size = 28
+text = "The garden is happy."
+horizontal_alignment = 1
+
+[node name="CompletionPanel" type="Panel" parent="Hud" unique_id=1510216207]
+visible = false
+self_modulate = Color(1, 0.97, 0.84, 0.96)
+offset_left = 554.0
+offset_top = 354.0
+offset_right = 1366.0
+offset_bottom = 616.0
+
+[node name="CompletionLabel" type="Label" parent="Hud/CompletionPanel" unique_id=381970824]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 84.0
+offset_right = 746.0
+offset_bottom = 162.0
+theme_override_colors/font_color = Color(0.4138232, 0.6218372, 0.11129714, 1)
+theme_override_font_sizes/font_size = 38
+text = "The garden has been cared for today!"
+horizontal_alignment = 1
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=1257524006]
+script = ExtResource("responsive_layout")
+fit_design_roots_to_viewport = true

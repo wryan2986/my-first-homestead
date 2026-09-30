@@ -1,0 +1,15 @@
+Bundled font files in this folder come from the Google Fonts project.
+
+Fonts used:
+- Noto Sans
+- Noto Sans Arabic
+- Noto Sans Devanagari
+- Noto Sans SC
+- Noto Sans JP
+- Noto Sans KR
+
+License:
+SIL Open Font License, Version 1.1
+
+Source:
+https://github.com/google/fonts

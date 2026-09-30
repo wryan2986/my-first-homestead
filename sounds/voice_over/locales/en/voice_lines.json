@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "locale": "en",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "response_format": "ogg",
+    "instructions": "Google Chirp 3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "speaking_rate": 0.92,
+    "google_tts_locale": "en-US",
+    "google_tts_voice": "en-US-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "Tap the egg in the nest.",
+      "path": "res://sounds/voice_over/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "Tap the egg in the nest.",
+      "path": "res://sounds/voice_over/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "The eggs go in the basket.",
+      "path": "res://sounds/voice_over/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "The eggs go in the basket.",
+      "path": "res://sounds/voice_over/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "Tap the udder to help fill the bucket.",
+      "path": "res://sounds/voice_over/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "Tap the udder to help fill the bucket.",
+      "path": "res://sounds/voice_over/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "Tap near the cow to help with milking.",
+      "path": "res://sounds/voice_over/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "Tap near the cow to help with milking.",
+      "path": "res://sounds/voice_over/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "Tap the cow to give her a gentle pat.",
+      "path": "res://sounds/voice_over/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "Tap the cow to give her a gentle pat.",
+      "path": "res://sounds/voice_over/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "Tap this animal to give it food.",
+      "path": "res://sounds/voice_over/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "Tap this animal to give it food.",
+      "path": "res://sounds/voice_over/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "Tap this animal to brush it.",
+      "path": "res://sounds/voice_over/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "Tap this animal to brush it.",
+      "path": "res://sounds/voice_over/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "Tap an animal and the brush will help.",
+      "path": "res://sounds/voice_over/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "Tap an animal and the brush will help.",
+      "path": "res://sounds/voice_over/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "Tap this garden plot to care for the plants.",
+      "path": "res://sounds/voice_over/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "Tap this garden plot to care for the plants.",
+      "path": "res://sounds/voice_over/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "Tap the cold frame to care for the winter lettuce.",
+      "path": "res://sounds/voice_over/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "Tap the cold frame to care for the winter lettuce.",
+      "path": "res://sounds/voice_over/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "Great helping! The chickens are happy.",
+      "path": "res://sounds/voice_over/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "Nice work! The eggs are safe.",
+      "path": "res://sounds/voice_over/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "Thank you! The coop feels cozy.",
+      "path": "res://sounds/voice_over/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "Good job! The basket is full.",
+      "path": "res://sounds/voice_over/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "Happy hens! You helped so much.",
+      "path": "res://sounds/voice_over/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "Nice work! The cow feels cared for.",
+      "path": "res://sounds/voice_over/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "Great helping! The milk bucket is full.",
+      "path": "res://sounds/voice_over/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "Thank you! The cow is happy.",
+      "path": "res://sounds/voice_over/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "Good job! Fresh milk is ready.",
+      "path": "res://sounds/voice_over/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "Lovely helping! The barn feels calm.",
+      "path": "res://sounds/voice_over/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "Yum! The animals loved their snack.",
+      "path": "res://sounds/voice_over/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "Great helping! Every animal had food.",
+      "path": "res://sounds/voice_over/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "Nice work! Happy munching time.",
+      "path": "res://sounds/voice_over/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "Thank you! The animals are full.",
+      "path": "res://sounds/voice_over/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "Good job! The pen feels happy.",
+      "path": "res://sounds/voice_over/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "All clean! The animals feel better.",
+      "path": "res://sounds/voice_over/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "Nice work! Everyone is brushed.",
+      "path": "res://sounds/voice_over/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "Great helping! Soft and shiny coats.",
+      "path": "res://sounds/voice_over/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "Thank you! The animals feel cozy.",
+      "path": "res://sounds/voice_over/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "Good job! The barn friends are clean.",
+      "path": "res://sounds/voice_over/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "Great gardening! The plants are cared for.",
+      "path": "res://sounds/voice_over/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "Nice work! The garden feels happy.",
+      "path": "res://sounds/voice_over/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "Thank you! Every plot got care.",
+      "path": "res://sounds/voice_over/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "Good job! The plants look bright.",
+      "path": "res://sounds/voice_over/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "Lovely helping! The garden is cozy.",
+      "path": "res://sounds/voice_over/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ]
+}

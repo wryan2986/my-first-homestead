@@ -1,0 +1,18 @@
+# Intentionally Retained Unreferenced Assets
+#
+# These assets may be source/reference material, alternate states, or sprite sheets
+# that are useful even when not currently referenced by a scene.
+
+art/animals/*_states_sheet.png
+art/animals/*_blinking.png
+art/animals/*_eating.png
+art/animals/*_excited.png
+art/animals/*_celebrating.png
+art/audio_prompts/*.txt
+art/fonts/*
+art/backgrounds/farmyard_background_original_backup.png
+art/backgrounds/farmyard_layers/*
+art/garden/apple.png
+art/garden/harvest_items/apple_item.png
+sounds/voice_over/locales/*/voice_lines.json
+sounds/voice_over/locales/*/santa_full_greeting.ogg

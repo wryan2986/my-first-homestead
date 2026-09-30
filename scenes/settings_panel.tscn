@@ -1,0 +1,710 @@
+[gd_scene format=3 uid="uid://wqv64d1el1dy"]
+
+[ext_resource type="Script" uid="uid://cvsfukt7kqwk8" path="res://scripts/ui/SettingsPanel.gd" id="1_54ti7"]
+[ext_resource type="AudioStream" uid="uid://os6ra4le88xa" path="res://sounds/tap.wav" id="2_8fxpn"]
+[ext_resource type="Texture2D" uid="uid://hw3i2u2nwlx1" path="res://art/ui/settings_parent_notebook_panel.png" id="3_70r2r"]
+
+[sub_resource type="StyleBoxFlat" id="SettingsPanelStyle"]
+bg_color = Color(1, 0.956863, 0.807843, 0.98)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.486275, 0.290196, 0.172549, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+shadow_color = Color(0.25098, 0.156863, 0.0941176, 0.28)
+shadow_size = 20
+shadow_offset = Vector2(0, 10)
+
+[sub_resource type="StyleBoxFlat" id="SettingsHeaderStyle"]
+bg_color = Color(0.95, 0.68, 0.35, 0)
+corner_radius_top_left = 34
+corner_radius_top_right = 34
+corner_radius_bottom_right = 34
+corner_radius_bottom_left = 34
+
+[sub_resource type="StyleBoxFlat" id="SettingsButtonNormal"]
+bg_color = Color(0.494118, 0.8, 0.407843, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.25098, 0.45098, 0.215686, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="SettingsButtonPressed"]
+bg_color = Color(0.384314, 0.690196, 0.313725, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.25098, 0.45098, 0.215686, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="SettingsCardStyle"]
+bg_color = Color(1, 0.965, 0.79, 0.86)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.72549, 0.47451, 0.227451, 1)
+corner_radius_top_left = 28
+corner_radius_top_right = 28
+corner_radius_bottom_right = 28
+corner_radius_bottom_left = 28
+shadow_color = Color(0.32, 0.2, 0.11, 0.14)
+shadow_size = 8
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="SettingsMuteButtonNormal"]
+bg_color = Color(0.968627, 0.827451, 0.478431, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.423529, 0.266667, 0.152941, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="SettingsMuteButtonPressed"]
+bg_color = Color(0.905882, 0.72549, 0.364706, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.423529, 0.266667, 0.152941, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="SettingsToggleNormal"]
+bg_color = Color(1, 0.975, 0.83, 0.66)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.847059, 0.65098, 0.372549, 1)
+corner_radius_top_left = 28
+corner_radius_top_right = 28
+corner_radius_bottom_right = 28
+corner_radius_bottom_left = 28
+
+[node name="SettingsPanel" type="Panel" unique_id=1796436620]
+offset_right = 1900.0
+offset_bottom = 1040.0
+theme_override_styles/panel = SubResource("SettingsPanelStyle")
+script = ExtResource("1_54ti7")
+master_volume_slider_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/MasterVolumeSlider")
+music_volume_slider_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/MusicVolumeSlider")
+sfx_volume_slider_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/SfxVolumeSlider")
+voice_over_volume_slider_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/VoiceOverVolumeSlider")
+master_volume_label_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/MasterVolumeLabel")
+music_volume_label_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/MusicVolumeLabel")
+sfx_volume_label_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/SfxVolumeLabel")
+voice_over_volume_label_path = NodePath("SettingsScroll/SettingsContent/SoundSettings/VoiceOverVolumeLabel")
+preview_sound = ExtResource("2_8fxpn")
+
+[node name="PanelBackdrop" type="TextureRect" parent="." unique_id=1235575801]
+layout_mode = 0
+offset_right = 1900.0
+offset_bottom = 1040.0
+mouse_filter = 2
+texture = ExtResource("3_70r2r")
+stretch_mode = 5
+
+[node name="HeaderBoard" type="Panel" parent="." unique_id=1460634031]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 64.0
+offset_right = 1530.0
+offset_bottom = 158.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("SettingsHeaderStyle")
+
+[node name="SettingsTitle" type="Label" parent="." unique_id=1288306074]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 70.0
+offset_right = 1152.0
+offset_bottom = 152.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 48
+text = "Farm Settings"
+
+[node name="CloseButton" type="Button" parent="." unique_id=127113616]
+layout_mode = 0
+offset_left = 1596.0
+offset_top = 62.0
+offset_right = 1832.0
+offset_bottom = 174.0
+theme_override_colors/font_color = Color(0.18, 0.24, 0.12, 1)
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("SettingsButtonNormal")
+theme_override_styles/pressed = SubResource("SettingsButtonPressed")
+theme_override_styles/hover = SubResource("SettingsButtonNormal")
+text = "Done"
+
+[node name="SoundTabButton" type="Button" parent="." unique_id=1830678836]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 146.0
+offset_right = 941.0
+offset_bottom = 234.0
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "Sound"
+
+[node name="GameplayTabButton" type="Button" parent="." unique_id=171137180]
+layout_mode = 0
+offset_left = 959.0
+offset_top = 146.0
+offset_right = 1390.0
+offset_bottom = 234.0
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "Gameplay"
+
+[node name="LanguageTabButton" type="Button" parent="." unique_id=911204835]
+layout_mode = 0
+offset_left = 1408.0
+offset_top = 146.0
+offset_right = 1839.0
+offset_bottom = 234.0
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "Language"
+
+[node name="SettingsScroll" type="ScrollContainer" parent="." unique_id=13547339]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 266.0
+offset_right = 1848.0
+offset_bottom = 1006.0
+horizontal_scroll_mode = 0
+
+[node name="SettingsContent" type="Control" parent="SettingsScroll" unique_id=892171653]
+custom_minimum_size = Vector2(1780, 1120)
+layout_mode = 2
+
+[node name="SoundSettings" type="Control" parent="SettingsScroll/SettingsContent" unique_id=2005943874]
+anchors_preset = 0
+offset_right = 1780.0
+offset_bottom = 1120.0
+mouse_filter = 1
+
+[node name="MasterCard" type="Panel" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=691911566]
+layout_mode = 0
+offset_left = 314.0
+offset_right = 1466.0
+offset_bottom = 204.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("SettingsCardStyle")
+
+[node name="MasterVolumeLabel" type="Label" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=1244941662]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 18.0
+offset_right = 1438.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 34
+text = "All Sound: %d%%"
+
+[node name="MasterMuteButton" type="Button" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=1614570577]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 18.0
+offset_right = 1424.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("SettingsMuteButtonNormal")
+theme_override_styles/pressed = SubResource("SettingsMuteButtonPressed")
+theme_override_styles/hover = SubResource("SettingsMuteButtonNormal")
+text = "On"
+
+[node name="MasterVolumeSlider" type="HSlider" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=1161688071]
+custom_minimum_size = Vector2(1084, 116)
+layout_mode = 0
+offset_left = 354.0
+offset_top = 72.0
+offset_right = 1438.0
+offset_bottom = 188.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="MusicCard" type="Panel" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=2001655547]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 228.0
+offset_right = 1466.0
+offset_bottom = 432.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("SettingsCardStyle")
+
+[node name="MusicVolumeLabel" type="Label" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=373300573]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 246.0
+offset_right = 1438.0
+offset_bottom = 306.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 34
+text = "Music: 75%"
+
+[node name="MusicMuteButton" type="Button" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=1230912797]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 246.0
+offset_right = 1424.0
+offset_bottom = 328.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("SettingsMuteButtonNormal")
+theme_override_styles/pressed = SubResource("SettingsMuteButtonPressed")
+theme_override_styles/hover = SubResource("SettingsMuteButtonNormal")
+text = "On"
+
+[node name="MusicVolumeSlider" type="HSlider" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=757488387]
+custom_minimum_size = Vector2(1084, 116)
+layout_mode = 0
+offset_left = 354.0
+offset_top = 300.0
+offset_right = 1438.0
+offset_bottom = 416.0
+max_value = 1.0
+step = 0.05
+value = 0.75
+
+[node name="SfxCard" type="Panel" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=2084507229]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 456.0
+offset_right = 1466.0
+offset_bottom = 660.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("SettingsCardStyle")
+
+[node name="SfxVolumeLabel" type="Label" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=124107212]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 474.0
+offset_right = 1438.0
+offset_bottom = 534.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 34
+text = "Sound Effects: 100%"
+
+[node name="SfxMuteButton" type="Button" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=21471079]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 474.0
+offset_right = 1424.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("SettingsMuteButtonNormal")
+theme_override_styles/pressed = SubResource("SettingsMuteButtonPressed")
+theme_override_styles/hover = SubResource("SettingsMuteButtonNormal")
+text = "On"
+
+[node name="SfxVolumeSlider" type="HSlider" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=1568878687]
+custom_minimum_size = Vector2(1084, 116)
+layout_mode = 0
+offset_left = 354.0
+offset_top = 528.0
+offset_right = 1438.0
+offset_bottom = 644.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="VoiceOverCard" type="Panel" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=90086306]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 684.0
+offset_right = 1466.0
+offset_bottom = 888.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("SettingsCardStyle")
+
+[node name="LanguageCard" type="Panel" parent="SettingsScroll/SettingsContent" unique_id=1479203361]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 0.0
+offset_right = 1466.0
+offset_bottom = 210.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("SettingsCardStyle")
+
+[node name="LanguageTitle" type="Label" parent="SettingsScroll/SettingsContent/LanguageCard" unique_id=1639206686]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 18.0
+offset_right = 600.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 30
+text = "Language"
+
+[node name="LanguageOptionButton" type="OptionButton" parent="SettingsScroll/SettingsContent/LanguageCard" unique_id=2080648474]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 104.0
+offset_right = 1372.0
+offset_bottom = 186.0
+theme_override_font_sizes/font_size = 30
+
+[node name="VoiceOverVolumeLabel" type="Label" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=1719981694]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 702.0
+offset_right = 1438.0
+offset_bottom = 762.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 34
+text = "Voice Over: 85%"
+
+[node name="VoiceOverMuteButton" type="Button" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=694532125]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 702.0
+offset_right = 1424.0
+offset_bottom = 784.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("SettingsMuteButtonNormal")
+theme_override_styles/pressed = SubResource("SettingsMuteButtonPressed")
+theme_override_styles/hover = SubResource("SettingsMuteButtonNormal")
+text = "On"
+
+[node name="VoiceOverVolumeSlider" type="HSlider" parent="SettingsScroll/SettingsContent/SoundSettings" unique_id=2017610774]
+custom_minimum_size = Vector2(1084, 116)
+layout_mode = 0
+offset_left = 354.0
+offset_top = 756.0
+offset_right = 1438.0
+offset_bottom = 872.0
+max_value = 1.0
+step = 0.05
+value = 0.85
+
+[node name="GameplaySettings" type="Control" parent="SettingsScroll/SettingsContent" unique_id=351594983]
+anchors_preset = 0
+offset_right = 1780.0
+offset_bottom = 1120.0
+mouse_filter = 1
+
+[node name="TapAnywhereReturnToggle" type="CheckButton" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=882451799]
+layout_mode = 0
+offset_left = 332.0
+offset_right = 1448.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("SettingsToggleNormal")
+theme_override_styles/pressed = SubResource("SettingsToggleNormal")
+theme_override_styles/hover = SubResource("SettingsToggleNormal")
+theme_override_styles/focus = SubResource("SettingsToggleNormal")
+text = "Tap Anywhere to Play On"
+
+[node name="DuckPondTimeoutToggle" type="CheckButton" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=87933172]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 150.0
+offset_right = 1448.0
+offset_bottom = 276.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("SettingsToggleNormal")
+theme_override_styles/pressed = SubResource("SettingsToggleNormal")
+theme_override_styles/hover = SubResource("SettingsToggleNormal")
+theme_override_styles/focus = SubResource("SettingsToggleNormal")
+text = "Duck Pond Timer Off 2 minutes"
+
+[node name="MoleGardenTimeoutToggle" type="CheckButton" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=528775418]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 430.0
+offset_right = 1448.0
+offset_bottom = 556.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("SettingsToggleNormal")
+theme_override_styles/pressed = SubResource("SettingsToggleNormal")
+theme_override_styles/hover = SubResource("SettingsToggleNormal")
+theme_override_styles/focus = SubResource("SettingsToggleNormal")
+text = "Mole Garden Timer Off 2 minutes"
+
+[node name="DuckPondTimer60Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=1526269392]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 292.0
+offset_right = 504.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="DuckPondTimer120Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=356207993]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 292.0
+offset_right = 668.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "2"
+
+[node name="DuckPondTimer180Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=711835218]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 292.0
+offset_right = 832.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="DuckPondTimer300Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=1825210019]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 292.0
+offset_right = 996.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "5"
+
+[node name="DuckPondTimerCustomChip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=665632942]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 292.0
+offset_right = 1208.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "Custom"
+
+[node name="DuckPondTimerCustomEdit" type="LineEdit" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=1729200670]
+visible = false
+layout_mode = 0
+offset_left = 1222.0
+offset_top = 292.0
+offset_right = 1354.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 32
+text = "2"
+alignment = 1
+max_length = 2
+virtual_keyboard_type = 2
+
+[node name="MoleGardenTimer60Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=600415171]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 572.0
+offset_right = 504.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="MoleGardenTimer120Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=1246543722]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 572.0
+offset_right = 668.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 30
+text = "2"
+
+[node name="MoleGardenTimer180Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=468556944]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 572.0
+offset_right = 832.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="MoleGardenTimer300Chip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=1441813835]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 572.0
+offset_right = 996.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 30
+text = "5"
+
+[node name="MoleGardenTimerCustomChip" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=265736806]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 572.0
+offset_right = 1208.0
+offset_bottom = 640.0
+theme_override_font_sizes/font_size = 30
+text = "Custom"
+
+[node name="MoleGardenTimerCustomEdit" type="LineEdit" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=2102910966]
+visible = false
+layout_mode = 0
+offset_left = 1222.0
+offset_top = 572.0
+offset_right = 1354.0
+offset_bottom = 640.0
+theme_override_colors/font_color = Color(0.309804, 0.207843, 0.141176, 1)
+theme_override_font_sizes/font_size = 32
+text = "2"
+alignment = 1
+max_length = 2
+virtual_keyboard_type = 2
+
+[node name="TesterTools" type="Control" parent="SettingsScroll/SettingsContent/GameplaySettings" unique_id=1122300957]
+anchors_preset = 0
+offset_left = 314.0
+offset_top = 660.0
+offset_right = 1466.0
+offset_bottom = 980.0
+
+[node name="TesterTitle" type="Label" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=123802021]
+layout_mode = 0
+offset_left = 40.0
+offset_right = 460.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.372549, 0.231373, 0.133333, 1)
+theme_override_font_sizes/font_size = 30
+text = "Tester Tools"
+
+[node name="PrevDay" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1769948394]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 54.0
+offset_right = 240.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 22
+text = "Prev Day"
+
+[node name="NextDay" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=626106598]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 54.0
+offset_right = 452.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 22
+text = "Next Day"
+
+[node name="Spring" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1647573160]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 54.0
+offset_right = 664.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 22
+text = "Spring"
+
+[node name="Summer" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=872922782]
+layout_mode = 0
+offset_left = 676.0
+offset_top = 54.0
+offset_right = 876.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 22
+text = "Summer"
+
+[node name="Fall" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=683330107]
+layout_mode = 0
+offset_left = 888.0
+offset_top = 54.0
+offset_right = 1088.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 22
+text = "Fall"
+
+[node name="Winter" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1534532638]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 120.0
+offset_right = 240.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 22
+text = "Winter"
+
+[node name="SeasonDay1" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=61111389]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 120.0
+offset_right = 452.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 22
+text = "Day 1"
+
+[node name="SeasonDay2" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1133382320]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 120.0
+offset_right = 664.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 22
+text = "Day 2"
+
+[node name="SeasonDay3" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1877868651]
+layout_mode = 0
+offset_left = 676.0
+offset_top = 120.0
+offset_right = 876.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 22
+text = "Day 3"
+
+[node name="CompleteNext" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1895155987]
+layout_mode = 0
+offset_left = 888.0
+offset_top = 120.0
+offset_right = 1088.0
+offset_bottom = 174.0
+theme_override_font_sizes/font_size = 22
+text = "Complete Next"
+
+[node name="CompleteAll" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=863055100]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 186.0
+offset_right = 240.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 22
+text = "Complete All"
+
+[node name="ResetToday" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=264776729]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 186.0
+offset_right = 452.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 22
+text = "Reset Today"
+
+[node name="DuckVisited" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1031586630]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 186.0
+offset_right = 664.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 22
+text = "Duck Visit"
+
+[node name="ResetFarm" type="Button" parent="SettingsScroll/SettingsContent/GameplaySettings/TesterTools" unique_id=1801328332]
+layout_mode = 0
+offset_left = 676.0
+offset_top = 186.0
+offset_right = 876.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 22
+text = "Reset Farm"

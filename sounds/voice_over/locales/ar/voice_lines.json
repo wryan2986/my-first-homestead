@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "ar",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "ar-XA",
+    "google_tts_voice": "ar-XA-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "اضغط على البيضة في العش.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "اضغط على البيضة في العش.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "البيض يذهب إلى السلة.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "البيض يذهب إلى السلة.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "اضغط على الضرع لتساعد في ملء الدلو.",
+      "path": "res://sounds/voice_over/locales/ar/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "اضغط على الضرع لتساعد في ملء الدلو.",
+      "path": "res://sounds/voice_over/locales/ar/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "اضغط قرب البقرة لتساعد في الحلب.",
+      "path": "res://sounds/voice_over/locales/ar/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "اضغط قرب البقرة لتساعد في الحلب.",
+      "path": "res://sounds/voice_over/locales/ar/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "اضغط على البقرة لتربت عليها بلطف.",
+      "path": "res://sounds/voice_over/locales/ar/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "اضغط على البقرة لتربت عليها بلطف.",
+      "path": "res://sounds/voice_over/locales/ar/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "اضغط على هذا الحيوان لتعطيه الطعام.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "اضغط على هذا الحيوان لتعطيه الطعام.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "اضغط على هذا الحيوان لتمشطه.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "اضغط على هذا الحيوان لتمشطه.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "اضغط على حيوان، وستساعد الفرشاة.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "اضغط على حيوان، وستساعد الفرشاة.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "اضغط على هذه البقعة في الحديقة لتعتني بالنباتات.",
+      "path": "res://sounds/voice_over/locales/ar/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "اضغط على هذه البقعة في الحديقة لتعتني بالنباتات.",
+      "path": "res://sounds/voice_over/locales/ar/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "اضغط على البيت البارد لتعتني بخس الشتاء.",
+      "path": "res://sounds/voice_over/locales/ar/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "اضغط على البيت البارد لتعتني بخس الشتاء.",
+      "path": "res://sounds/voice_over/locales/ar/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "مساعدة رائعة! الدجاج سعيد.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "عمل جميل! البيض في أمان.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "شكرا لك! قن الدجاج مريح.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "أحسنت! السلة ممتلئة.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "دجاجات سعيدة! لقد ساعدت كثيرا.",
+      "path": "res://sounds/voice_over/locales/ar/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "عمل جميل! البقرة تشعر بالعناية.",
+      "path": "res://sounds/voice_over/locales/ar/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "مساعدة رائعة! دلو الحليب ممتلئ.",
+      "path": "res://sounds/voice_over/locales/ar/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "شكرا لك! البقرة سعيدة.",
+      "path": "res://sounds/voice_over/locales/ar/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "أحسنت! الحليب الطازج جاهز.",
+      "path": "res://sounds/voice_over/locales/ar/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "مساعدة لطيفة! الحظيرة هادئة.",
+      "path": "res://sounds/voice_over/locales/ar/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "لذيذ! أحبت الحيوانات وجبتها الخفيفة.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "مساعدة رائعة! كل حيوان أكل طعامه.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "عمل جميل! وقت أكل سعيد.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "شكرا لك! الحيوانات شبعت.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "أحسنت! الحظيرة الصغيرة تبدو سعيدة.",
+      "path": "res://sounds/voice_over/locales/ar/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "كل شيء نظيف! الحيوانات تشعر بتحسن.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "عمل جميل! تم تمشيط الجميع.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "مساعدة رائعة! فراء ناعم ولامع.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "شكرا لك! الحيوانات تشعر بالراحة.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "أحسنت! أصدقاء الحظيرة نظيفون.",
+      "path": "res://sounds/voice_over/locales/ar/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "عمل رائع في الحديقة! النباتات معتنى بها.",
+      "path": "res://sounds/voice_over/locales/ar/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "عمل جميل! الحديقة تبدو سعيدة.",
+      "path": "res://sounds/voice_over/locales/ar/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "شكرا لك! كل بقعة نالت العناية.",
+      "path": "res://sounds/voice_over/locales/ar/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "أحسنت! النباتات تبدو جميلة.",
+      "path": "res://sounds/voice_over/locales/ar/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "مساعدة لطيفة! الحديقة مريحة.",
+      "path": "res://sounds/voice_over/locales/ar/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

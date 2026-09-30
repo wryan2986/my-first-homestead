@@ -1,0 +1,58 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="My First Homestead"
+run/main_scene="res://scenes/StartScene.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/bg_color=Color(0.780392, 0.929412, 0.972549, 1)
+boot_splash/stretch_mode=0
+boot_splash/image="res://art/ui/app_icon_adaptive_foreground_432.png"
+config/icon="uid://dk2gx26mdydjj"
+
+[autoload]
+
+FarmState="*res://scripts/core/FarmState.gd"
+GameSettings="*res://scripts/core/GameSettings.gd"
+LocalizationFonts="*res://scripts/core/LocalizationFonts.gd"
+MusicManager="*res://scenes/shared/MusicManager.tscn"
+VoiceOverManager="*res://scripts/core/VoiceOverManager.gd"
+SceneNavigator="*res://scripts/core/SceneNavigator.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation="landscape"
+
+[dotnet]
+
+project/assembly_name="My First Homestead"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[network]
+
+tls/certificate_bundle_override="res://certificates/godot_tls_bundle.pem"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

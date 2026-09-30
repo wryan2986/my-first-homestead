@@ -1,0 +1,44 @@
+key,filename,text,notes,godot_path
+eggs_hint_gentle,eggs_hint_gentle.wav,Tap the egg in the nest.,Gentle trouble tip.,res://sounds/voice_over/eggs_hint_gentle.wav
+eggs_hint_strong,eggs_hint_strong.wav,Tap the egg in the nest.,Slightly clearer but still calm trouble tip.,res://sounds/voice_over/eggs_hint_strong.wav
+eggs_hint_basket_gentle,eggs_hint_basket_gentle.wav,The eggs go in the basket.,Gentle basket hint.,res://sounds/voice_over/eggs_hint_basket_gentle.wav
+eggs_hint_basket_strong,eggs_hint_basket_strong.wav,The eggs go in the basket.,Slightly clearer but still calm basket hint.,res://sounds/voice_over/eggs_hint_basket_strong.wav
+milking_hint_gentle,milking_hint_gentle.wav,Tap the udder to help fill the bucket.,Gentle milking target hint.,res://sounds/voice_over/milking_hint_gentle.wav
+milking_hint_strong,milking_hint_strong.wav,Tap the udder to help fill the bucket.,Slightly clearer but still calm milking target hint.,res://sounds/voice_over/milking_hint_strong.wav
+milking_hint_cow_gentle,milking_hint_cow_gentle.wav,Tap near the cow to help with milking.,Gentle near-miss hint.,res://sounds/voice_over/milking_hint_cow_gentle.wav
+milking_hint_cow_strong,milking_hint_cow_strong.wav,Tap near the cow to help with milking.,Slightly clearer but still calm near-miss hint.,res://sounds/voice_over/milking_hint_cow_strong.wav
+feeding_hint_gentle,feeding_hint_gentle.wav,Tap this animal to give it food.,Shared feeding hint for all animals.,res://sounds/voice_over/feeding_hint_gentle.wav
+feeding_hint_strong,feeding_hint_strong.wav,Tap this animal to give it food.,Shared stronger feeding hint for all animals.,res://sounds/voice_over/feeding_hint_strong.wav
+brushing_hint_gentle,brushing_hint_gentle.wav,Tap this animal to brush it.,Shared brushing hint for all animals.,res://sounds/voice_over/brushing_hint_gentle.wav
+brushing_hint_strong,brushing_hint_strong.wav,Tap this animal to brush it.,Shared stronger brushing hint for all animals.,res://sounds/voice_over/brushing_hint_strong.wav
+brushing_hint_tool_gentle,brushing_hint_tool_gentle.wav,Tap an animal and the brush will help.,Gentle brush-tool hint.,res://sounds/voice_over/brushing_hint_tool_gentle.wav
+brushing_hint_tool_strong,brushing_hint_tool_strong.wav,Tap an animal and the brush will help.,Slightly clearer but still calm brush-tool hint.,res://sounds/voice_over/brushing_hint_tool_strong.wav
+garden_hint_plot_gentle,garden_hint_plot_gentle.wav,Tap this garden plot to care for the plants.,Gentle garden plot hint.,res://sounds/voice_over/garden_hint_plot_gentle.wav
+garden_hint_plot_strong,garden_hint_plot_strong.wav,Tap this garden plot to care for the plants.,Slightly clearer but still calm garden plot hint.,res://sounds/voice_over/garden_hint_plot_strong.wav
+garden_hint_winter_gentle,garden_hint_winter_gentle.wav,Tap the cold frame to care for the winter lettuce.,Gentle winter garden hint.,res://sounds/voice_over/garden_hint_winter_gentle.wav
+garden_hint_winter_strong,garden_hint_winter_strong.wav,Tap the cold frame to care for the winter lettuce.,Slightly clearer but still calm winter garden hint.,res://sounds/voice_over/garden_hint_winter_strong.wav
+eggs_complete_0,eggs_complete_0.wav,Great helping! The chickens are happy.,Egg completion message.,res://sounds/voice_over/eggs_complete_0.wav
+eggs_complete_1,eggs_complete_1.wav,Nice work! The eggs are safe.,Egg completion message.,res://sounds/voice_over/eggs_complete_1.wav
+eggs_complete_2,eggs_complete_2.wav,Thank you! The coop feels cozy.,Egg completion message.,res://sounds/voice_over/eggs_complete_2.wav
+eggs_complete_3,eggs_complete_3.wav,Good job! The basket is full.,Egg completion message.,res://sounds/voice_over/eggs_complete_3.wav
+eggs_complete_4,eggs_complete_4.wav,Happy hens! You helped so much.,Egg completion message.,res://sounds/voice_over/eggs_complete_4.wav
+milking_complete_0,milking_complete_0.wav,Nice work! The cow feels cared for.,Milking completion message.,res://sounds/voice_over/milking_complete_0.wav
+milking_complete_1,milking_complete_1.wav,Great helping! The milk bucket is full.,Milking completion message.,res://sounds/voice_over/milking_complete_1.wav
+milking_complete_2,milking_complete_2.wav,Thank you! The cow is happy.,Milking completion message.,res://sounds/voice_over/milking_complete_2.wav
+milking_complete_3,milking_complete_3.wav,Good job! Fresh milk is ready.,Milking completion message.,res://sounds/voice_over/milking_complete_3.wav
+milking_complete_4,milking_complete_4.wav,Lovely helping! The barn feels calm.,Milking completion message.,res://sounds/voice_over/milking_complete_4.wav
+feeding_complete_0,feeding_complete_0.wav,Yum! The animals loved their snack.,Feeding completion message.,res://sounds/voice_over/feeding_complete_0.wav
+feeding_complete_1,feeding_complete_1.wav,Great helping! Every animal had food.,Feeding completion message.,res://sounds/voice_over/feeding_complete_1.wav
+feeding_complete_2,feeding_complete_2.wav,Nice work! Happy munching time.,Feeding completion message.,res://sounds/voice_over/feeding_complete_2.wav
+feeding_complete_3,feeding_complete_3.wav,Thank you! The animals are full.,Feeding completion message.,res://sounds/voice_over/feeding_complete_3.wav
+feeding_complete_4,feeding_complete_4.wav,Good job! The pen feels happy.,Feeding completion message.,res://sounds/voice_over/feeding_complete_4.wav
+brushing_complete_0,brushing_complete_0.wav,All clean! The animals feel better.,Brushing completion message.,res://sounds/voice_over/brushing_complete_0.wav
+brushing_complete_1,brushing_complete_1.wav,Nice work! Everyone is brushed.,Brushing completion message.,res://sounds/voice_over/brushing_complete_1.wav
+brushing_complete_2,brushing_complete_2.wav,Great helping! Soft and shiny coats.,Brushing completion message.,res://sounds/voice_over/brushing_complete_2.wav
+brushing_complete_3,brushing_complete_3.wav,Thank you! The animals feel cozy.,Brushing completion message.,res://sounds/voice_over/brushing_complete_3.wav
+brushing_complete_4,brushing_complete_4.wav,Good job! The barn friends are clean.,Brushing completion message.,res://sounds/voice_over/brushing_complete_4.wav
+garden_complete_0,garden_complete_0.wav,Great gardening! The plants are cared for.,Garden completion message.,res://sounds/voice_over/garden_complete_0.wav
+garden_complete_1,garden_complete_1.wav,Nice work! The garden feels happy.,Garden completion message.,res://sounds/voice_over/garden_complete_1.wav
+garden_complete_2,garden_complete_2.wav,Thank you! Every plot got care.,Garden completion message.,res://sounds/voice_over/garden_complete_2.wav
+garden_complete_3,garden_complete_3.wav,Good job! The plants look bright.,Garden completion message.,res://sounds/voice_over/garden_complete_3.wav
+garden_complete_4,garden_complete_4.wav,Lovely helping! The garden is cozy.,Garden completion message.,res://sounds/voice_over/garden_complete_4.wav

@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "hi",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "hi-IN",
+    "google_tts_voice": "hi-IN-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "घोंसले में अंडे पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "घोंसले में अंडे पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "अंडे टोकरी में जाते हैं।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "अंडे टोकरी में जाते हैं।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "बाल्टी भरने में मदद के लिए थन पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "बाल्टी भरने में मदद के लिए थन पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "दूध दुहने में मदद के लिए गाय के पास टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "दूध दुहने में मदद के लिए गाय के पास टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "गाय को हल्के से थपथपाने के लिए टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "गाय को हल्के से थपथपाने के लिए टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "इस जानवर को खाना देने के लिए टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "इस जानवर को खाना देने के लिए टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "इस जानवर को ब्रश करने के लिए टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "इस जानवर को ब्रश करने के लिए टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "किसी जानवर पर टैप करें और ब्रश मदद करेगा।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "किसी जानवर पर टैप करें और ब्रश मदद करेगा।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "पौधों की देखभाल के लिए इस क्यारी पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "पौधों की देखभाल के लिए इस क्यारी पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "सर्दियों के सलाद की देखभाल के लिए ठंडे फ्रेम पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "सर्दियों के सलाद की देखभाल के लिए ठंडे फ्रेम पर टैप करें।",
+      "path": "res://sounds/voice_over/locales/hi/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "बहुत अच्छी मदद! मुर्गियां खुश हैं।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "अच्छा काम! अंडे सुरक्षित हैं।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "धन्यवाद! मुर्गीघर आरामदायक लग रहा है।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "शाबाश! टोकरी भर गई है।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "खुश मुर्गियां! आपने बहुत मदद की।",
+      "path": "res://sounds/voice_over/locales/hi/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "अच्छा काम! गाय को देखभाल मिली है।",
+      "path": "res://sounds/voice_over/locales/hi/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "बहुत अच्छी मदद! दूध की बाल्टी भर गई है।",
+      "path": "res://sounds/voice_over/locales/hi/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "धन्यवाद! गाय खुश है।",
+      "path": "res://sounds/voice_over/locales/hi/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "शाबाश! ताजा दूध तैयार है।",
+      "path": "res://sounds/voice_over/locales/hi/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "प्यारी मदद! खलिहान शांत लग रहा है।",
+      "path": "res://sounds/voice_over/locales/hi/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "वाह! जानवरों को अपना नाश्ता बहुत पसंद आया।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "बहुत अच्छी मदद! हर जानवर ने खाना खाया।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "अच्छा काम! खुशी से खाने का समय।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "धन्यवाद! जानवरों का पेट भर गया है।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "शाबाश! बाड़ा खुश लग रहा है।",
+      "path": "res://sounds/voice_over/locales/hi/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "सब साफ! जानवर बेहतर महसूस कर रहे हैं।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "अच्छा काम! सबको ब्रश कर दिया गया।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "बहुत अच्छी मदद! मुलायम और चमकदार बाल।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "धन्यवाद! जानवर आरामदायक महसूस कर रहे हैं।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "शाबाश! खलिहान के दोस्त साफ हैं।",
+      "path": "res://sounds/voice_over/locales/hi/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "बहुत अच्छी बागवानी! पौधों की देखभाल हो गई।",
+      "path": "res://sounds/voice_over/locales/hi/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "अच्छा काम! बगीचा खुश लग रहा है।",
+      "path": "res://sounds/voice_over/locales/hi/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "धन्यवाद! हर क्यारी की देखभाल हुई।",
+      "path": "res://sounds/voice_over/locales/hi/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "शाबाश! पौधे सुंदर दिख रहे हैं।",
+      "path": "res://sounds/voice_over/locales/hi/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "प्यारी मदद! बगीचा आरामदायक है।",
+      "path": "res://sounds/voice_over/locales/hi/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

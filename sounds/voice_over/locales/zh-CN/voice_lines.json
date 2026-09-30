@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "zh-CN",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "cmn-CN",
+    "google_tts_voice": "cmn-CN-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "点一下窝里的鸡蛋。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "点一下窝里的鸡蛋。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "鸡蛋放进篮子里。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "鸡蛋放进篮子里。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "点一下乳房，帮忙把桶装满。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "点一下乳房，帮忙把桶装满。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "点一下奶牛旁边，帮忙挤奶。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "点一下奶牛旁边，帮忙挤奶。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "点一点奶牛，轻轻拍拍她。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "点一点奶牛，轻轻拍拍她。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "点一下这只动物，给它食物。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "点一下这只动物，给它食物。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "点一下这只动物，帮它刷一刷。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "点一下这只动物，帮它刷一刷。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "点一只动物，刷子会来帮忙。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "点一只动物，刷子会来帮忙。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "点一下这块菜地，照顾植物。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "点一下这块菜地，照顾植物。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "点一下冷床，照顾冬天的生菜。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "点一下冷床，照顾冬天的生菜。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "帮得真棒！小鸡很开心。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "做得好！鸡蛋安全了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "谢谢你！鸡舍很舒服。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "做得好！篮子装满了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "母鸡很开心！你帮了大忙。",
+      "path": "res://sounds/voice_over/locales/zh-CN/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "做得好！奶牛被照顾好了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "帮得真棒！牛奶桶装满了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "谢谢你！奶牛很开心。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "做得好！新鲜牛奶好了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "帮得真好！谷仓很安静。",
+      "path": "res://sounds/voice_over/locales/zh-CN/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "真好吃！动物们喜欢点心。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "帮得真棒！每只动物都吃到了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "做得好！开心吃饭时间。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "谢谢你！动物们吃饱了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "做得好！围栏里很开心。",
+      "path": "res://sounds/voice_over/locales/zh-CN/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "都干净了！动物们感觉更好了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "做得好！大家都刷好了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "帮得真棒！毛毛又软又亮。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "谢谢你！动物们很舒服。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "做得好！谷仓朋友们干净了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "种得真棒！植物被照顾好了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "做得好！花园很开心。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "谢谢你！每块地都照顾到了。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "做得好！植物看起来很漂亮。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "帮得真好！花园很舒服。",
+      "path": "res://sounds/voice_over/locales/zh-CN/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

@@ -1,0 +1,43 @@
+# Python virtual environments and cache
+.venv/
+__pycache__/
+*.pyc
+
+# Voice generation temporary samples
+tools/voice_generation/samples/
+
+# Santa voice generation temporary workspace
+tools/voice_generation/santa/.venv/
+tools/voice_generation/santa/work/
+tools/voice_generation/santa/output/
+
+# Voice comparison output (generated evaluation data)
+tools/voice_comparison/output/
+tools/voice_comparison/.venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Godot 4+ specific ignores
+.godot/
+.godot/export_credentials.cfg
+/android/
+
+# Local signing material must stay outside source control.
+*.keystore
+*.jks
+
+# Generated Android exports.
+/Android game/
+*.apk
+*.aab
+*.idsig
+
+# Temporary local preview/export files.
+tmp_*
+*_preview.png
+*_preview.png.import
+/build/
+/dist/

@@ -1,0 +1,10 @@
+[
+    {
+        "id": "test_feed_chickens",
+        "text": "Let's feed the chickens!"
+    },
+    {
+        "id": "test_chore_complete",
+        "text": "Great job! The animals are all taken care of."
+    }
+]

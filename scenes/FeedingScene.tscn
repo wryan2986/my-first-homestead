@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://cg5bnx4p4e61g"]
+
+[ext_resource type="Script" uid="uid://cfqrudxtvir1q" path="res://scripts/chores/FeedingScene.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://ca7ukcvw2g5yq" path="res://scenes/shared/FeedingAnimalStation.tscn" id="2"]
+[ext_resource type="AudioStream" uid="uid://3n48kt1moda4" path="res://sounds/feed.wav" id="4"]
+[ext_resource type="AudioStream" path="res://sounds/complete.ogg" id="5"]
+[ext_resource type="Texture2D" uid="uid://bl52jso3ri1wt" path="res://art/animals/sheep_idle.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cjw3ups6bffvc" path="res://art/animals/sheep_happy.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://w11xqlcacbst" path="res://art/animals/pig_idle.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bppv7qqpq3g5i" path="res://art/animals/pig_happy.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cymomhiddm8vk" path="res://art/animals/chicken_idle.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://56e4eovyi2qu" path="res://art/animals/chicken_happy.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://c7k0h4ypcd3yu" path="res://art/animals/goat_happy.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dmhueytldnnb2" path="res://art/props/feed_cart.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://c0uxyb14tjkan" path="res://art/props/feed_bag.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dsnokab6pmcuu" path="res://art/props/feed_pour.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dancvxdgcuau8" path="res://art/animals/sheep_walking.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bl2w3nxqy0cuk" path="res://art/animals/pig_walking.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://ct5yp6vfw0j8i" path="res://art/animals/chicken_walking.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://bl3c50kcpljhg" path="res://art/animals/goat_walking.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bg423fx5qah32" path="res://art/animals/sheep_eating.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://puai4e0chhvn" path="res://art/animals/pig_eating.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cvuef0aajp1db" path="res://art/animals/chicken_eating.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://ba5jnqh0rtu6a" path="res://art/animals/goat_eating.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://d0vvtmx0725sy" path="res://art/ui/back_button.png" id="back_icon"]
+[ext_resource type="Texture2D" uid="uid://d41l82rnt13b" path="res://art/backgrounds/feeding_yard_background_fall.png" id="bg_fall"]
+[ext_resource type="Texture2D" uid="uid://bnaismhudn1f8" path="res://art/backgrounds/feeding_yard_background_spring.png" id="bg_spring"]
+[ext_resource type="Texture2D" uid="uid://dbeevoxb6hav0" path="res://art/backgrounds/feeding_yard_background_summer.png" id="bg_summer"]
+[ext_resource type="Texture2D" uid="uid://fdykp5la11sx" path="res://art/backgrounds/feeding_yard_background_winter.png" id="bg_winter"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+[ext_resource type="Script" uid="uid://bg6ih6xf5wa5h" path="res://scripts/ui/SeasonalBackground.gd" id="seasonal_bg"]
+
+[node name="FeedingScene" type="Node2D" unique_id=686561724]
+script = ExtResource("1")
+feed_bag_pile = NodePath("FeedBagPile")
+feed_bag_texture = ExtResource("16")
+feed_pour_texture = ExtResource("17")
+feedback_label = NodePath("Hud/FeedbackLabel")
+completion_panel = NodePath("Hud/CompletionPanel")
+completion_label = NodePath("Hud/CompletionPanel/CompletionLabel")
+back_button = NodePath("Hud/BackButton")
+animal_card_paths = Array[NodePath]([NodePath("SheepCard"), NodePath("PigCard"), NodePath("ChickenCard"), NodePath("GoatCard")])
+feed_sound = ExtResource("4")
+completion_sound = ExtResource("5")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2007833673]
+position = Vector2(960, 540)
+texture = ExtResource("bg_spring")
+script = ExtResource("seasonal_bg")
+spring_texture = ExtResource("bg_spring")
+summer_texture = ExtResource("bg_summer")
+fall_texture = ExtResource("bg_fall")
+winter_texture = ExtResource("bg_winter")
+
+[node name="FeedCart" type="Sprite2D" parent="." unique_id=1925422283]
+visible = false
+position = Vector2(960, 548)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("15")
+
+[node name="FeedBagPile" type="Sprite2D" parent="." unique_id=34255345]
+position = Vector2(1836, 392)
+scale = Vector2(0.39320308, 0.39320308)
+texture = ExtResource("16")
+
+[node name="SheepCard" parent="." unique_id=1570680143 instance=ExtResource("2")]
+position = Vector2(231, 673)
+feed_target_offset = Vector2(51, 60)
+walk_texture = ExtResource("18")
+eating_texture = ExtResource("22")
+animal_id = "sheep"
+animal_name = "Sheep"
+idle_texture = ExtResource("6")
+happy_texture = ExtResource("7")
+
+[node name="PigCard" parent="." unique_id=1944440817 instance=ExtResource("2")]
+position = Vector2(688, 665)
+feed_target_offset = Vector2(39, 68)
+walk_texture = ExtResource("19")
+eating_texture = ExtResource("23")
+animal_id = "pig"
+animal_name = "Pig"
+idle_texture = ExtResource("8")
+happy_texture = ExtResource("9")
+
+[node name="ChickenCard" parent="." unique_id=602201933 instance=ExtResource("2")]
+position = Vector2(1169, 674)
+feed_target_offset = Vector2(5, 59)
+walk_texture = ExtResource("20")
+eating_texture = ExtResource("24")
+animal_id = "chicken"
+animal_name = "Hen"
+idle_texture = ExtResource("10")
+happy_texture = ExtResource("11")
+animal_art_faces_left = true
+
+[node name="GoatCard" parent="." unique_id=60404463 instance=ExtResource("2")]
+position = Vector2(1632, 675)
+feed_target_offset = Vector2(6, 58)
+walk_texture = ExtResource("21")
+eating_texture = ExtResource("25")
+animal_id = "goat"
+animal_name = "Goat"
+happy_texture = ExtResource("13")
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=1913893347]
+
+[node name="BackButton" type="Button" parent="Hud" unique_id=1256673185]
+visible = false
+offset_left = 1672.0
+offset_top = -1.0
+offset_right = 1916.0
+offset_bottom = 245.0
+theme_override_colors/font_color = Color(1, 0.96, 0.84, 1)
+theme_override_font_sizes/font_size = 28
+icon = ExtResource("back_icon")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FeedbackLabel" type="Label" parent="Hud" unique_id=2036744338]
+visible = false
+offset_left = 400.0
+offset_top = 970.0
+offset_right = 1520.0
+offset_bottom = 1030.0
+theme_override_font_sizes/font_size = 28
+text = "A happy snack arrived!"
+horizontal_alignment = 1
+
+[node name="CompletionPanel" type="Panel" parent="Hud" unique_id=1874642840]
+visible = false
+self_modulate = Color(1, 0.98, 0.88, 0.96)
+offset_left = 558.0
+offset_top = 354.0
+offset_right = 1362.0
+offset_bottom = 616.0
+
+[node name="CompletionLabel" type="Label" parent="Hud/CompletionPanel" unique_id=1750412588]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 86.0
+offset_right = 736.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 38
+text = "All the animals enjoyed their snack!"
+horizontal_alignment = 1
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=428923796]
+script = ExtResource("responsive_layout")
+fit_design_roots_to_viewport = true

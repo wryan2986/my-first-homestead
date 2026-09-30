@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/AmbientChasePair.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/animals/cat_idle.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/animals/mouse_idle.png" id="3"]
+
+[node name="AmbientChasePair" type="Node2D"]
+script = ExtResource("1")
+cat_sprite = NodePath("Cat")
+mouse_sprite = NodePath("Mouse")
+
+[node name="Cat" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("2")
+
+[node name="Mouse" type="Sprite2D" parent="."]
+texture = ExtResource("3")

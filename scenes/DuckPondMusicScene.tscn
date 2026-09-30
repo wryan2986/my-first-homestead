@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://c46kkx758jtvv"]
+
+[ext_resource type="Script" uid="uid://dqwuyu6eht3nw" path="res://scripts/optional/DuckPondMusicScene.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dbfxfjvworxbr" path="res://art/animals/duck_swimming_idle.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://253hh8n5o3de" path="res://art/props/lily_pad_music_green.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b0cahp86vuxyg" path="res://art/effects/music_note_soft.png" id="8"]
+[ext_resource type="AudioStream" uid="uid://5l1vxan12uq6" path="res://sounds/duck_pond_note_c.wav" id="9"]
+[ext_resource type="AudioStream" uid="uid://ceev8aaun2w5c" path="res://sounds/duck_pond_note_e.wav" id="10"]
+[ext_resource type="AudioStream" uid="uid://dd4kekp12u7y4" path="res://sounds/duck_pond_note_g.wav" id="11"]
+[ext_resource type="AudioStream" uid="uid://coie8kj5i4cyc" path="res://sounds/duck_pond_note_a.wav" id="12"]
+[ext_resource type="Texture2D" uid="uid://d0vvtmx0725sy" path="res://art/ui/back_button.png" id="back_icon"]
+[ext_resource type="Texture2D" uid="uid://bj7qhnh4iodbo" path="res://art/backgrounds/duck_pond_music_background_fall.png" id="bg_fall"]
+[ext_resource type="Texture2D" uid="uid://b4rub85nor1i5" path="res://art/backgrounds/duck_pond_music_background_spring.png" id="bg_spring"]
+[ext_resource type="Texture2D" uid="uid://1u4elrncu4dr" path="res://art/backgrounds/duck_pond_music_background_summer.png" id="bg_summer"]
+[ext_resource type="Texture2D" uid="uid://vdbus5prjj8o" path="res://art/backgrounds/duck_pond_music_background_winter.png" id="bg_winter"]
+[ext_resource type="Script" uid="uid://dbjooo3urqp4f" path="res://scripts/ui/ResponsiveCoverSprite2D.gd" id="cover_sprite"]
+[ext_resource type="AudioStream" uid="uid://3n48kt1moda4" path="res://sounds/feed.wav" id="feed_sound"]
+[ext_resource type="Texture2D" uid="uid://4rd2e4idvstg" path="res://art/props/duck_food_crumb.png" id="food_crumb"]
+[ext_resource type="Texture2D" uid="uid://bd1sn8kg8wn4d" path="res://art/animals/pond_fish.png" id="pond_fish"]
+[ext_resource type="AudioStream" uid="uid://cc6bnhm1adw1n" path="res://sounds/duck_quack.wav" id="quack_sound"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 108.0
+
+[sub_resource type="StyleBoxFlat" id="BackButtonStyle"]
+bg_color = Color(0.996078, 0.878431, 0.54902, 0.95)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.545098, 0.356863, 0.164706, 1)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[node name="DuckPondMusicScene" type="Node2D" unique_id=911288339]
+script = ExtResource("1")
+background_sprite = NodePath("Background")
+back_button = NodePath("Hud/BackButton")
+duck_nodes = Array[NodePath]([NodePath("Ducks/DuckA"), NodePath("Ducks/DuckB"), NodePath("Ducks/DuckC")])
+lily_pad_nodes = Array[NodePath]([NodePath("LilyPads/LilyPadC"), NodePath("LilyPads/LilyPadE"), NodePath("LilyPads/LilyPadG"), NodePath("LilyPads/LilyPadA")])
+note_effect_texture = ExtResource("8")
+lily_pad_note_colors = Array[Color]([Color(0.43, 0.77, 1, 1), Color(0.48, 0.89, 0.65, 1), Color(1, 0.9, 0.43, 1), Color(1, 0.42, 0.42, 1)])
+food_texture = ExtResource("food_crumb")
+fish_texture = ExtResource("pond_fish")
+feed_sound = ExtResource("feed_sound")
+quack_sound = ExtResource("quack_sound")
+spring_background_texture = ExtResource("bg_spring")
+summer_background_texture = ExtResource("bg_summer")
+fall_background_texture = ExtResource("bg_fall")
+winter_background_texture = ExtResource("bg_winter")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=310924026]
+position = Vector2(960, 540)
+texture = ExtResource("bg_spring")
+script = ExtResource("cover_sprite")
+
+[node name="LilyPads" type="Node2D" parent="." unique_id=309186509]
+z_index = 5
+
+[node name="LilyPadC" type="Area2D" parent="LilyPads" unique_id=1170958724]
+position = Vector2(401, 664)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="LilyPads/LilyPadC" unique_id=1004825013]
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LilyPads/LilyPadC" unique_id=459235615]
+shape = SubResource("1")
+
+[node name="NoteSound" type="AudioStreamPlayer" parent="LilyPads/LilyPadC" unique_id=149464964]
+stream = ExtResource("9")
+volume_db = -9.0
+
+[node name="LilyPadE" type="Area2D" parent="LilyPads" unique_id=1342345938]
+position = Vector2(819, 563)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="LilyPads/LilyPadE" unique_id=1051315469]
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LilyPads/LilyPadE" unique_id=1980683093]
+shape = SubResource("1")
+
+[node name="NoteSound" type="AudioStreamPlayer" parent="LilyPads/LilyPadE" unique_id=554731737]
+stream = ExtResource("10")
+volume_db = -9.0
+
+[node name="LilyPadG" type="Area2D" parent="LilyPads" unique_id=921378175]
+position = Vector2(1242, 701)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="LilyPads/LilyPadG" unique_id=1402461312]
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LilyPads/LilyPadG" unique_id=134538207]
+shape = SubResource("1")
+
+[node name="NoteSound" type="AudioStreamPlayer" parent="LilyPads/LilyPadG" unique_id=220393614]
+stream = ExtResource("11")
+volume_db = -9.0
+
+[node name="LilyPadA" type="Area2D" parent="LilyPads" unique_id=132396857]
+position = Vector2(1609, 597)
+scale = Vector2(2, 2)
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="Sprite2D" parent="LilyPads/LilyPadA" unique_id=702396507]
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LilyPads/LilyPadA" unique_id=1397526521]
+shape = SubResource("1")
+
+[node name="NoteSound" type="AudioStreamPlayer" parent="LilyPads/LilyPadA" unique_id=596577657]
+stream = ExtResource("12")
+volume_db = -9.0
+
+[node name="Ducks" type="Node2D" parent="." unique_id=1656820266]
+z_index = 8
+
+[node name="DuckA" type="Sprite2D" parent="Ducks" unique_id=29253590]
+position = Vector2(710, 820)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3")
+
+[node name="TedLabel" type="Label" parent="Ducks/DuckA" unique_id=683314467]
+offset_left = -102.0
+offset_top = 96.0
+offset_right = 102.0
+offset_bottom = 142.0
+scale = Vector2(1.4285715, 1.4285715)
+theme_override_colors/font_color = Color(0.25, 0.19, 0.15, 1)
+theme_override_colors/font_outline_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Ted"
+horizontal_alignment = 1
+
+[node name="DuckB" type="Sprite2D" parent="Ducks" unique_id=492382288]
+position = Vector2(925, 800)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3")
+
+[node name="TommyLabel" type="Label" parent="Ducks/DuckB" unique_id=1951530075]
+offset_left = -122.0
+offset_top = 96.0
+offset_right = 122.0
+offset_bottom = 142.0
+scale = Vector2(1.4285715, 1.4285715)
+theme_override_colors/font_color = Color(0.25, 0.19, 0.15, 1)
+theme_override_colors/font_outline_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Tommy"
+horizontal_alignment = 1
+
+[node name="DuckC" type="Sprite2D" parent="Ducks" unique_id=591998672]
+position = Vector2(1140, 820)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3")
+
+[node name="TateLabel" type="Label" parent="Ducks/DuckC" unique_id=808285481]
+offset_left = -102.0
+offset_top = 96.0
+offset_right = 102.0
+offset_bottom = 142.0
+scale = Vector2(1.4285715, 1.4285715)
+theme_override_colors/font_color = Color(0.25, 0.19, 0.15, 1)
+theme_override_colors/font_outline_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "Tate"
+horizontal_alignment = 1
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=1714915753]
+
+[node name="BackButton" type="Button" parent="Hud" unique_id=1447693121]
+offset_left = 1682.0
+offset_top = 3.0
+offset_right = 1917.0
+offset_bottom = 234.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("BackButtonStyle")
+icon = ExtResource("back_icon")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=1331423104]
+script = ExtResource("responsive_layout")

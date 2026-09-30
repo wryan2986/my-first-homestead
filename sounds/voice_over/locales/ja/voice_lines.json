@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "ja",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "ja-JP",
+    "google_tts_voice": "ja-JP-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "巣の中のたまごをタップしてね。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "巣の中のたまごをタップしてね。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "たまごはかごに入れよう。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "たまごはかごに入れよう。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "乳房をタップして、バケツをいっぱいにしよう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "乳房をタップして、バケツをいっぱいにしよう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "牛の近くをタップして、乳しぼりを手伝おう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "牛の近くをタップして、乳しぼりを手伝おう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "牛をタップして、やさしくなでてあげよう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "牛をタップして、やさしくなでてあげよう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "この動物をタップして、ごはんをあげよう。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "この動物をタップして、ごはんをあげよう。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "この動物をタップして、ブラシをかけよう。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "この動物をタップして、ブラシをかけよう。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "動物をタップすると、ブラシがお手伝いするよ。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "動物をタップすると、ブラシがお手伝いするよ。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "この畑をタップして、植物のお世話をしよう。",
+      "path": "res://sounds/voice_over/locales/ja/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "この畑をタップして、植物のお世話をしよう。",
+      "path": "res://sounds/voice_over/locales/ja/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "温室箱をタップして、冬のレタスをお世話しよう。",
+      "path": "res://sounds/voice_over/locales/ja/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "温室箱をタップして、冬のレタスをお世話しよう。",
+      "path": "res://sounds/voice_over/locales/ja/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "とても助かったよ！にわとりたちはうれしそう。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "よくできたね！たまごは安全だよ。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "ありがとう！鶏小屋が心地よくなったよ。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "よくできたね！かごがいっぱいだよ。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "めんどりたちがうれしそう！たくさん助けたね。",
+      "path": "res://sounds/voice_over/locales/ja/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "よくできたね！牛は大事にされてうれしそう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "とても助かったよ！ミルクのバケツがいっぱいだよ。",
+      "path": "res://sounds/voice_over/locales/ja/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "ありがとう！牛はうれしそう。",
+      "path": "res://sounds/voice_over/locales/ja/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "よくできたね！新鮮なミルクができたよ。",
+      "path": "res://sounds/voice_over/locales/ja/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "すてきなお手伝い！納屋が落ち着いているよ。",
+      "path": "res://sounds/voice_over/locales/ja/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "おいしいね！動物たちはおやつが大好きだったよ。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "とても助かったよ！みんなごはんを食べたよ。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "よくできたね！楽しいもぐもぐ時間だよ。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "ありがとう！動物たちはおなかいっぱい。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "よくできたね！囲いが楽しい場所になったよ。",
+      "path": "res://sounds/voice_over/locales/ja/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "すっかりきれい！動物たちは気持ちよさそう。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "よくできたね！みんなブラシできたよ。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "とても助かったよ！毛がふわふわ、ぴかぴか。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "ありがとう！動物たちは心地よさそう。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "よくできたね！納屋の友だちはきれいだよ。",
+      "path": "res://sounds/voice_over/locales/ja/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "すてきな庭仕事！植物はお世話されたよ。",
+      "path": "res://sounds/voice_over/locales/ja/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "よくできたね！庭がうれしそう。",
+      "path": "res://sounds/voice_over/locales/ja/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "ありがとう！全部の畑をお世話できたよ。",
+      "path": "res://sounds/voice_over/locales/ja/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "よくできたね！植物がきれいに見えるよ。",
+      "path": "res://sounds/voice_over/locales/ja/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "すてきなお手伝い！庭が心地よいね。",
+      "path": "res://sounds/voice_over/locales/ja/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

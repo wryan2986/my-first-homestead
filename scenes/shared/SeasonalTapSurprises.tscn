@@ -1,0 +1,13 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/SeasonalTapSurprises.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/effects/fall_leaf.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/effects/large_snowflake.png" id="3"]
+[ext_resource type="Texture2D" path="res://art/effects/magic_sparkle.png" id="4"]
+
+[node name="SeasonalTapSurprises" type="Node2D"]
+z_index = 18
+script = ExtResource("1")
+leaf_texture = ExtResource("2")
+snowflake_texture = ExtResource("3")
+sparkle_texture = ExtResource("4")

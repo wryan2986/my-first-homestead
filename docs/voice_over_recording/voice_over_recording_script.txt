@@ -1,0 +1,228 @@
+Farm Chore Friends Voice-Over Recording Script
+
+Voice direction:
+Speak as the same calm adult woman narrator for every line. Use a warm, gentle preschool-teacher voice. Keep the delivery natural, reassuring, and clear for toddlers ages 2 to 5. Speak a little slowly, smile in the voice, and avoid sounding loud, silly, robotic, dramatic, or rushed.
+
+Recording notes:
+- Record one female speaker in one quiet session when possible.
+- Keep delivery warm, gentle, clear, and reassuring.
+- Leave clean silence at the start and end of each take.
+- Export each accepted take as WAV using the listed filename.
+- Do not change the line text unless the catalog is updated too.
+
+Lines:
+
+01. eggs_hint_gentle
+Filename: eggs_hint_gentle.wav
+Text: Tap the egg in the nest.
+Notes: Gentle trouble tip.
+
+02. eggs_hint_strong
+Filename: eggs_hint_strong.wav
+Text: Tap the egg in the nest.
+Notes: Slightly clearer but still calm trouble tip.
+
+03. eggs_hint_basket_gentle
+Filename: eggs_hint_basket_gentle.wav
+Text: The eggs go in the basket.
+Notes: Gentle basket hint.
+
+04. eggs_hint_basket_strong
+Filename: eggs_hint_basket_strong.wav
+Text: The eggs go in the basket.
+Notes: Slightly clearer but still calm basket hint.
+
+05. milking_hint_gentle
+Filename: milking_hint_gentle.wav
+Text: Tap the udder to help fill the bucket.
+Notes: Gentle milking target hint.
+
+06. milking_hint_strong
+Filename: milking_hint_strong.wav
+Text: Tap the udder to help fill the bucket.
+Notes: Slightly clearer but still calm milking target hint.
+
+07. milking_hint_cow_gentle
+Filename: milking_hint_cow_gentle.wav
+Text: Tap near the cow to help with milking.
+Notes: Gentle near-miss hint.
+
+08. milking_hint_cow_strong
+Filename: milking_hint_cow_strong.wav
+Text: Tap near the cow to help with milking.
+Notes: Slightly clearer but still calm near-miss hint.
+
+09. feeding_hint_gentle
+Filename: feeding_hint_gentle.wav
+Text: Tap this animal to give it food.
+Notes: Shared feeding hint for all animals.
+
+10. feeding_hint_strong
+Filename: feeding_hint_strong.wav
+Text: Tap this animal to give it food.
+Notes: Shared stronger feeding hint for all animals.
+
+11. brushing_hint_gentle
+Filename: brushing_hint_gentle.wav
+Text: Tap this animal to brush it.
+Notes: Shared brushing hint for all animals.
+
+12. brushing_hint_strong
+Filename: brushing_hint_strong.wav
+Text: Tap this animal to brush it.
+Notes: Shared stronger brushing hint for all animals.
+
+13. brushing_hint_tool_gentle
+Filename: brushing_hint_tool_gentle.wav
+Text: Tap an animal and the brush will help.
+Notes: Gentle brush-tool hint.
+
+14. brushing_hint_tool_strong
+Filename: brushing_hint_tool_strong.wav
+Text: Tap an animal and the brush will help.
+Notes: Slightly clearer but still calm brush-tool hint.
+
+15. garden_hint_plot_gentle
+Filename: garden_hint_plot_gentle.wav
+Text: Tap this garden plot to care for the plants.
+Notes: Gentle garden plot hint.
+
+16. garden_hint_plot_strong
+Filename: garden_hint_plot_strong.wav
+Text: Tap this garden plot to care for the plants.
+Notes: Slightly clearer but still calm garden plot hint.
+
+17. garden_hint_winter_gentle
+Filename: garden_hint_winter_gentle.wav
+Text: Tap the cold frame to care for the winter lettuce.
+Notes: Gentle winter garden hint.
+
+18. garden_hint_winter_strong
+Filename: garden_hint_winter_strong.wav
+Text: Tap the cold frame to care for the winter lettuce.
+Notes: Slightly clearer but still calm winter garden hint.
+
+19. eggs_complete_0
+Filename: eggs_complete_0.wav
+Text: Great helping! The chickens are happy.
+Notes: Egg completion message.
+
+20. eggs_complete_1
+Filename: eggs_complete_1.wav
+Text: Nice work! The eggs are safe.
+Notes: Egg completion message.
+
+21. eggs_complete_2
+Filename: eggs_complete_2.wav
+Text: Thank you! The coop feels cozy.
+Notes: Egg completion message.
+
+22. eggs_complete_3
+Filename: eggs_complete_3.wav
+Text: Good job! The basket is full.
+Notes: Egg completion message.
+
+23. eggs_complete_4
+Filename: eggs_complete_4.wav
+Text: Happy hens! You helped so much.
+Notes: Egg completion message.
+
+24. milking_complete_0
+Filename: milking_complete_0.wav
+Text: Nice work! The cow feels cared for.
+Notes: Milking completion message.
+
+25. milking_complete_1
+Filename: milking_complete_1.wav
+Text: Great helping! The milk bucket is full.
+Notes: Milking completion message.
+
+26. milking_complete_2
+Filename: milking_complete_2.wav
+Text: Thank you! The cow is happy.
+Notes: Milking completion message.
+
+27. milking_complete_3
+Filename: milking_complete_3.wav
+Text: Good job! Fresh milk is ready.
+Notes: Milking completion message.
+
+28. milking_complete_4
+Filename: milking_complete_4.wav
+Text: Lovely helping! The barn feels calm.
+Notes: Milking completion message.
+
+29. feeding_complete_0
+Filename: feeding_complete_0.wav
+Text: Yum! The animals loved their snack.
+Notes: Feeding completion message.
+
+30. feeding_complete_1
+Filename: feeding_complete_1.wav
+Text: Great helping! Every animal had food.
+Notes: Feeding completion message.
+
+31. feeding_complete_2
+Filename: feeding_complete_2.wav
+Text: Nice work! Happy munching time.
+Notes: Feeding completion message.
+
+32. feeding_complete_3
+Filename: feeding_complete_3.wav
+Text: Thank you! The animals are full.
+Notes: Feeding completion message.
+
+33. feeding_complete_4
+Filename: feeding_complete_4.wav
+Text: Good job! The pen feels happy.
+Notes: Feeding completion message.
+
+34. brushing_complete_0
+Filename: brushing_complete_0.wav
+Text: All clean! The animals feel better.
+Notes: Brushing completion message.
+
+35. brushing_complete_1
+Filename: brushing_complete_1.wav
+Text: Nice work! Everyone is brushed.
+Notes: Brushing completion message.
+
+36. brushing_complete_2
+Filename: brushing_complete_2.wav
+Text: Great helping! Soft and shiny coats.
+Notes: Brushing completion message.
+
+37. brushing_complete_3
+Filename: brushing_complete_3.wav
+Text: Thank you! The animals feel cozy.
+Notes: Brushing completion message.
+
+38. brushing_complete_4
+Filename: brushing_complete_4.wav
+Text: Good job! The barn friends are clean.
+Notes: Brushing completion message.
+
+39. garden_complete_0
+Filename: garden_complete_0.wav
+Text: Great gardening! The plants are cared for.
+Notes: Garden completion message.
+
+40. garden_complete_1
+Filename: garden_complete_1.wav
+Text: Nice work! The garden feels happy.
+Notes: Garden completion message.
+
+41. garden_complete_2
+Filename: garden_complete_2.wav
+Text: Thank you! Every plot got care.
+Notes: Garden completion message.
+
+42. garden_complete_3
+Filename: garden_complete_3.wav
+Text: Good job! The plants look bright.
+Notes: Garden completion message.
+
+43. garden_complete_4
+Filename: garden_complete_4.wav
+Text: Lovely helping! The garden is cozy.
+Notes: Garden completion message.

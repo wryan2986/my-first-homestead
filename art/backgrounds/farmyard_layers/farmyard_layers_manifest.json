@@ -1,0 +1,80 @@
+{
+  "source": "art/backgrounds/farmyard_background.png",
+  "description": "Modular layers extracted from the farmyard background. Each layer holds one visual group so elements can be moved, hidden, or replaced independently in Godot.",
+  "background_1920x1080": false,
+  "base_background_resolution": [1600, 900],
+  "legacy_safe_composition": [1920, 1080],
+  "layers": [
+    {
+      "name": "Sky",
+      "path": "art/backgrounds/farmyard_layers/sky.png",
+      "purpose": "Sky gradient and clouds. Transparent below the horizon so it cannot tint farm art if reordered.",
+      "suggested_position": [0, 0],
+      "z_index": 0,
+      "full_canvas": true,
+      "movable": false
+    },
+    {
+      "name": "GroundBase",
+      "path": "art/backgrounds/farmyard_layers/ground_base.png",
+      "purpose": "Main grass ground with opaque meadow/hill shapes, the continuous rear farm fence, and opaque pre-blended activity-area floor pads.",
+      "suggested_position": [0, 0],
+      "z_index": 1,
+      "full_canvas": true,
+      "movable": false
+    },
+    {
+      "name": "Paths",
+      "path": "art/backgrounds/farmyard_layers/paths.png",
+      "purpose": "Dirt paths connecting activity areas across the farmyard.",
+      "suggested_position": [0, 0],
+      "z_index": 2,
+      "full_canvas": true,
+      "movable": false
+    },
+    {
+      "name": "DecorativeProps",
+      "path": "art/backgrounds/farmyard_layers/decorative_props.png",
+      "purpose": "Non-essential decorative props: trees, bushes, hay bales, small flowers. Not tied to any single activity area.",
+      "suggested_position": [0, 0],
+      "z_index": 3,
+      "full_canvas": true,
+      "movable": false
+    },
+    {
+      "name": "ActivityBackFence",
+      "path": "art/backgrounds/farmyard_layers/activity_back_fence.png",
+      "purpose": "Shared back-fence artwork for the chicken, feeding, and brushing activity areas. Kept as one full-canvas layer so it aligns at position (0, 0).",
+      "suggested_position": [0, 0],
+      "z_index": 4,
+      "full_canvas": true,
+      "movable": true
+    },
+    {
+      "name": "CowArea",
+      "path": "art/backgrounds/farmyard_layers/cow_area.png",
+      "purpose": "Cow milking area art: barn-red roof frame over a stall nook.",
+      "suggested_position": [0, 0],
+      "z_index": 4,
+      "full_canvas": true,
+      "movable": true
+    },
+    {
+      "name": "GardenArea",
+      "path": "art/backgrounds/farmyard_layers/garden_area.png",
+      "purpose": "Garden care area art: soil bed rows with sprout plants and a watering can.",
+      "suggested_position": [0, 0],
+      "z_index": 4,
+      "full_canvas": true,
+      "movable": true
+    }
+  ],
+  "notes": [
+    "Base layers are 1600x900 full-canvas PNGs so they stack seamlessly in the mobile package. They preserve the original 1920x1080 safe composition proportionally.",
+    "Set Sprite2D at position (0,0) with no offset for correct alignment.",
+    "Activity area layers (z_index 4) can be moved by adjusting the Sprite2D node position in Godot.",
+    "The original farmyard_background.png remains untouched for reference.",
+    "Existing activity area Area2D nodes (with collision + labels) sit at z_index 10+.",
+    "The scene's existing Icon sprites under each Area2D provide the tappable-area visuals; the background layers provide the ground-level environment art."
+  ]
+}

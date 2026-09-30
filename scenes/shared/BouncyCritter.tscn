@@ -1,0 +1,48 @@
+[gd_scene load_steps=11 format=3 uid="uid://cpku3ks6fonjm"]
+
+[ext_resource type="Script" uid="uid://ct43wfo2fd47g" path="res://scripts/ui/BouncyCritter.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/animals/chicken_idle.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/effects/success_glow.png" id="3"]
+[ext_resource type="Texture2D" path="res://art/animals/chicken_happy.png" id="5"]
+[ext_resource type="AudioStream" path="res://sounds/chicken_cluck_variant_1.ogg" id="6"]
+[ext_resource type="AudioStream" path="res://sounds/chicken_cluck_variant_2.ogg" id="7"]
+[ext_resource type="AudioStream" path="res://sounds/chicken_cluck_variant_3.ogg" id="8"]
+[ext_resource type="AudioStream" path="res://sounds/chicken_cluck_variant_4.ogg" id="9"]
+[ext_resource type="AudioStream" path="res://sounds/chicken_cluck_variant_5.ogg" id="10"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 78.0
+
+[node name="BouncyCritter" type="Area2D" unique_id=1822877840]
+script = ExtResource("1")
+icon_sprite = NodePath("Icon")
+name_label = NodePath("NameLabel")
+happy_glow = NodePath("Glow")
+idle_texture = ExtResource("2")
+happy_texture = ExtResource("5")
+sprite_faces_left = true
+cluck_sounds = Array[AudioStream]([ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), ExtResource("10")])
+
+[node name="Glow" type="Sprite2D" parent="." unique_id=1252967766]
+modulate = Color(1, 1, 0.8, 0.45)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=801758000]
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("2")
+
+[node name="NameLabel" type="Label" parent="." unique_id=389098848]
+offset_left = -70.0
+offset_top = 76.0
+offset_right = 70.0
+offset_bottom = 112.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.25, 0.19, 0.15, 1)
+text = "Chicken"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1980507369]
+scale = Vector2(1.5, 1.5)
+shape = SubResource("1")

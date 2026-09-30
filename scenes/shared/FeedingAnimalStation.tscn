@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://ca7ukcvw2g5yq"]
+
+[ext_resource type="Script" uid="uid://td1c53r2eh8v" path="res://scripts/ui/FeedingAnimalStation.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://delqthryga6i8" path="res://art/animals/goat_idle.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://huedmwkwqiq6" path="res://art/effects/success_glow.png" id="4"]
+[ext_resource type="Texture2D" path="res://art/props/feeding_trough_contents.png" id="6"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(380, 320)
+
+[node name="FeedingAnimalStation" type="Area2D" unique_id=157658632]
+script = ExtResource("1")
+feed_pile = NodePath("FeedPile")
+feed_target = NodePath("FeedTarget")
+eat_target = NodePath("EatTarget")
+icon_sprite = NodePath("Animal")
+title_label = NodePath("NameLabel")
+status_label = NodePath("StatusLabel")
+selection_ring = NodePath("SelectionGlow")
+completion_badge = NodePath("DoneBadge")
+idle_texture = ExtResource("3")
+happy_texture = ExtResource("3")
+
+[node name="SelectionGlow" type="Sprite2D" parent="." unique_id=1982611667]
+modulate = Color(0.95, 1, 0.6, 0.52)
+position = Vector2(0, -36)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4")
+
+[node name="Animal" type="Sprite2D" parent="." unique_id=278118858]
+z_index = 4
+position = Vector2(0, -46)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("3")
+
+[node name="FeedPile" type="Sprite2D" parent="." unique_id=2144330361]
+visible = false
+z_index = 2
+position = Vector2(0, 60)
+scale = Vector2(0.4, 0.2)
+texture = ExtResource("6")
+
+[node name="FeedTarget" type="Marker2D" parent="." unique_id=1255530227]
+position = Vector2(0, 60)
+
+[node name="EatTarget" type="Marker2D" parent="." unique_id=122068247]
+position = Vector2(-1, 1)
+
+[node name="NameLabel" type="Label" parent="." unique_id=2047048906]
+visible = false
+offset_left = -96.0
+offset_top = 112.0
+offset_right = 96.0
+offset_bottom = 148.0
+theme_override_colors/font_color = Color(0.35, 0.18, 0.14, 1)
+theme_override_font_sizes/font_size = 24
+text = "Animal"
+horizontal_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1036356125]
+visible = false
+offset_left = -122.0
+offset_top = 146.0
+offset_right = 122.0
+offset_bottom = 198.0
+theme_override_colors/font_color = Color(0.3, 0.21, 0.16, 1)
+theme_override_font_sizes/font_size = 20
+text = "Ready for snack!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="DoneBadge" type="Label" parent="." unique_id=1346835929]
+visible = false
+offset_left = -64.0
+offset_top = -164.0
+offset_right = 64.0
+offset_bottom = -96.0
+theme_override_colors/font_color = Color(0.18, 0.58, 0.22, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 56
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=811599164]
+position = Vector2(0, 18)
+shape = SubResource("1")

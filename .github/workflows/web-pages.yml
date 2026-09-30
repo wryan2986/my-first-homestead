@@ -1,0 +1,79 @@
+name: Build and deploy web review build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/web-pages.yml'
+      - 'project.godot'
+      - 'export_presets.cfg'
+      - 'scenes/**'
+      - 'scripts/**'
+      - 'art/**'
+      - 'assets/**'
+      - 'sounds/**'
+      - 'localization/**'
+      - 'resources/**'
+      - 'certificates/**'
+      - 'icon.svg'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+        with:
+          enablement: true
+
+      - name: Install Godot and Web export templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          godot_version='4.6.2'
+          godot_dir="$RUNNER_TEMP/godot"
+          template_dir="$HOME/.local/share/godot/export_templates/${godot_version}.stable"
+          mkdir -p "$godot_dir" "$template_dir"
+          curl -fsSL "https://github.com/godotengine/godot/releases/download/${godot_version}-stable/Godot_v${godot_version}-stable_linux.x86_64.zip" -o "$RUNNER_TEMP/godot.zip"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$godot_dir"
+          curl -fsSL "https://github.com/godotengine/godot/releases/download/${godot_version}-stable/Godot_v${godot_version}-stable_export_templates.tpz" -o "$RUNNER_TEMP/godot-export-templates.tpz"
+          unzip -q "$RUNNER_TEMP/godot-export-templates.tpz" -d "$RUNNER_TEMP/godot-export-templates"
+          cp -a "$RUNNER_TEMP/godot-export-templates/templates/." "$template_dir/"
+          chmod +x "$godot_dir/Godot_v${godot_version}-stable_linux.x86_64"
+          echo "GODOT_BIN=$godot_dir/Godot_v${godot_version}-stable_linux.x86_64" >> "$GITHUB_ENV"
+
+      - name: Import Godot resources
+        run: "$GODOT_BIN --headless --path . --editor --quit"
+
+      - name: Export static web build
+        run: |
+          mkdir -p build/web
+          "$GODOT_BIN" --headless --path . --export-release Web build/web/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build/web
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

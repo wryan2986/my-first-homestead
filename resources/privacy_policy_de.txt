@@ -1,0 +1,57 @@
+DATENSCHUTZERKLÄRUNG FÜR MY FIRST HOMESTEAD
+
+Gültig ab: 24. Juni 2026
+
+My First Homestead ist ein von Cozy Sprout Games entwickeltes und veröffentlichtes Bauernhofspiel für Kinder. Es richtet sich an kleine Kinder und ihre Familien.
+
+VON UNS ERFASSTE INFORMATIONEN
+
+My First Homestead erfasst, überträgt, speichert auf externen Servern und teilt keine personenbezogenen Daten.
+
+Das Spiel erfasst keine Namen oder E-Mail-Adressen, Standortdaten, Fotos, Videos, Kontakte oder Dateien, Werbe- oder Gerätekennungen, Nutzungsanalysen, Kauf- oder Zahlungsinformationen, von Kindern eingegebene Informationen sowie Konto- oder Anmeldedaten.
+
+Das Spiel enthält keine Werbung, Verhaltensverfolgung, sozialen Funktionen oder Analysedienste von Drittanbietern.
+
+LOKALE SPIELDATEN
+
+My First Homestead speichert nur auf dem Gerät begrenzte Spieldaten, darunter den Fortschritt auf dem Bauernhof, abgeschlossene Aktivitäten, Einstellungen sowie Einstellungen für Musik, Ton und Sprachführung.
+
+Diese Daten verbleiben auf dem Gerät und werden weder an Cozy Sprout Games noch an Dritte übertragen. Sie können gelöscht werden, indem die App-Daten in den Geräteeinstellungen gelöscht werden oder die App deinstalliert wird.
+
+SPRACHFÜHRUNG
+
+Das Spiel kann die integrierte Sprachausgabe des Geräts verwenden, um fest vorgegebene Anweisungen und ermutigende Hinweise vorzulesen. Vom Benutzer eingegebener Text oder personenbezogene Daten werden nicht an diese Funktion gesendet.
+
+DATENSCHUTZ FÜR KINDER
+
+My First Homestead ist für Kinder konzipiert, erfasst jedoch wissentlich keine personenbezogenen Daten von Kindern oder Erwachsenen. Das Spiel ermöglicht es Kindern nicht, Konten zu erstellen, mit anderen Benutzern zu kommunizieren, Inhalte einzureichen oder personenbezogene Daten zu teilen.
+
+DIENSTE VON DRITTANBIETERN
+
+Das Spiel wird über Google Play vertrieben. Google kann Informationen zum Herunterladen, Kaufen, Installieren oder Warten der App gemäß den eigenen Datenschutzrichtlinien verarbeiten.
+
+My First Homestead enthält keine SDKs von Drittanbietern für Werbung, Analysen, soziale Medien oder Tracking.
+
+WEITERGABE, AUFBEWAHRUNG UND LÖSCHUNG VON DATEN
+
+Cozy Sprout Games verkauft, vermietet, veröffentlicht oder teilt keine personenbezogenen Daten, da das Spiel keine solchen Daten erfasst. Benutzerdaten werden nicht auf externen Servern gespeichert. Lokal gespeicherter Fortschritt und Einstellungen bleiben auf dem Gerät, bis die App-Daten gelöscht oder die App deinstalliert wird.
+
+Da das Spiel keine Benutzerkonten anbietet, gibt es keine Kontodaten zu löschen.
+
+SICHERHEIT
+
+Das Spiel verringert Datenschutzrisiken, indem es die Erfassung und Übertragung personenbezogener Daten vermeidet. Fortschritt und Einstellungen werden lokal im App-Speicher des Geräts gespeichert.
+
+ÄNDERUNGEN DIESER DATENSCHUTZERKLÄRUNG
+
+Diese Erklärung kann aktualisiert werden, wenn sich Funktionen oder Datenpraktiken des Spiels ändern. Aktualisierungen werden mit einem neuen Gültigkeitsdatum auf der öffentlichen Richtlinienseite veröffentlicht.
+
+KONTAKT
+
+Bei Datenschutzfragen zu My First Homestead:
+
+Cozy Sprout Games
+wryan2986@gmail.com
+
+ÖFFENTLICHE RICHTLINIENSEITE
+https://github.com/wryan2986/my-first-homestead-privacy

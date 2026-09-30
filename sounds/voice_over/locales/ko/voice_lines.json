@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "ko",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "ko-KR",
+    "google_tts_voice": "ko-KR-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "둥지 안의 알을 눌러요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "둥지 안의 알을 눌러요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "알은 바구니에 넣어요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "알은 바구니에 넣어요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "젖통을 눌러 양동이를 채워요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "젖통을 눌러 양동이를 채워요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "젖 짜기를 도우려면 소 가까이를 눌러요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "젖 짜기를 도우려면 소 가까이를 눌러요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "소를 탭해서 부드럽게 쓰다듬어 주세요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "소를 탭해서 부드럽게 쓰다듬어 주세요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "이 동물을 눌러 먹이를 줘요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "이 동물을 눌러 먹이를 줘요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "이 동물을 눌러 빗질해 줘요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "이 동물을 눌러 빗질해 줘요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "동물을 누르면 솔이 도와줄 거예요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "동물을 누르면 솔이 도와줄 거예요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "이 텃밭을 눌러 식물을 돌봐요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "이 텃밭을 눌러 식물을 돌봐요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "온상 상자를 눌러 겨울 상추를 돌봐요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "온상 상자를 눌러 겨울 상추를 돌봐요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "정말 잘 도왔어요! 닭들이 행복해요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "잘했어요! 알들이 안전해요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "고마워요! 닭장이 포근해졌어요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "잘했어요! 바구니가 가득 찼어요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "암탉들이 행복해요! 많이 도와줬어요.",
+      "path": "res://sounds/voice_over/locales/ko/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "잘했어요! 소가 보살핌을 받았어요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "정말 잘 도왔어요! 우유 양동이가 가득 찼어요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "고마워요! 소가 행복해요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "잘했어요! 신선한 우유가 준비됐어요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "예쁘게 도왔어요! 헛간이 평온해요.",
+      "path": "res://sounds/voice_over/locales/ko/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "냠냠! 동물들이 간식을 좋아했어요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "정말 잘 도왔어요! 모든 동물이 먹이를 먹었어요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "잘했어요! 즐거운 냠냠 시간이에요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "고마워요! 동물들이 배불러요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "잘했어요! 우리가 행복해 보여요.",
+      "path": "res://sounds/voice_over/locales/ko/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "모두 깨끗해요! 동물들이 더 편해졌어요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "잘했어요! 모두 빗질했어요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "정말 잘 도왔어요! 털이 부드럽고 반짝여요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "고마워요! 동물들이 포근해해요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "잘했어요! 헛간 친구들이 깨끗해요.",
+      "path": "res://sounds/voice_over/locales/ko/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "정말 멋진 정원 일이에요! 식물들이 보살핌을 받았어요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "잘했어요! 정원이 행복해 보여요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "고마워요! 모든 밭을 돌봤어요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "잘했어요! 식물들이 환해 보여요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "예쁘게 도왔어요! 정원이 포근해요.",
+      "path": "res://sounds/voice_over/locales/ko/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/BeeCritter.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/animals/butterfly_idle.png" id="2"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 52.0
+
+[node name="ButterflyCritter" type="Area2D"]
+script = ExtResource("1")
+icon_sprite = NodePath("Icon")
+sprite_faces_left = false
+move_speed = 24.0
+idle_duration_range = Vector2(0.7, 1.8)
+buzz_volume_db = -12.0
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")

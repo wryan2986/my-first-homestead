@@ -1,0 +1,115 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/GardenPlot.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/garden/plot_tile.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/garden/seed.png" id="3"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_ready.png" id="4"]
+[ext_resource type="Texture2D" path="res://art/effects/water_drop.png" id="5"]
+[ext_resource type="Texture2D" path="res://art/garden/plant_growing.png" id="6"]
+[ext_resource type="Texture2D" path="res://art/garden/wet_soil_overlay.png" id="7"]
+[ext_resource type="Texture2D" path="res://art/effects/sparkle.png" id="8"]
+[ext_resource type="Texture2D" path="res://art/garden/turnip.png" id="10"]
+[ext_resource type="Texture2D" path="res://art/garden/carrot.png" id="11"]
+[ext_resource type="Texture2D" path="res://art/garden/corn.png" id="12"]
+[ext_resource type="Texture2D" path="res://art/garden/pumpkin.png" id="13"]
+[ext_resource type="Texture2D" path="res://art/garden/tomato.png" id="15"]
+[ext_resource type="Texture2D" path="res://art/garden/strawberry.png" id="16"]
+[ext_resource type="Texture2D" path="res://art/garden/sunflower.png" id="17"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/turnip_item.png" id="18"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/carrot_item.png" id="19"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/corn_item.png" id="20"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/pumpkin_item.png" id="21"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/tomato_item.png" id="23"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/strawberry_item.png" id="24"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/sunflower_item.png" id="25"]
+[ext_resource type="Texture2D" path="res://art/garden/lettuce.png" id="26"]
+[ext_resource type="Texture2D" path="res://art/garden/harvest_items/lettuce_item.png" id="27"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(310, 230)
+
+[node name="GardenPlot" type="Area2D"]
+script = ExtResource("1")
+soil_sprite = NodePath("Soil")
+plant_sprite = NodePath("Plant")
+title_label = NodePath("TitleLabel")
+status_label = NodePath("StatusLabel")
+water_icon = NodePath("WaterIcon")
+wet_overlay = NodePath("WetSoil")
+sparkle_sprite = NodePath("Sparkle")
+plot_texture = ExtResource("2")
+seed_texture = ExtResource("3")
+plant_texture = ExtResource("6")
+harvest_texture = ExtResource("4")
+turnip_texture = ExtResource("10")
+carrot_texture = ExtResource("11")
+corn_texture = ExtResource("12")
+pumpkin_texture = ExtResource("13")
+tomato_texture = ExtResource("15")
+strawberry_texture = ExtResource("16")
+sunflower_texture = ExtResource("17")
+lettuce_texture = ExtResource("26")
+turnip_harvest_item_texture = ExtResource("18")
+carrot_harvest_item_texture = ExtResource("19")
+corn_harvest_item_texture = ExtResource("20")
+pumpkin_harvest_item_texture = ExtResource("21")
+tomato_harvest_item_texture = ExtResource("23")
+strawberry_harvest_item_texture = ExtResource("24")
+sunflower_harvest_item_texture = ExtResource("25")
+lettuce_harvest_item_texture = ExtResource("27")
+wet_soil_texture = ExtResource("7")
+
+[node name="Soil" type="Sprite2D" parent="."]
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("2")
+
+[node name="WetSoil" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("7")
+
+[node name="Plant" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(0, -42)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3")
+
+[node name="WaterIcon" type="Sprite2D" parent="."]
+z_index = 4
+position = Vector2(100, -88)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("5")
+
+[node name="Sparkle" type="Sprite2D" parent="."]
+visible = false
+z_index = 5
+position = Vector2(0, -82)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("8")
+
+[node name="TitleLabel" type="Label" parent="."]
+visible = false
+offset_left = -72.0
+offset_top = -88.0
+offset_right = 72.0
+offset_bottom = -52.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.26, 0.18, 0.13, 1)
+horizontal_alignment = 1
+text = "Plot"
+
+[node name="StatusLabel" type="Label" parent="."]
+visible = false
+offset_left = -90.0
+offset_top = 56.0
+offset_right = 90.0
+offset_bottom = 106.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.27, 0.19, 0.12, 1)
+horizontal_alignment = 1
+autowrap_mode = 2
+text = "Tap to plant"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")

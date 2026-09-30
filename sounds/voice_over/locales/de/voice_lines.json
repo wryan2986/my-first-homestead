@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "locale": "de",
+  "voice": {
+    "model": "google",
+    "voice": "Aoede",
+    "speaking_rate": 0.92,
+    "response_format": "ogg",
+    "instructions": "Google Chirp3-HD Aoede voice. Same calm adult woman voice. Calm, warm, friendly, clear preschool-teacher delivery for toddlers ages 2 to 5. Short phrases, not loud, silly, robotic, dramatic, or rushed.",
+    "google_tts_locale": "de-DE",
+    "google_tts_voice": "de-DE-Chirp3-HD-Aoede"
+  },
+  "lines": [
+    {
+      "key": "eggs_hint_gentle",
+      "text": "Tippe auf das Ei im Nest.",
+      "path": "res://sounds/voice_over/locales/de/eggs_hint_gentle.ogg",
+      "notes": "Gentle trouble tip."
+    },
+    {
+      "key": "eggs_hint_strong",
+      "text": "Tippe auf das Ei im Nest.",
+      "path": "res://sounds/voice_over/locales/de/eggs_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm trouble tip."
+    },
+    {
+      "key": "eggs_hint_basket_gentle",
+      "text": "Die Eier kommen in den Korb.",
+      "path": "res://sounds/voice_over/locales/de/eggs_hint_basket_gentle.ogg",
+      "notes": "Gentle basket hint."
+    },
+    {
+      "key": "eggs_hint_basket_strong",
+      "text": "Die Eier kommen in den Korb.",
+      "path": "res://sounds/voice_over/locales/de/eggs_hint_basket_strong.ogg",
+      "notes": "Slightly clearer but still calm basket hint."
+    },
+    {
+      "key": "milking_hint_gentle",
+      "text": "Tippe auf das Euter, damit der Eimer voll wird.",
+      "path": "res://sounds/voice_over/locales/de/milking_hint_gentle.ogg",
+      "notes": "Gentle milking target hint."
+    },
+    {
+      "key": "milking_hint_strong",
+      "text": "Tippe auf das Euter, damit der Eimer voll wird.",
+      "path": "res://sounds/voice_over/locales/de/milking_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm milking target hint."
+    },
+    {
+      "key": "milking_hint_cow_gentle",
+      "text": "Tippe neben die Kuh, um beim Melken zu helfen.",
+      "path": "res://sounds/voice_over/locales/de/milking_hint_cow_gentle.ogg",
+      "notes": "Gentle near-miss hint."
+    },
+    {
+      "key": "milking_hint_cow_strong",
+      "text": "Tippe neben die Kuh, um beim Melken zu helfen.",
+      "path": "res://sounds/voice_over/locales/de/milking_hint_cow_strong.ogg",
+      "notes": "Slightly clearer but still calm near-miss hint."
+    },
+    {
+      "key": "milking_pet_hint_gentle",
+      "text": "Tippe auf die Kuh, um sie sanft zu streicheln.",
+      "path": "res://sounds/voice_over/locales/de/milking_pet_hint_gentle.ogg",
+      "notes": "Gentle cow pat hint."
+    },
+    {
+      "key": "milking_pet_hint_strong",
+      "text": "Tippe auf die Kuh, um sie sanft zu streicheln.",
+      "path": "res://sounds/voice_over/locales/de/milking_pet_hint_strong.ogg",
+      "notes": "Slightly clearer but still calm cow pat hint."
+    },
+    {
+      "key": "feeding_hint_gentle",
+      "text": "Tippe auf dieses Tier, um ihm Futter zu geben.",
+      "path": "res://sounds/voice_over/locales/de/feeding_hint_gentle.ogg",
+      "notes": "Shared feeding hint for all animals."
+    },
+    {
+      "key": "feeding_hint_strong",
+      "text": "Tippe auf dieses Tier, um ihm Futter zu geben.",
+      "path": "res://sounds/voice_over/locales/de/feeding_hint_strong.ogg",
+      "notes": "Shared stronger feeding hint for all animals."
+    },
+    {
+      "key": "brushing_hint_gentle",
+      "text": "Tippe auf dieses Tier, um es zu buersten.",
+      "path": "res://sounds/voice_over/locales/de/brushing_hint_gentle.ogg",
+      "notes": "Shared brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_strong",
+      "text": "Tippe auf dieses Tier, um es zu buersten.",
+      "path": "res://sounds/voice_over/locales/de/brushing_hint_strong.ogg",
+      "notes": "Shared stronger brushing hint for all animals."
+    },
+    {
+      "key": "brushing_hint_tool_gentle",
+      "text": "Tippe auf ein Tier, dann hilft die Buerste.",
+      "path": "res://sounds/voice_over/locales/de/brushing_hint_tool_gentle.ogg",
+      "notes": "Gentle brush-tool hint."
+    },
+    {
+      "key": "brushing_hint_tool_strong",
+      "text": "Tippe auf ein Tier, dann hilft die Buerste.",
+      "path": "res://sounds/voice_over/locales/de/brushing_hint_tool_strong.ogg",
+      "notes": "Slightly clearer but still calm brush-tool hint."
+    },
+    {
+      "key": "garden_hint_plot_gentle",
+      "text": "Tippe auf dieses Beet, um die Pflanzen zu pflegen.",
+      "path": "res://sounds/voice_over/locales/de/garden_hint_plot_gentle.ogg",
+      "notes": "Gentle garden plot hint."
+    },
+    {
+      "key": "garden_hint_plot_strong",
+      "text": "Tippe auf dieses Beet, um die Pflanzen zu pflegen.",
+      "path": "res://sounds/voice_over/locales/de/garden_hint_plot_strong.ogg",
+      "notes": "Slightly clearer but still calm garden plot hint."
+    },
+    {
+      "key": "garden_hint_winter_gentle",
+      "text": "Tippe auf das Fruehbeet, um den Wintersalat zu pflegen.",
+      "path": "res://sounds/voice_over/locales/de/garden_hint_winter_gentle.ogg",
+      "notes": "Gentle winter garden hint."
+    },
+    {
+      "key": "garden_hint_winter_strong",
+      "text": "Tippe auf das Fruehbeet, um den Wintersalat zu pflegen.",
+      "path": "res://sounds/voice_over/locales/de/garden_hint_winter_strong.ogg",
+      "notes": "Slightly clearer but still calm winter garden hint."
+    },
+    {
+      "key": "eggs_complete_0",
+      "text": "Toll geholfen! Die Huehner sind gluecklich.",
+      "path": "res://sounds/voice_over/locales/de/eggs_complete_0.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_1",
+      "text": "Gut gemacht! Die Eier sind sicher.",
+      "path": "res://sounds/voice_over/locales/de/eggs_complete_1.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_2",
+      "text": "Danke! Der Huehnerstall ist gemuetlich.",
+      "path": "res://sounds/voice_over/locales/de/eggs_complete_2.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_3",
+      "text": "Gut gemacht! Der Korb ist voll.",
+      "path": "res://sounds/voice_over/locales/de/eggs_complete_3.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "eggs_complete_4",
+      "text": "Glueckliche Hennen! Du hast sehr geholfen.",
+      "path": "res://sounds/voice_over/locales/de/eggs_complete_4.ogg",
+      "notes": "Egg completion message."
+    },
+    {
+      "key": "milking_complete_0",
+      "text": "Gut gemacht! Die Kuh fuehlt sich gut versorgt.",
+      "path": "res://sounds/voice_over/locales/de/milking_complete_0.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_1",
+      "text": "Toll geholfen! Der Milcheimer ist voll.",
+      "path": "res://sounds/voice_over/locales/de/milking_complete_1.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_2",
+      "text": "Danke! Die Kuh ist gluecklich.",
+      "path": "res://sounds/voice_over/locales/de/milking_complete_2.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_3",
+      "text": "Gut gemacht! Frische Milch ist fertig.",
+      "path": "res://sounds/voice_over/locales/de/milking_complete_3.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "milking_complete_4",
+      "text": "Schoen geholfen! Der Stall ist ruhig.",
+      "path": "res://sounds/voice_over/locales/de/milking_complete_4.ogg",
+      "notes": "Milking completion message."
+    },
+    {
+      "key": "feeding_complete_0",
+      "text": "Lecker! Die Tiere mochten ihren Snack.",
+      "path": "res://sounds/voice_over/locales/de/feeding_complete_0.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_1",
+      "text": "Toll geholfen! Jedes Tier hat Futter bekommen.",
+      "path": "res://sounds/voice_over/locales/de/feeding_complete_1.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_2",
+      "text": "Gut gemacht! Froehliche Futterzeit.",
+      "path": "res://sounds/voice_over/locales/de/feeding_complete_2.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_3",
+      "text": "Danke! Die Tiere sind satt.",
+      "path": "res://sounds/voice_over/locales/de/feeding_complete_3.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "feeding_complete_4",
+      "text": "Gut gemacht! Das Gehege wirkt froh.",
+      "path": "res://sounds/voice_over/locales/de/feeding_complete_4.ogg",
+      "notes": "Feeding completion message."
+    },
+    {
+      "key": "brushing_complete_0",
+      "text": "Alles sauber! Die Tiere fuehlen sich besser.",
+      "path": "res://sounds/voice_over/locales/de/brushing_complete_0.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_1",
+      "text": "Gut gemacht! Alle sind gebuerstet.",
+      "path": "res://sounds/voice_over/locales/de/brushing_complete_1.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_2",
+      "text": "Toll geholfen! Weiches, glaenzendes Fell.",
+      "path": "res://sounds/voice_over/locales/de/brushing_complete_2.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_3",
+      "text": "Danke! Die Tiere fuehlen sich wohl.",
+      "path": "res://sounds/voice_over/locales/de/brushing_complete_3.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "brushing_complete_4",
+      "text": "Gut gemacht! Die Stallfreunde sind sauber.",
+      "path": "res://sounds/voice_over/locales/de/brushing_complete_4.ogg",
+      "notes": "Brushing completion message."
+    },
+    {
+      "key": "garden_complete_0",
+      "text": "Toll gegaertnert! Die Pflanzen sind versorgt.",
+      "path": "res://sounds/voice_over/locales/de/garden_complete_0.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_1",
+      "text": "Gut gemacht! Der Garten wirkt froh.",
+      "path": "res://sounds/voice_over/locales/de/garden_complete_1.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_2",
+      "text": "Danke! Jedes Beet wurde gepflegt.",
+      "path": "res://sounds/voice_over/locales/de/garden_complete_2.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_3",
+      "text": "Gut gemacht! Die Pflanzen sehen schoen aus.",
+      "path": "res://sounds/voice_over/locales/de/garden_complete_3.ogg",
+      "notes": "Garden completion message."
+    },
+    {
+      "key": "garden_complete_4",
+      "text": "Schoen geholfen! Der Garten ist gemuetlich.",
+      "path": "res://sounds/voice_over/locales/de/garden_complete_4.ogg",
+      "notes": "Garden completion message."
+    }
+  ],
+  "aliases": {
+    "feeding_hint_sheep_gentle": "feeding_hint_gentle",
+    "feeding_hint_sheep_strong": "feeding_hint_strong",
+    "feeding_hint_pig_gentle": "feeding_hint_gentle",
+    "feeding_hint_pig_strong": "feeding_hint_strong",
+    "feeding_hint_chicken_gentle": "feeding_hint_gentle",
+    "feeding_hint_chicken_strong": "feeding_hint_strong",
+    "feeding_hint_goat_gentle": "feeding_hint_gentle",
+    "feeding_hint_goat_strong": "feeding_hint_strong",
+    "brushing_hint_pony_gentle": "brushing_hint_gentle",
+    "brushing_hint_pony_strong": "brushing_hint_strong",
+    "brushing_hint_cow_gentle": "brushing_hint_gentle",
+    "brushing_hint_cow_strong": "brushing_hint_strong",
+    "brushing_hint_sheep_gentle": "brushing_hint_gentle",
+    "brushing_hint_sheep_strong": "brushing_hint_strong",
+    "brushing_hint_duck_gentle": "brushing_hint_gentle",
+    "brushing_hint_duck_strong": "brushing_hint_strong"
+  }
+}

@@ -1,0 +1,34 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/MusicManager.gd" id="1"]
+[ext_resource type="AudioStream" path="res://assets/music/music_farmyard_loop.ogg" id="2"]
+[ext_resource type="AudioStream" path="res://assets/music/music_chore_loop.ogg" id="3"]
+[ext_resource type="AudioStream" path="res://assets/music/music_sunny_farm_morning.ogg" id="4"]
+[ext_resource type="AudioStream" path="res://assets/music/music_sunny_farm_playtime.ogg" id="5"]
+[ext_resource type="AudioStream" path="res://assets/music/music_sunny_farm_twilight.ogg" id="6"]
+[ext_resource type="AudioStream" path="res://assets/music/music_farmyard_morning.ogg" id="7"]
+[ext_resource type="AudioStream" path="res://assets/music/music_farmyard_playtime.ogg" id="8"]
+[ext_resource type="AudioStream" path="res://assets/music/music_chore_gentle.ogg" id="9"]
+[ext_resource type="AudioStream" path="res://assets/music/music_winter_cozy.ogg" id="10"]
+[ext_resource type="AudioStream" path="res://assets/music/music_spring_gentle_morning.ogg" id="11"]
+[ext_resource type="AudioStream" path="res://assets/music/music_summer_sunny_play.ogg" id="12"]
+[ext_resource type="AudioStream" path="res://assets/music/music_fall_cozy_harvest.ogg" id="13"]
+[ext_resource type="AudioStream" path="res://assets/music/music_winter_soft_bells.ogg" id="14"]
+
+[node name="MusicManager" type="Node"]
+script = ExtResource("1")
+farmyard_music = ExtResource("2")
+chore_music = ExtResource("3")
+soundtrack_playlist = Array[AudioStream]([ExtResource("4"), ExtResource("5"), ExtResource("6")])
+farmyard_playlist = Array[AudioStream]([ExtResource("7"), ExtResource("8"), ExtResource("6")])
+chore_playlist = Array[AudioStream]([ExtResource("9"), ExtResource("3")])
+spring_playlist = Array[AudioStream]([ExtResource("11"), ExtResource("7")])
+summer_playlist = Array[AudioStream]([ExtResource("12"), ExtResource("8")])
+fall_playlist = Array[AudioStream]([ExtResource("13"), ExtResource("6")])
+winter_playlist = Array[AudioStream]([ExtResource("14"), ExtResource("10")])
+music_volume_db = -24.0
+fade_duration = 0.9
+keep_music_continuous_between_scenes = true
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -24.0

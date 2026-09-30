@@ -1,0 +1,88 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/FarmAnimalCard.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/props/grooming_station_back.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/animals/goat_idle.png" id="3"]
+[ext_resource type="Texture2D" path="res://art/effects/success_glow.png" id="4"]
+[ext_resource type="Texture2D" path="res://art/props/grooming_station_front.png" id="5"]
+[ext_resource type="Texture2D" path="res://art/effects/dirt_smudge.png" id="6"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(330, 310)
+
+[node name="FarmAnimalCard" type="Area2D"]
+script = ExtResource("1")
+icon_sprite = NodePath("Icon")
+title_label = NodePath("TitleLabel")
+status_label = NodePath("StatusLabel")
+selection_ring = NodePath("SelectionRing")
+completion_badge = NodePath("CompletionBadge")
+dirt_texture = ExtResource("6")
+idle_texture = ExtResource("3")
+happy_texture = ExtResource("3")
+
+[node name="CardBack" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 18)
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("2")
+
+[node name="SelectionRing" type="Sprite2D" parent="."]
+position = Vector2(0, -36)
+modulate = Color(0.73, 0.94, 1, 0.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(0, -44)
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("3")
+
+[node name="StationFront" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 18)
+scale = Vector2(0.72, 0.72)
+texture = ExtResource("5")
+
+[node name="TitleLabel" type="Label" parent="."]
+visible = false
+offset_left = -80.0
+offset_top = 64.0
+offset_right = 80.0
+offset_bottom = 96.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.35, 0.18, 0.17, 1)
+horizontal_alignment = 1
+text = "Animal"
+
+[node name="StatusLabel" type="Label" parent="."]
+visible = false
+offset_left = -92.0
+offset_top = 100.0
+offset_right = 92.0
+offset_bottom = 144.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.3, 0.21, 0.16, 1)
+horizontal_alignment = 1
+autowrap_mode = 2
+text = "Ready to help!"
+
+[node name="CompletionBadge" type="Label" parent="."]
+visible = false
+offset_left = -74.0
+offset_top = -154.0
+offset_right = 74.0
+offset_bottom = -118.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.17, 0.4, 0.14, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/font_size = 56
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "✓"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 18)
+shape = SubResource("1")

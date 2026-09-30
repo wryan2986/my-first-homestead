@@ -1,0 +1,822 @@
+[gd_scene format=3 uid="uid://dqq888fjlkuu2"]
+
+[ext_resource type="Script" uid="uid://c3k44mohmefjm" path="res://scripts/FarmyardScene.gd" id="1"]
+[ext_resource type="Script" uid="uid://ci4iaskqjjaq6" path="res://scripts/ChickenCoopArea.gd" id="2"]
+[ext_resource type="Script" uid="uid://bjewd1jkyad0e" path="res://scripts/CowArea.gd" id="3"]
+[ext_resource type="Script" uid="uid://d1eurb5luaw5y" path="res://scripts/GardenArea.gd" id="4"]
+[ext_resource type="Script" uid="uid://bl7aoh1uxd55r" path="res://scripts/FeedArea.gd" id="5"]
+[ext_resource type="Script" uid="uid://wlvsn6i2o14k" path="res://scripts/AnimalPenArea.gd" id="6"]
+[ext_resource type="PackedScene" uid="uid://jugsxux4o3d8" path="res://scenes/EggCollectingScene.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/MilkingScene.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://d55hac08g1bh" path="res://scenes/WateringScene.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://cg5bnx4p4e61g" path="res://scenes/FeedingScene.tscn" id="10"]
+[ext_resource type="Texture2D" uid="uid://c4k1i6d0x4nc5" path="res://art/props/chicken_coop.png" id="10_mm6dm"]
+[ext_resource type="PackedScene" uid="uid://dmp5v78s4kxa8" path="res://scenes/BrushingScene.tscn" id="11"]
+[ext_resource type="PackedScene" uid="uid://c46kkx758jtvv" path="res://scenes/DuckPondMusicScene.tscn" id="12_duck_music"]
+[ext_resource type="Texture2D" uid="uid://c5ndhwil55hx3" path="res://art/animals/cow_idle.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bumuntb74io7e" path="res://art/garden/plot_tile.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dcqimbeq3qxct" path="res://art/garden/sprout.png" id="18"]
+[ext_resource type="AudioStream" uid="uid://os6ra4le88xa" path="res://sounds/tap.wav" id="20"]
+[ext_resource type="AudioStream" uid="uid://dl1voenuu60qm" path="res://sounds/next_day.wav" id="21"]
+[ext_resource type="Texture2D" uid="uid://be7ujn5cqjr7l" path="res://art/ui/next_day_icon.png" id="21_mm6dm"]
+[ext_resource type="PackedScene" path="res://scenes/shared/AmbientChasePair.tscn" id="ambient_chase_scene"]
+[ext_resource type="PackedScene" uid="uid://cpku3ks6fonjm" path="res://scenes/shared/BouncyCritter.tscn" id="ambient_chicken_scene"]
+[ext_resource type="Texture2D" uid="uid://4djurltt8i7i" path="res://art/animals/duck_idle.png" id="animal_duck"]
+[ext_resource type="Texture2D" uid="uid://dn4gccjwrog6q" path="res://art/props/hub_animal_pen_front.png" id="animal_pen_front"]
+[ext_resource type="Texture2D" uid="uid://bjdrv1dwsumu6" path="res://art/animals/pony_idle.png" id="animal_pony"]
+[ext_resource type="Texture2D" uid="uid://bl52jso3ri1wt" path="res://art/animals/sheep_idle.png" id="animal_sheep"]
+[ext_resource type="PackedScene" uid="uid://dyar5tnrf0t7" path="res://scenes/shared/BeeCritter.tscn" id="bee_scene"]
+[ext_resource type="PackedScene" path="res://scenes/shared/ButterflyCritter.tscn" id="butterfly_scene"]
+[ext_resource type="Texture2D" uid="uid://cc3ghfuko32l7" path="res://art/effects/clean_sparkle.png" id="clean_sparkle"]
+[ext_resource type="Script" uid="uid://r16kgjo2mt74" path="res://scripts/ui/ResponsiveCoverNode2D.gd" id="cover_node"]
+[ext_resource type="Texture2D" uid="uid://dr3vwbi4afhs" path="res://art/backgrounds/farmyard_layers/cow_area.png" id="cow_area_layer"]
+[ext_resource type="Texture2D" uid="uid://bdrk4pc24ln5s" path="res://art/animals/cow_happy.png" id="cow_happy"]
+[ext_resource type="AudioStream" uid="uid://nq7tpvx43cuh" path="res://sounds/cow_moo.wav" id="cow_moo"]
+[ext_resource type="Texture2D" uid="uid://6l036o8ufrsr" path="res://art/backgrounds/farmyard_layers/decorative_props.png" id="decorative_props_layer"]
+[ext_resource type="Texture2D" uid="uid://bw1iksufl6b52" path="res://art/props/decoration_duck_pond.png" id="decor_duck_pond"]
+[ext_resource type="Texture2D" uid="uid://c3b0ljpsn5owt" path="res://art/props/decoration_flower_path.png" id="decor_flower_path"]
+[ext_resource type="Texture2D" uid="uid://ckhg6kp1iiajb" path="res://art/props/decoration_orchard_tree.png" id="decor_orchard_tree"]
+[ext_resource type="Texture2D" uid="uid://bqy34kyyt7yme" path="res://art/props/decoration_windmill.png" id="decor_windmill"]
+[ext_resource type="Texture2D" uid="uid://ynn270pub4fc" path="res://art/props/decoration_windmill_fan_0.png" id="decor_windmill_fan_0"]
+[ext_resource type="Script" uid="uid://6xry8jrp51nv" path="res://scripts/WindmillDecoration.gd" id="decor_windmill_script"]
+[ext_resource type="Texture2D" uid="uid://l4wymc55mj1q" path="res://art/effects/dirt_smudge.png" id="dirt_smudge"]
+[ext_resource type="PackedScene" path="res://scenes/shared/DuckPondPlay.tscn" id="duck_pond_play_scene"]
+[ext_resource type="Texture2D" uid="uid://c0k3qmnd7x86y" path="res://art/props/hub_feed_pen.png" id="feed_pen_base"]
+[ext_resource type="Texture2D" uid="uid://dyojxbtfbdcqr" path="res://art/props/hub_feed_trough_front.png" id="feed_trough_front"]
+[ext_resource type="Texture2D" uid="uid://wkslsnc613vn" path="res://art/garden/sunflower.png" id="fence_flower"]
+[ext_resource type="Texture2D" uid="uid://dlsmu5it3ao4x" path="res://art/backgrounds/farmyard_layers/garden_area.png" id="garden_area_layer"]
+[ext_resource type="Texture2D" uid="uid://c00o6ca4eled" path="res://art/garden/plant_growing.png" id="garden_growing"]
+[ext_resource type="Texture2D" uid="uid://vfgandc6x650" path="res://art/garden/harvested.png" id="garden_harvested"]
+[ext_resource type="Texture2D" uid="uid://bwmwrpfeg1bmb" path="res://art/garden/harvest_ready.png" id="garden_ready"]
+[ext_resource type="Texture2D" uid="uid://dfoin3agxn6vd" path="res://art/garden/seed.png" id="garden_seed"]
+[ext_resource type="Texture2D" uid="uid://k2wjcoif654q" path="res://art/props/hub_grooming_stalls.png" id="grooming_stalls"]
+[ext_resource type="Texture2D" uid="uid://d38l60v3rbifg" path="res://art/backgrounds/farmyard_layers/ground_base.png" id="ground_base_layer"]
+[ext_resource type="Texture2D" uid="uid://csj2ejdjre0ne" path="res://art/animals/hub_feed_chicken.png" id="hub_feed_chicken"]
+[ext_resource type="Texture2D" uid="uid://bdt7nrgs4dh7i" path="res://art/animals/hub_feed_goat.png" id="hub_feed_goat"]
+[ext_resource type="Texture2D" uid="uid://hfgunrtcu5l6" path="res://art/animals/hub_feed_pig.png" id="hub_feed_pig"]
+[ext_resource type="Texture2D" uid="uid://br11gx70r8e5l" path="res://art/animals/hub_feed_sheep.png" id="hub_feed_sheep"]
+[ext_resource type="Texture2D" uid="uid://ce48iqubybv5j" path="res://art/props/hub_garden_fenced.png" id="hub_garden_fenced"]
+[ext_resource type="Texture2D" uid="uid://bnh1ohnl4gomg" path="res://art/props/hub_milking_stall_cow.png" id="hub_milking_icon"]
+[ext_resource type="Script" uid="uid://dgb0b5duw57ly" path="res://scripts/ui/HubAnimalWanderer.gd" id="hub_wander"]
+[ext_resource type="Texture2D" uid="uid://coekocbf3nxjx" path="res://art/props/mole_burrow.png" id="mole_burrow"]
+[ext_resource type="PackedScene" path="res://scenes/MoleGardenScene.tscn" id="mole_garden_scene"]
+[ext_resource type="PackedScene" path="res://scenes/shared/FarmNightTransition.tscn" id="night_transition_scene"]
+[ext_resource type="Script" uid="uid://r4hm7x1rhvo8" path="res://scripts/RainbowTreeDecoration.gd" id="rainbow_tree_script"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+[ext_resource type="PackedScene" uid="uid://bymx6u8686w1u" path="res://scenes/shared/SantaSleighFlyer.tscn" id="santa_sleigh_scene"]
+[ext_resource type="PackedScene" path="res://scenes/shared/SeasonalTapSurprises.tscn" id="seasonal_surprises_scene"]
+[ext_resource type="Texture2D" uid="uid://ddn8y8ebd2epx" path="res://art/ui/season_fall_leaf.png" id="season_fall"]
+[ext_resource type="Texture2D" uid="uid://buyyopp5milx2" path="res://art/backgrounds/farmyard_layers/season_fall_overlay.png" id="season_fall_overlay"]
+[ext_resource type="Texture2D" uid="uid://bgnvlhcl2ytg5" path="res://art/ui/season_spring_seedling.png" id="season_spring"]
+[ext_resource type="Texture2D" uid="uid://c8vliqas573ai" path="res://art/backgrounds/farmyard_layers/season_spring_overlay.png" id="season_spring_overlay"]
+[ext_resource type="Texture2D" uid="uid://cerhl66nacs4e" path="res://art/ui/season_summer_sun.png" id="season_summer"]
+[ext_resource type="Texture2D" uid="uid://cvieuq1oi2hgr" path="res://art/backgrounds/farmyard_layers/season_summer_overlay.png" id="season_summer_overlay"]
+[ext_resource type="Texture2D" uid="uid://b8f4xb2ny0ypr" path="res://art/ui/season_winter_snowflake.png" id="season_winter"]
+[ext_resource type="Texture2D" uid="uid://6u2085cy7s2v" path="res://art/backgrounds/farmyard_layers/season_winter_overlay.png" id="season_winter_overlay"]
+[ext_resource type="Texture2D" uid="uid://gwvqkfv8c5es" path="res://art/ui/settings_button.png" id="settings_icon"]
+[ext_resource type="PackedScene" uid="uid://wqv64d1el1dy" path="res://scenes/settings_panel.tscn" id="settings_panel_scene"]
+[ext_resource type="Texture2D" uid="uid://bem8up3ltpllr" path="res://art/backgrounds/farmyard_layers/sky.png" id="sky_layer"]
+[ext_resource type="PackedScene" path="res://scenes/shared/SpringPondGeese.tscn" id="spring_geese_scene"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(320, 280)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(365, 388)
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(400, 300)
+
+[sub_resource type="RectangleShape2D" id="4"]
+size = Vector2(400, 270)
+
+[sub_resource type="RectangleShape2D" id="5"]
+size = Vector2(390, 290)
+
+[sub_resource type="CircleShape2D" id="6"]
+radius = 180.0
+
+[node name="FarmyardScene" type="Node2D" unique_id=334924057]
+script = ExtResource("1")
+day_label = NodePath("Hud/DayLabel")
+season_label = NodePath("Hud/SeasonLabel")
+season_icon = NodePath("Hud/SeasonIcon")
+spring_season_icon = ExtResource("season_spring")
+summer_season_icon = ExtResource("season_summer")
+fall_season_icon = ExtResource("season_fall")
+winter_season_icon = ExtResource("season_winter")
+summary_label = NodePath("Hud/SummaryLabel")
+next_day_button = NodePath("Hud/NextDayButton")
+settings_button = NodePath("Hud/SettingsButton")
+settings_panel = NodePath("Hud/SettingsPanel")
+chicken_badge = NodePath("ActivityAreas/ChickenCoopArea/DoneBadge")
+milking_badge = NodePath("ActivityAreas/CowArea/DoneBadge")
+garden_badge = NodePath("ActivityAreas/GardenArea/DoneBadge")
+feeding_badge = NodePath("ActivityAreas/FeedArea/DoneBadge")
+brushing_badge = NodePath("ActivityAreas/AnimalPenArea/DoneBadge")
+flower_bed_node = NodePath("Decorations/FlowerBed")
+goat_node = NodePath("ActivityAreas/FeedArea/GoatFriend")
+prettier_fence_node = NodePath("Decorations/PrettierFenceFlowers")
+duck_pond_node = NodePath("Decorations/DuckPond")
+rainbow_tree_node = NodePath("Decorations/RainbowTree")
+windmill_node = NodePath("Decorations/Windmill")
+brushing_duck_stall_node = NodePath("ActivityAreas/AnimalPenArea/StallDuck")
+brushing_dirty_overlays = Array[NodePath]([NodePath("ActivityAreas/AnimalPenArea/StallPony/Dirt"), NodePath("ActivityAreas/AnimalPenArea/StallCow/Dirt"), NodePath("ActivityAreas/AnimalPenArea/StallSheep/Dirt"), NodePath("ActivityAreas/AnimalPenArea/StallDuck/Dirt")])
+brushing_clean_sparkles = Array[NodePath]([NodePath("ActivityAreas/AnimalPenArea/StallPony/CleanSparkle"), NodePath("ActivityAreas/AnimalPenArea/StallCow/CleanSparkle"), NodePath("ActivityAreas/AnimalPenArea/StallSheep/CleanSparkle"), NodePath("ActivityAreas/AnimalPenArea/StallDuck/CleanSparkle")])
+chicken_visual = NodePath("ActivityAreas/ChickenCoopArea/Icon")
+milking_visual = NodePath("ActivityAreas/CowArea/Icon")
+garden_visual = NodePath("ActivityAreas/GardenArea/Icon")
+feeding_visual = NodePath("ActivityAreas/FeedArea/PenBase")
+brushing_visual = NodePath("ActivityAreas/AnimalPenArea/StallBase")
+chicken_hotspot = NodePath("ActivityAreas/ChickenCoopArea")
+milking_hotspot = NodePath("ActivityAreas/CowArea")
+garden_hotspot = NodePath("ActivityAreas/GardenArea")
+feeding_hotspot = NodePath("ActivityAreas/FeedArea")
+brushing_hotspot = NodePath("ActivityAreas/AnimalPenArea")
+mole_garden_hotspot = NodePath("Decorations/MoleGardenArea")
+next_day_sound = ExtResource("21")
+egg_scene = ExtResource("7")
+milking_scene = ExtResource("8")
+garden_scene = ExtResource("9")
+feeding_scene = ExtResource("10")
+brushing_scene = ExtResource("11")
+duck_pond_music_scene = ExtResource("12_duck_music")
+ambient_chicken_root = NodePath("AmbientLife/CoopChickens")
+ambient_cow_root = NodePath("AmbientLife/CowFriend")
+bee_root = NodePath("AmbientLife/Bees")
+butterfly_root = NodePath("AmbientLife/Butterflies")
+spring_geese_root = NodePath("AmbientLife/SpringPondGeese")
+duck_pond_play_root = NodePath("AmbientLife/DuckPondPlay")
+santa_flyer_root = NodePath("AmbientLife/SantaSleighFlyer")
+seasonal_surprises_root = NodePath("AmbientLife/SeasonalTapSurprises")
+night_transition_root = NodePath("Hud/FarmNightTransition")
+seasonal_base_visual = NodePath("BackgroundLayers/SeasonalBase")
+seasonal_spring_overlay = NodePath("BackgroundLayers/SeasonalOverlays/SpringOverlay")
+seasonal_summer_overlay = NodePath("BackgroundLayers/SeasonalOverlays/SummerOverlay")
+seasonal_fall_overlay = NodePath("BackgroundLayers/SeasonalOverlays/FallOverlay")
+seasonal_winter_overlay = NodePath("BackgroundLayers/SeasonalOverlays/WinterOverlay")
+garden_fence_visual = NodePath("ActivityAreas/GardenArea/GardenFenceBase")
+garden_preview_plot_nodes = Array[NodePath]([NodePath("ActivityAreas/GardenArea/Icon"), NodePath("ActivityAreas/GardenArea/PlotTile2"), NodePath("ActivityAreas/GardenArea/PlotTile3"), NodePath("ActivityAreas/GardenArea/PlotTile4")])
+garden_preview_plant_nodes = Array[NodePath]([NodePath("ActivityAreas/GardenArea/Sprout"), NodePath("ActivityAreas/GardenArea/Sprout2"), NodePath("ActivityAreas/GardenArea/Sprout3"), NodePath("ActivityAreas/GardenArea/Sprout4")])
+garden_preview_seed_texture = ExtResource("garden_seed")
+garden_preview_sprout_texture = ExtResource("18")
+garden_preview_growing_texture = ExtResource("garden_growing")
+garden_preview_ready_texture = ExtResource("garden_ready")
+garden_preview_harvested_texture = ExtResource("garden_harvested")
+
+[node name="BackgroundLayers" type="Node2D" parent="." unique_id=1791380529]
+script = ExtResource("cover_node")
+
+[node name="SeasonalBase" type="Sprite2D" parent="BackgroundLayers" unique_id=102533164]
+visible = false
+z_index = 1
+centered = false
+
+[node name="Sky" type="Sprite2D" parent="BackgroundLayers" unique_id=996771314]
+texture = ExtResource("sky_layer")
+centered = false
+
+[node name="GroundBase" type="Sprite2D" parent="BackgroundLayers" unique_id=1884953605]
+z_index = 1
+texture = ExtResource("ground_base_layer")
+centered = false
+
+[node name="DecorativeProps" type="Sprite2D" parent="BackgroundLayers" unique_id=1938061744]
+z_index = 3
+texture = ExtResource("decorative_props_layer")
+centered = false
+
+[node name="CowAreaArt" type="Sprite2D" parent="BackgroundLayers" unique_id=1826683927]
+z_index = 11
+position = Vector2(0, 90)
+texture = ExtResource("cow_area_layer")
+centered = false
+
+[node name="GardenAreaArt" type="Sprite2D" parent="BackgroundLayers" unique_id=1015481643]
+z_index = 4
+position = Vector2(-293, 103)
+scale = Vector2(1.0057292, 0.94814813)
+texture = ExtResource("garden_area_layer")
+centered = false
+
+[node name="SeasonalOverlays" type="Node2D" parent="BackgroundLayers" unique_id=645956084]
+z_index = 6
+
+[node name="SpringOverlay" type="Sprite2D" parent="BackgroundLayers/SeasonalOverlays" unique_id=96489362]
+visible = false
+texture = ExtResource("season_spring_overlay")
+centered = false
+
+[node name="SummerOverlay" type="Sprite2D" parent="BackgroundLayers/SeasonalOverlays" unique_id=621391516]
+visible = false
+texture = ExtResource("season_summer_overlay")
+centered = false
+
+[node name="FallOverlay" type="Sprite2D" parent="BackgroundLayers/SeasonalOverlays" unique_id=265899317]
+visible = false
+texture = ExtResource("season_fall_overlay")
+centered = false
+
+[node name="WinterOverlay" type="Sprite2D" parent="BackgroundLayers/SeasonalOverlays" unique_id=215792697]
+visible = false
+texture = ExtResource("season_winter_overlay")
+centered = false
+
+[node name="ActivityAreas" type="Node2D" parent="." unique_id=1150390974]
+z_index = 10
+
+[node name="ChickenCoopArea" type="Area2D" parent="ActivityAreas" unique_id=146392280]
+position = Vector2(508, 440)
+script = ExtResource("2")
+target_scene = ExtResource("7")
+visual_node = NodePath("Icon")
+tap_sound = ExtResource("20")
+metadata/_edit_group_ = true
+
+[node name="Icon" type="Sprite2D" parent="ActivityAreas/ChickenCoopArea" unique_id=462754251]
+scale = Vector2(0.56, 0.52)
+texture = ExtResource("10_mm6dm")
+
+[node name="DoneBadge" type="Label" parent="ActivityAreas/ChickenCoopArea" unique_id=1565869937]
+visible = false
+offset_left = 50.0
+offset_top = -144.0
+offset_right = 118.0
+offset_bottom = -76.0
+theme_override_colors/font_color = Color(0.18, 0.58, 0.22, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 56
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActivityAreas/ChickenCoopArea" unique_id=462272149]
+position = Vector2(0, 20)
+shape = SubResource("1")
+
+[node name="CowArea" type="Area2D" parent="ActivityAreas" unique_id=1688243053]
+z_index = 4
+position = Vector2(184, 782)
+script = ExtResource("3")
+target_scene = ExtResource("8")
+visual_node = NodePath("Icon")
+tap_sound = ExtResource("20")
+
+[node name="Icon" type="Sprite2D" parent="ActivityAreas/CowArea" unique_id=1756454346]
+position = Vector2(8.139978, -84.63997)
+scale = Vector2(0.74164057, 0.75921863)
+texture = ExtResource("hub_milking_icon")
+
+[node name="DoneBadge" type="Label" parent="ActivityAreas/CowArea" unique_id=2132920160]
+visible = false
+offset_left = 50.0
+offset_top = -144.0
+offset_right = 118.0
+offset_bottom = -76.0
+theme_override_colors/font_color = Color(0.18, 0.58, 0.22, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 56
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActivityAreas/CowArea" unique_id=1390094129]
+position = Vector2(9.5, -60)
+shape = SubResource("2")
+
+[node name="GardenArea" type="Area2D" parent="ActivityAreas" unique_id=395441336]
+position = Vector2(1164, 834)
+script = ExtResource("4")
+target_scene = ExtResource("9")
+visual_node = NodePath("Icon")
+tap_sound = ExtResource("20")
+metadata/_edit_group_ = true
+
+[node name="GardenFenceBase" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1919049815]
+z_index = -2
+position = Vector2(0, -2)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("hub_garden_fenced")
+
+[node name="Icon" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1129265072]
+visible = false
+modulate = Color(0.93, 0.74, 0.57, 1)
+position = Vector2(-58, -38)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("14")
+
+[node name="Sprout" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1074863975]
+position = Vector2(-58, -48)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("18")
+
+[node name="PlotTile2" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1391967538]
+visible = false
+modulate = Color(0.98, 0.8, 0.6, 1)
+position = Vector2(56, -38)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("14")
+
+[node name="Sprout2" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1329971499]
+position = Vector2(56, -48)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("18")
+
+[node name="PlotTile3" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1964963291]
+visible = false
+modulate = Color(0.92, 0.7, 0.54, 1)
+position = Vector2(-58, 42)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("14")
+
+[node name="Sprout3" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=1385390165]
+position = Vector2(-58, 32)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("18")
+
+[node name="PlotTile4" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=845537043]
+visible = false
+modulate = Color(0.96, 0.77, 0.58, 1)
+position = Vector2(56, 42)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("14")
+
+[node name="Sprout4" type="Sprite2D" parent="ActivityAreas/GardenArea" unique_id=141022246]
+position = Vector2(56, 32)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("18")
+
+[node name="DoneBadge" type="Label" parent="ActivityAreas/GardenArea" unique_id=1310326211]
+visible = false
+offset_left = 50.0
+offset_top = -144.0
+offset_right = 118.0
+offset_bottom = -76.0
+theme_override_colors/font_color = Color(0.18, 0.58, 0.22, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 56
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActivityAreas/GardenArea" unique_id=883713469]
+position = Vector2(-6, 59)
+shape = SubResource("3")
+
+[node name="FeedArea" type="Area2D" parent="ActivityAreas" unique_id=2086044448]
+position = Vector2(920, 560)
+script = ExtResource("5")
+target_scene = ExtResource("10")
+visual_node = NodePath("PenBase")
+tap_sound = ExtResource("20")
+
+[node name="PenBase" type="Sprite2D" parent="ActivityAreas/FeedArea" unique_id=1316155100]
+position = Vector2(0, -6)
+scale = Vector2(0.63, 0.63)
+texture = ExtResource("feed_pen_base")
+
+[node name="SheepFriend" type="Sprite2D" parent="ActivityAreas/FeedArea" unique_id=807929180]
+z_index = 1
+position = Vector2(-96, 4)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("hub_feed_sheep")
+script = ExtResource("hub_wander")
+movement_bounds = Rect2(-110, -18, 220, 72)
+move_speed = 16.0
+
+[node name="PigFriend" type="Sprite2D" parent="ActivityAreas/FeedArea" unique_id=1213186639]
+z_index = 1
+position = Vector2(-36.735, 37.235)
+scale = Vector2(0.093676284, 0.09287876)
+texture = ExtResource("hub_feed_pig")
+script = ExtResource("hub_wander")
+movement_bounds = Rect2(-110, -18, 220, 72)
+move_speed = 14.0
+
+[node name="ChickenFriend" type="Sprite2D" parent="ActivityAreas/FeedArea" unique_id=220434639]
+z_index = 1
+position = Vector2(66, 32)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("hub_feed_chicken")
+script = ExtResource("hub_wander")
+movement_bounds = Rect2(-110, -18, 220, 72)
+move_speed = 18.0
+
+[node name="GoatFriend" type="Sprite2D" parent="ActivityAreas/FeedArea" unique_id=1430169949]
+visible = false
+z_index = 1
+position = Vector2(102, 4)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("hub_feed_goat")
+script = ExtResource("hub_wander")
+movement_bounds = Rect2(-110, -18, 220, 72)
+move_speed = 15.0
+
+[node name="FeedTroughFront" type="Sprite2D" parent="ActivityAreas/FeedArea" unique_id=2066092076]
+visible = false
+position = Vector2(0, -6)
+scale = Vector2(0.63, 0.63)
+texture = ExtResource("feed_trough_front")
+
+[node name="DoneBadge" type="Label" parent="ActivityAreas/FeedArea" unique_id=757512727]
+visible = false
+offset_left = 50.0
+offset_top = -144.0
+offset_right = 118.0
+offset_bottom = -76.0
+theme_override_colors/font_color = Color(0.18, 0.58, 0.22, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 56
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActivityAreas/FeedArea" unique_id=1398896263]
+position = Vector2(10, 30)
+shape = SubResource("4")
+
+[node name="AnimalPenArea" type="Area2D" parent="ActivityAreas" unique_id=1389542501]
+position = Vector2(1519, 482)
+script = ExtResource("6")
+target_scene = ExtResource("11")
+visual_node = NodePath("StallBase")
+tap_sound = ExtResource("20")
+metadata/_edit_group_ = true
+
+[node name="StallBase" type="Sprite2D" parent="ActivityAreas/AnimalPenArea" unique_id=1110077382]
+position = Vector2(1, 2.9999995)
+scale = Vector2(0.62, 0.62)
+texture = ExtResource("grooming_stalls")
+
+[node name="StallPony" type="Node2D" parent="ActivityAreas/AnimalPenArea" unique_id=708139561]
+position = Vector2(-88, 14)
+
+[node name="Animal" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallPony" unique_id=152075014]
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("animal_pony")
+
+[node name="Dirt" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallPony" unique_id=195640898]
+position = Vector2(2, 0)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("dirt_smudge")
+
+[node name="CleanSparkle" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallPony" unique_id=2024213540]
+visible = false
+position = Vector2(2, -8)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("clean_sparkle")
+
+[node name="StallCow" type="Node2D" parent="ActivityAreas/AnimalPenArea" unique_id=667194154]
+position = Vector2(-30, 16)
+
+[node name="Animal" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallCow" unique_id=1489629760]
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("13")
+
+[node name="Dirt" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallCow" unique_id=1260379365]
+position = Vector2(2, 0)
+scale = Vector2(0.105, 0.105)
+texture = ExtResource("dirt_smudge")
+
+[node name="CleanSparkle" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallCow" unique_id=1034332145]
+visible = false
+position = Vector2(2, -8)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("clean_sparkle")
+
+[node name="StallSheep" type="Node2D" parent="ActivityAreas/AnimalPenArea" unique_id=489310885]
+position = Vector2(30, 16)
+
+[node name="Animal" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallSheep" unique_id=289648302]
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("animal_sheep")
+
+[node name="Dirt" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallSheep" unique_id=1539066432]
+position = Vector2(2, 0)
+scale = Vector2(0.105, 0.105)
+texture = ExtResource("dirt_smudge")
+
+[node name="CleanSparkle" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallSheep" unique_id=1907451018]
+visible = false
+position = Vector2(2, -8)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("clean_sparkle")
+
+[node name="StallDuck" type="Node2D" parent="ActivityAreas/AnimalPenArea" unique_id=145596143]
+visible = false
+position = Vector2(88, 18)
+
+[node name="Animal" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallDuck" unique_id=1968591079]
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("animal_duck")
+
+[node name="Dirt" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallDuck" unique_id=320886854]
+position = Vector2(2, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("dirt_smudge")
+
+[node name="CleanSparkle" type="Sprite2D" parent="ActivityAreas/AnimalPenArea/StallDuck" unique_id=2082772341]
+visible = false
+position = Vector2(2, -8)
+scale = Vector2(0.105, 0.105)
+texture = ExtResource("clean_sparkle")
+
+[node name="PenFront" type="Sprite2D" parent="ActivityAreas/AnimalPenArea" unique_id=121664304]
+z_index = 2
+position = Vector2(-4.3199883, 24.500011)
+scale = Vector2(0.6276562, 0.4589844)
+texture = ExtResource("animal_pen_front")
+
+[node name="DoneBadge" type="Label" parent="ActivityAreas/AnimalPenArea" unique_id=992159238]
+visible = false
+offset_left = 50.0
+offset_top = -144.0
+offset_right = 118.0
+offset_bottom = -76.0
+theme_override_colors/font_color = Color(0.18, 0.58, 0.22, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.713725, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 56
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActivityAreas/AnimalPenArea" unique_id=281906880]
+position = Vector2(12, -35)
+shape = SubResource("5")
+
+[node name="Decorations" type="Node2D" parent="." unique_id=1633375364]
+z_index = 5
+
+[node name="FlowerBed" type="Sprite2D" parent="Decorations" unique_id=674613197]
+position = Vector2(759.99994, 781.99994)
+scale = Vector2(0.38, 0.38)
+texture = ExtResource("decor_flower_path")
+
+[node name="DuckPond" type="Sprite2D" parent="Decorations" unique_id=1638758740]
+position = Vector2(792, 939.00006)
+scale = Vector2(0.56815445, 0.4939354)
+texture = ExtResource("decor_duck_pond")
+
+[node name="MoleGardenArea" type="Area2D" parent="Decorations" unique_id=1673851337]
+position = Vector2(1586, 904)
+script = ExtResource("4")
+target_scene = ExtResource("mole_garden_scene")
+visual_node = NodePath("Burrow")
+tap_sound = ExtResource("20")
+metadata/_edit_group_ = true
+
+[node name="Burrow" type="Sprite2D" parent="Decorations/MoleGardenArea" unique_id=1660164431]
+position = Vector2(0, -8)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("mole_burrow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Decorations/MoleGardenArea" unique_id=286331807]
+position = Vector2(0, -2)
+shape = SubResource("6")
+
+[node name="RainbowTree" type="Sprite2D" parent="Decorations" unique_id=1674131983]
+position = Vector2(1472, 160)
+scale = Vector2(0.44, 0.44)
+texture = ExtResource("decor_orchard_tree")
+script = ExtResource("rainbow_tree_script")
+
+[node name="DropAnchor" type="Marker2D" parent="Decorations/RainbowTree" unique_id=777236832]
+position = Vector2(4.545578, -61.363632)
+
+[node name="Windmill" type="Sprite2D" parent="Decorations" unique_id=1417221125]
+position = Vector2(457.00003, 200)
+scale = Vector2(0.15, 0.144)
+texture = ExtResource("decor_windmill")
+script = ExtResource("decor_windmill_script")
+
+[node name="FanCenter" type="Node2D" parent="Decorations/Windmill" unique_id=2147483646]
+position = Vector2(-12, -246)
+
+[node name="FanSprite" type="Sprite2D" parent="Decorations/Windmill/FanCenter" unique_id=2147483645]
+z_index = 1
+texture_filter = 1
+texture = ExtResource("decor_windmill_fan_0")
+
+[node name="PrettierFenceFlowers" type="Node2D" parent="Decorations" unique_id=1088877513]
+visible = false
+position = Vector2(1450, 430)
+
+[node name="FenceFlowerA" type="Sprite2D" parent="Decorations/PrettierFenceFlowers" unique_id=741127197]
+position = Vector2(-355, 0)
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("fence_flower")
+
+[node name="FenceFlowerB" type="Sprite2D" parent="Decorations/PrettierFenceFlowers" unique_id=749004531]
+position = Vector2(-242, 8)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("fence_flower")
+
+[node name="FenceFlowerC" type="Sprite2D" parent="Decorations/PrettierFenceFlowers" unique_id=1349492260]
+position = Vector2(-120, -5)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("fence_flower")
+
+[node name="FenceFlowerD" type="Sprite2D" parent="Decorations/PrettierFenceFlowers" unique_id=1951899327]
+position = Vector2(0, 8)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("fence_flower")
+
+[node name="FenceFlowerE" type="Sprite2D" parent="Decorations/PrettierFenceFlowers" unique_id=812739581]
+position = Vector2(128, -2)
+scale = Vector2(0.092, 0.092)
+texture = ExtResource("fence_flower")
+
+[node name="FenceFlowerF" type="Sprite2D" parent="Decorations/PrettierFenceFlowers" unique_id=71503500]
+position = Vector2(254, 8)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("fence_flower")
+
+[node name="AmbientLife" type="Node2D" parent="." unique_id=2055718590]
+z_index = 9
+
+[node name="CoopChickens" type="Node2D" parent="AmbientLife" unique_id=984408607]
+
+[node name="ChickenA" parent="AmbientLife/CoopChickens" unique_id=1646719323 instance=ExtResource("ambient_chicken_scene")]
+position = Vector2(566, 636.99994)
+scale = Vector2(0.55, 0.55)
+movement_bounds = Rect2(150, 680, 480, 180)
+move_speed = 38.0
+idle_duration_range = Vector2(1.1, 2.5)
+waddle_distance_range = Vector2(42, 105)
+cluck_interval_range = Vector2(8.5, 16)
+
+[node name="ChickenB" parent="AmbientLife/CoopChickens" unique_id=1808387870 instance=ExtResource("ambient_chicken_scene")]
+position = Vector2(691, 484)
+scale = Vector2(0.58, 0.58)
+movement_bounds = Rect2(150, 680, 480, 180)
+move_speed = 34.0
+idle_duration_range = Vector2(1.4, 2.9)
+waddle_distance_range = Vector2(36, 96)
+cluck_interval_range = Vector2(10, 18)
+
+[node name="ChickenC" parent="AmbientLife/CoopChickens" unique_id=1086628667 instance=ExtResource("ambient_chicken_scene")]
+position = Vector2(276, 449)
+scale = Vector2(0.5, 0.5)
+movement_bounds = Rect2(150, 680, 480, 180)
+move_speed = 32.0
+idle_duration_range = Vector2(1.7, 3.2)
+waddle_distance_range = Vector2(30, 84)
+cluck_interval_range = Vector2(12, 20)
+
+[node name="CowFriend" type="Node2D" parent="AmbientLife" unique_id=753242299]
+
+[node name="Cow" parent="AmbientLife/CowFriend" unique_id=1416986445 instance=ExtResource("ambient_chicken_scene")]
+z_index = 12
+position = Vector2(534, 888.00006)
+scale = Vector2(1.3, 1.3)
+idle_texture = ExtResource("13")
+happy_texture = ExtResource("cow_happy")
+random_clucks_enabled = false
+movement_bounds = Rect2(430, 850, 230, 95)
+move_speed = 24.0
+idle_duration_range = Vector2(1.8, 3.7)
+waddle_distance_range = Vector2(24, 70)
+cluck_sounds = Array[AudioStream]([ExtResource("cow_moo")])
+cluck_volume_db = -8.0
+
+[node name="Bees" type="Node2D" parent="AmbientLife" unique_id=440335]
+
+[node name="FlowerBeeA" parent="AmbientLife/Bees" unique_id=617667449 instance=ExtResource("bee_scene")]
+position = Vector2(907, 820)
+scale = Vector2(0.4, 0.4)
+movement_bounds = Rect2(104, 742, 205, 115)
+move_speed = 30.0
+
+[node name="FlowerBeeB" parent="AmbientLife/Bees" unique_id=990002748 instance=ExtResource("bee_scene")]
+position = Vector2(1510, 710)
+scale = Vector2(0.4, 0.4)
+movement_bounds = Rect2(1435, 660, 240, 120)
+move_speed = 32.0
+
+[node name="ForegroundBee" parent="AmbientLife/Bees" unique_id=1097255215 instance=ExtResource("bee_scene")]
+position = Vector2(1250, 535)
+scale = Vector2(0.4, 0.4)
+movement_bounds = Rect2(1210, 500, 225, 125)
+move_speed = 42.0
+foreground_enabled = true
+foreground_position = Vector2(1075, 760)
+foreground_interval_range = Vector2(9, 17)
+foreground_stay_duration = 2.4
+foreground_scale_multiplier = 1.75
+
+[node name="Butterflies" type="Node2D" parent="AmbientLife" unique_id=1636474052]
+
+[node name="GardenButterflyA" parent="AmbientLife/Butterflies" unique_id=2081960664 instance=ExtResource("butterfly_scene")]
+position = Vector2(1320, 740)
+scale = Vector2(0.62, 0.62)
+movement_bounds = Rect2(1190, 670, 280, 150)
+move_speed = 22.0
+
+[node name="GardenButterflyB" parent="AmbientLife/Butterflies" unique_id=772488502 instance=ExtResource("butterfly_scene")]
+position = Vector2(1508, 790)
+scale = Vector2(0.54, 0.54)
+movement_bounds = Rect2(1390, 705, 250, 120)
+move_speed = 20.0
+
+[node name="FlowerButterfly" parent="AmbientLife/Butterflies" unique_id=2001706725 instance=ExtResource("butterfly_scene")]
+position = Vector2(200, 780)
+scale = Vector2(0.5, 0.5)
+movement_bounds = Rect2(90, 735, 235, 125)
+move_speed = 18.0
+
+[node name="CatMouseChase" parent="AmbientLife" unique_id=1895648575 instance=ExtResource("ambient_chase_scene")]
+lane_y = 830.0
+interval_range = Vector2(20, 36)
+
+[node name="SpringPondGeese" parent="AmbientLife" unique_id=961423782 instance=ExtResource("spring_geese_scene")]
+position = Vector2(692, 306)
+scale = Vector2(0.7, 0.7)
+
+[node name="DuckPondPlay" parent="AmbientLife" unique_id=1965763900 instance=ExtResource("duck_pond_play_scene")]
+position = Vector2(791, 934)
+
+[node name="SantaSleighFlyer" parent="AmbientLife" unique_id=2071030634 instance=ExtResource("santa_sleigh_scene")]
+
+[node name="SeasonalTapSurprises" parent="AmbientLife" unique_id=234982694 instance=ExtResource("seasonal_surprises_scene")]
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=1762198448]
+
+[node name="DayLabel" type="Label" parent="Hud" unique_id=29256021]
+offset_left = 60.0
+offset_top = 44.0
+offset_right = 340.0
+offset_bottom = 86.0
+theme_override_colors/font_color = Color(0.33, 0.22, 0.14, 1)
+theme_override_font_sizes/font_size = 34
+text = "Year 1 -  Day 1"
+
+[node name="SeasonIcon" type="TextureRect" parent="Hud" unique_id=1714566919]
+offset_left = 58.0
+offset_top = 86.0
+offset_right = 104.0
+offset_bottom = 132.0
+mouse_filter = 2
+texture = ExtResource("season_spring")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SeasonLabel" type="Label" parent="Hud" unique_id=2029983731]
+offset_left = 112.0
+offset_top = 88.0
+offset_right = 564.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.33, 0.22, 0.14, 1)
+theme_override_font_sizes/font_size = 30
+text = "Spring"
+
+[node name="SummaryLabel" type="Label" parent="Hud" unique_id=7220557]
+offset_left = 60.0
+offset_top = 130.0
+offset_right = 564.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0.33, 0.22, 0.14, 1)
+theme_override_font_sizes/font_size = 26
+text = "Chores: 0 / 5"
+
+[node name="NextDayButton" type="Button" parent="Hud" unique_id=1534228929]
+offset_left = 1716.0
+offset_top = 36.0
+offset_right = 1876.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 32
+icon = ExtResource("21_mm6dm")
+flat = true
+autowrap_mode = 2
+clip_text = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="SettingsButton" type="Button" parent="Hud" unique_id=1210015033]
+offset_left = 60.0
+offset_top = 178.0
+offset_right = 188.0
+offset_bottom = 306.0
+tooltip_text = "Settings"
+icon = ExtResource("settings_icon")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FarmNightTransition" parent="Hud" unique_id=1836545603 instance=ExtResource("night_transition_scene")]
+transition_duration = 5.0
+
+[node name="SettingsPanel" parent="Hud" unique_id=1225878708 instance=ExtResource("settings_panel_scene")]
+visible = false
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=16335316]
+script = ExtResource("responsive_layout")

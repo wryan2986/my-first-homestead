@@ -1,0 +1,200 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://scripts/chores/MilkingScene.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/animals/cow_idle.png" id="2"]
+[ext_resource type="Texture2D" path="res://art/props/milk_bucket.png" id="3"]
+[ext_resource type="AudioStream" path="res://sounds/milk.ogg" id="4"]
+[ext_resource type="AudioStream" path="res://sounds/complete.ogg" id="5"]
+[ext_resource type="Texture2D" path="res://art/effects/success_glow.png" id="6"]
+[ext_resource type="Script" path="res://scripts/ui/MilkBucketFill.gd" id="7"]
+[ext_resource type="Texture2D" path="res://art/ui/back_button.png" id="9"]
+[ext_resource type="Script" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="14"]
+[ext_resource type="Script" path="res://scripts/ui/SeasonalBackground.gd" id="15"]
+[ext_resource type="Texture2D" path="res://art/props/milking_stanchion_back.png" id="16"]
+[ext_resource type="Texture2D" path="res://art/animals/cow_blinking.png" id="17"]
+[ext_resource type="Texture2D" path="res://art/animals/cow_happy.png" id="18"]
+[ext_resource type="Texture2D" path="res://art/animals/cow_celebrating.png" id="20"]
+[ext_resource type="AudioStream" path="res://sounds/cow_moo.wav" id="21"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(220, 150)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(418, 286)
+
+[node name="MilkingScene" type="Node2D"]
+script = ExtResource("1")
+cow_rig = NodePath("CowRig")
+pet_area = NodePath("CowRig/CowPetArea")
+udder_area = NodePath("CowRig/UdderArea")
+cow_visual = NodePath("CowRig/Cow")
+bucket_node = NodePath("Bucket")
+bucket_fill = NodePath("Bucket/MilkFill")
+milk_stream_source = NodePath("CowRig/UdderArea/MilkStreamSource")
+milk_stream_target = NodePath("Bucket/MilkStreamTarget")
+pet_glow = NodePath("CowRig/CowPetArea/CowPetGlow")
+udder_glow = NodePath("CowRig/UdderArea/UdderTapGlow")
+progress_label = NodePath("Hud/ProgressLabel")
+feedback_label = NodePath("Hud/FeedbackLabel")
+completion_panel = NodePath("Hud/CompletionPanel")
+completion_label = NodePath("Hud/CompletionPanel/CompletionLabel")
+back_button = NodePath("Hud/BackButton")
+cow_idle_texture = ExtResource("2")
+cow_blinking_texture = ExtResource("17")
+cow_happy_texture = ExtResource("18")
+cow_celebrating_texture = ExtResource("20")
+milk_sound = ExtResource("4")
+cow_moo_sound = ExtResource("21")
+completion_sound = ExtResource("5")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+script = ExtResource("15")
+spring_texture_path = "res://art/backgrounds/milking_barn_background_spring.png"
+summer_texture_path = "res://art/backgrounds/milking_barn_background_summer.png"
+fall_texture_path = "res://art/backgrounds/milking_barn_background_fall.png"
+winter_texture_path = "res://art/backgrounds/milking_barn_background_winter.png"
+
+[node name="MilkingStanchion" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(940, 620)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("16")
+
+[node name="CowRig" type="Node2D" parent="."]
+position = Vector2(924, 545)
+
+[node name="Cow" type="Sprite2D" parent="CowRig"]
+z_index = 2
+position = Vector2(0, 0)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("2")
+
+[node name="CowPetArea" type="Area2D" parent="CowRig"]
+position = Vector2(0, 18)
+input_pickable = false
+
+[node name="CowPetGlow" type="Sprite2D" parent="CowRig/CowPetArea"]
+modulate = Color(1, 0.96, 0.54, 0.22)
+z_index = 2
+position = Vector2(-55, -92)
+scale = Vector2(0.24, 0.19)
+texture = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CowRig/CowPetArea"]
+position = Vector2(0, -4)
+shape = SubResource("2")
+
+[node name="UdderArea" type="Area2D" parent="CowRig"]
+position = Vector2(-50, 199)
+input_pickable = false
+
+[node name="UdderTapGlow" type="Sprite2D" parent="CowRig/UdderArea"]
+modulate = Color(1, 0.96, 0.54, 0.22)
+z_index = 2
+position = Vector2(125, -98)
+scale = Vector2(0.22547, 0.176172)
+texture = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CowRig/UdderArea"]
+position = Vector2(132, -85)
+shape = SubResource("1")
+
+[node name="MilkStreamSource" type="Marker2D" parent="CowRig/UdderArea"]
+position = Vector2(132, -85)
+
+[node name="Bucket" type="Sprite2D" parent="."]
+z_index = 4
+position = Vector2(1006, 712)
+scale = Vector2(0.29, 0.26)
+texture = ExtResource("3")
+
+[node name="MilkStreamTarget" type="Marker2D" parent="Bucket"]
+position = Vector2(-3.74421, -84.85771)
+
+[node name="MilkFill" type="Node2D" parent="Bucket"]
+z_index = 6
+position = Vector2(-3.47186, -17.5968)
+script = ExtResource("7")
+body_node = NodePath("MilkBody")
+surface_node = NodePath("MilkSurface")
+shine_node = NodePath("MilkShine")
+splash_texture = ExtResource("6")
+empty_surface_y = 16.0
+full_surface_y = -34.0
+empty_half_width = 46.0
+full_half_width = 94.0
+surface_half_height = 13.0
+body_bottom_y = 64.0
+body_bottom_half_width = 68.0
+max_visible_body_depth = 24.0
+
+[node name="MilkBody" type="Polygon2D" parent="Bucket/MilkFill"]
+z_index = 1
+color = Color(0.894118, 0.945098, 1, 1)
+
+[node name="MilkSurface" type="Polygon2D" parent="Bucket/MilkFill"]
+z_index = 2
+color = Color(0.984314, 0.992157, 1, 1)
+
+[node name="MilkShine" type="Polygon2D" parent="Bucket/MilkFill"]
+z_index = 3
+color = Color(1, 1, 1, 0.72)
+
+[node name="Hud" type="CanvasLayer" parent="."]
+
+[node name="BackButton" type="Button" parent="Hud"]
+visible = false
+offset_left = 1656.0
+offset_top = -6.0
+offset_right = 1917.0
+offset_bottom = 264.0
+theme_override_font_sizes/font_size = 28
+icon = ExtResource("9")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FeedbackLabel" type="Label" parent="Hud"]
+visible = false
+offset_left = 458.0
+offset_top = 968.0
+offset_right = 1462.0
+offset_bottom = 1028.0
+theme_override_font_sizes/font_size = 28
+text = "Pat the cow to begin."
+horizontal_alignment = 1
+
+[node name="ProgressLabel" type="Label" parent="Hud"]
+offset_left = 584.0
+offset_top = 24.0
+offset_right = 1336.0
+offset_bottom = 116.0
+theme_override_font_sizes/font_size = 32
+text = "The cow is walking in..."
+horizontal_alignment = 1
+
+[node name="CompletionPanel" type="Panel" parent="Hud"]
+visible = false
+self_modulate = Color(1, 0.98, 0.88, 0.96)
+offset_left = 596.0
+offset_top = 132.0
+offset_right = 1392.0
+offset_bottom = 388.0
+
+[node name="CompletionLabel" type="Label" parent="Hud/CompletionPanel"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 82.0
+offset_right = 716.0
+offset_bottom = 158.0
+theme_override_font_sizes/font_size = 38
+text = "The milk bucket is full!"
+horizontal_alignment = 1
+
+[node name="ResponsiveLayout" type="Node" parent="."]
+script = ExtResource("14")
+fit_design_roots_to_viewport = true
+
+[connection signal="input_event" from="CowRig/CowPetArea" to="." method="_on_cow_pet_area_input_event"]
+[connection signal="input_event" from="CowRig/UdderArea" to="." method="_on_udder_area_input_event"]

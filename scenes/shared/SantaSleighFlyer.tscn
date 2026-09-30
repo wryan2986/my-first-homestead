@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bymx6u8686w1u"]
+
+[ext_resource type="Script" uid="uid://dtdhqyxr7l80p" path="res://scripts/ui/SantaSleighFlyer.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dh2nat04pl7s2" path="res://art/props/santa_sleigh.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cbw6yjreg0rii" path="res://art/effects/magic_sparkle.png" id="3"]
+[ext_resource type="AudioStream" uid="uid://c75cnukn425nc" path="res://sounds/santa_bells.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://0yn30d71rrkm" path="res://sounds/santa_ho_ho_variant_1.ogg" id="6"]
+[ext_resource type="AudioStream" uid="uid://c6yi48slidi4f" path="res://sounds/santa_ho_ho_variant_2.ogg" id="7"]
+[ext_resource type="AudioStream" uid="uid://dwbep4tqrlvpd" path="res://sounds/santa_ho_ho_variant_3.ogg" id="8"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(500, 220)
+
+[node name="SantaSleighFlyer" type="Node2D" unique_id=1230965365]
+z_index = 22
+scale = Vector2(2, 2)
+script = ExtResource("1")
+sleigh_sprite = NodePath("Sleigh")
+tap_area = NodePath("Sleigh/TapArea")
+sparkle_texture = ExtResource("3")
+bell_sound = ExtResource("4")
+ho_ho_sound = ExtResource("6")
+ho_ho_sounds = Array[AudioStream]([ExtResource("6"), ExtResource("7"), ExtResource("8")])
+lane_y = 96.0
+
+[node name="Sleigh" type="Sprite2D" parent="." unique_id=452120530]
+z_index = 22
+texture = ExtResource("2")
+
+[node name="TapArea" type="Area2D" parent="Sleigh" unique_id=2085565802]
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sleigh/TapArea" unique_id=1503934110]
+shape = SubResource("1")

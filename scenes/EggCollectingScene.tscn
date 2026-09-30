@@ -1,0 +1,216 @@
+[gd_scene format=3 uid="uid://jugsxux4o3d8"]
+
+[ext_resource type="Script" uid="uid://3rj1s7la7q0h" path="res://scripts/EggCollectingScene.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/shared/Egg.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://cpku3ks6fonjm" path="res://scenes/shared/BouncyCritter.tscn" id="3"]
+[ext_resource type="Texture2D" path="res://art/props/egg_basket_empty.png" id="4"]
+[ext_resource type="AudioStream" uid="uid://c2umy4bhy05j1" path="res://sounds/eggcollect.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://cn3sl3cat4etx" path="res://sounds/complete.ogg" id="7"]
+[ext_resource type="Texture2D" uid="uid://b0cahp86vuxyg" path="res://art/effects/music_note_soft.png" id="8"]
+[ext_resource type="PackedScene" path="res://scenes/shared/EggBasketFill.tscn" id="9"]
+[ext_resource type="AudioStream" uid="uid://5l1vxan12uq6" path="res://sounds/duck_pond_note_c.wav" id="10"]
+[ext_resource type="AudioStream" uid="uid://ceev8aaun2w5c" path="res://sounds/duck_pond_note_e.wav" id="11"]
+[ext_resource type="AudioStream" uid="uid://dd4kekp12u7y4" path="res://sounds/duck_pond_note_g.wav" id="12"]
+[ext_resource type="AudioStream" uid="uid://coie8kj5i4cyc" path="res://sounds/duck_pond_note_a.wav" id="13"]
+[ext_resource type="Texture2D" uid="uid://d0vvtmx0725sy" path="res://art/ui/back_button.png" id="back_icon"]
+[ext_resource type="Texture2D" uid="uid://b62mjty40g1ov" path="res://art/backgrounds/chicken_coop_background_fall.png" id="bg_fall"]
+[ext_resource type="Texture2D" uid="uid://be257o2p6uik1" path="res://art/backgrounds/chicken_coop_background_spring.png" id="bg_spring"]
+[ext_resource type="Texture2D" uid="uid://xw74epkny7h" path="res://art/backgrounds/chicken_coop_background_summer.png" id="bg_summer"]
+[ext_resource type="Texture2D" uid="uid://dlk0aiyllsila" path="res://art/backgrounds/chicken_coop_background_winter.png" id="bg_winter"]
+[ext_resource type="AudioStream" uid="uid://cqsgpquvmb3du" path="res://sounds/chicken_cluck_variant_1.ogg" id="cluck_1"]
+[ext_resource type="AudioStream" uid="uid://c2kfr3x57ma1u" path="res://sounds/chicken_cluck_variant_2.ogg" id="cluck_2"]
+[ext_resource type="AudioStream" uid="uid://cdtr6rrbaxbik" path="res://sounds/chicken_cluck_variant_3.ogg" id="cluck_3"]
+[ext_resource type="AudioStream" uid="uid://d31i3lerj0s40" path="res://sounds/chicken_cluck_variant_4.ogg" id="cluck_4"]
+[ext_resource type="AudioStream" uid="uid://cwxkgyn2lwjwe" path="res://sounds/chicken_cluck_variant_5.ogg" id="cluck_5"]
+[ext_resource type="Script" uid="uid://dbjooo3urqp4f" path="res://scripts/ui/ResponsiveCoverSprite2D.gd" id="cover_sprite"]
+[ext_resource type="Texture2D" uid="uid://dn2h8d1838u14" path="res://art/props/chicken_coop_hay_floor.png" id="hay_floor"]
+[ext_resource type="Texture2D" path="res://art/props/chicken_nest_hay_pocket.png" id="nest_box"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+[ext_resource type="Script" uid="uid://bg6ih6xf5wa5h" path="res://scripts/ui/SeasonalBackground.gd" id="seasonal_bg"]
+
+[node name="EggCollectingScene" type="Node2D" unique_id=737480276]
+script = ExtResource("1")
+basket_node = NodePath("Basket")
+basket_fill_visual = NodePath("Basket/BasketEggFill")
+egg_collection_target = NodePath("Basket/EggDropTarget")
+feedback_label = NodePath("Hud/FeedbackLabel")
+completion_panel = NodePath("Hud/CompletionPanel")
+completion_label = NodePath("Hud/CompletionPanel/CompletionLabel")
+back_button = NodePath("Hud/BackButton")
+egg_paths = Array[NodePath]([NodePath("EggA"), NodePath("EggB"), NodePath("EggC"), NodePath("EggD"), NodePath("EggE"), NodePath("EggF")])
+chicken_paths = Array[NodePath]([NodePath("ChickenOne"), NodePath("ChickenTwo"), NodePath("ChickenThree"), NodePath("ChickenFour"), NodePath("ChickenFive")])
+note_effect_texture = ExtResource("8")
+egg_note_sounds = Array[AudioStream]([ExtResource("10"), ExtResource("11"), ExtResource("12"), ExtResource("13"), ExtResource("10"), ExtResource("11")])
+egg_note_pitch_scales = Array[float]([1.0, 1.0, 1.0, 1.0, 2.0, 2.0])
+egg_note_colors = Array[Color]([Color(0.43, 0.77, 1, 1), Color(0.48, 0.89, 0.65, 1), Color(1, 0.9, 0.43, 1), Color(1, 0.71, 0.31, 1), Color(1, 0.42, 0.42, 1), Color(0.72, 0.55, 1, 1)])
+egg_collect_sound = ExtResource("5")
+chicken_sound = ExtResource("cluck_1")
+chicken_sounds = Array[AudioStream]([ExtResource("cluck_1"), ExtResource("cluck_2"), ExtResource("cluck_3"), ExtResource("cluck_4"), ExtResource("cluck_5")])
+completion_sound = ExtResource("7")
+
+[node name="CoopBackground" type="Sprite2D" parent="." unique_id=772291388]
+z_index = -10
+position = Vector2(960, 540)
+texture = ExtResource("bg_spring")
+script = ExtResource("seasonal_bg")
+spring_texture = ExtResource("bg_spring")
+summer_texture = ExtResource("bg_summer")
+fall_texture = ExtResource("bg_fall")
+winter_texture = ExtResource("bg_winter")
+
+[node name="HayFloor" type="Sprite2D" parent="." unique_id=1817616254]
+visible = true
+z_index = -9
+position = Vector2(960, 540)
+texture = ExtResource("hay_floor")
+script = ExtResource("cover_sprite")
+
+[node name="Basket" type="Sprite2D" parent="." unique_id=339521399]
+position = Vector2(1571, 771.00006)
+scale = Vector2(1.0027175, 0.7887121)
+texture = ExtResource("4")
+
+[node name="EggDropTarget" type="Marker2D" parent="Basket" unique_id=1038733099]
+position = Vector2(-15.3455305, 26.932411)
+
+[node name="BasketEggFill" parent="Basket" unique_id=2009608046 instance=ExtResource("9")]
+z_index = 1
+position = Vector2(-4.53104, 19.646559)
+egg_positions = Array[Vector2]([Vector2(-75, -32), Vector2(-45, -50), Vector2(-15, -38), Vector2(15, -38), Vector2(45, -50), Vector2(75, -32)])
+egg_scale = Vector2(0.26, 0.26)
+
+[node name="ChickenOne" parent="." unique_id=699050846 instance=ExtResource("3")]
+position = Vector2(220, 757)
+
+[node name="ChickenTwo" parent="." unique_id=1842579294 instance=ExtResource("3")]
+modulate = Color(1, 0.96, 0.84, 1)
+position = Vector2(845, 804)
+cluck_interval_range = Vector2(5, 10.5)
+
+[node name="ChickenThree" parent="." unique_id=1892903796 instance=ExtResource("3")]
+modulate = Color(1, 0.9, 0.84, 1)
+position = Vector2(1512, 799)
+cluck_interval_range = Vector2(5.5, 11)
+
+[node name="ChickenFour" parent="." unique_id=1822877840 instance=ExtResource("3")]
+modulate = Color(1, 0.9, 0.84, 1)
+position = Vector2(495, 923)
+cluck_interval_range = Vector2(5.5, 11)
+
+[node name="ChickenFive" parent="." unique_id=1701913843 instance=ExtResource("3")]
+modulate = Color(1, 0.9, 0.84, 1)
+position = Vector2(1229, 897)
+cluck_interval_range = Vector2(5.5, 11)
+
+[node name="NestA" type="Sprite2D" parent="." unique_id=910000001]
+visible = true
+z_index = -2
+position = Vector2(463, 342)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("nest_box")
+
+[node name="NestB" type="Sprite2D" parent="." unique_id=910000002]
+visible = true
+z_index = -2
+position = Vector2(995, 344)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("nest_box")
+
+[node name="NestC" type="Sprite2D" parent="." unique_id=910000003]
+visible = true
+z_index = -2
+position = Vector2(1462, 346)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("nest_box")
+
+[node name="NestD" type="Sprite2D" parent="." unique_id=910000004]
+visible = true
+z_index = -2
+position = Vector2(511, 566)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("nest_box")
+
+[node name="NestE" type="Sprite2D" parent="." unique_id=910000005]
+visible = true
+z_index = -2
+position = Vector2(1064, 566)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("nest_box")
+
+[node name="NestF" type="Sprite2D" parent="." unique_id=910000006]
+visible = true
+z_index = -2
+position = Vector2(1455, 560)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("nest_box")
+
+[node name="EggA" parent="." unique_id=1940830780 instance=ExtResource("2")]
+position = Vector2(463, 317)
+egg_id = "egg_a"
+
+[node name="EggB" parent="." unique_id=197474380 instance=ExtResource("2")]
+position = Vector2(995, 319)
+egg_id = "egg_b"
+
+[node name="EggC" parent="." unique_id=565608565 instance=ExtResource("2")]
+position = Vector2(1462, 321)
+egg_id = "egg_c"
+
+[node name="EggD" parent="." unique_id=534600570 instance=ExtResource("2")]
+position = Vector2(511, 541)
+egg_id = "egg_d"
+
+[node name="EggE" parent="." unique_id=309899959 instance=ExtResource("2")]
+position = Vector2(1064, 541)
+egg_id = "egg_e"
+
+[node name="EggF" parent="." unique_id=1990414437 instance=ExtResource("2")]
+position = Vector2(1455, 535)
+egg_id = "egg_f"
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=1409805000]
+
+[node name="BackButton" type="Button" parent="Hud" unique_id=52467539]
+visible = false
+offset_left = 1683.0
+offset_top = -1.0
+offset_right = 1924.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 28
+icon = ExtResource("back_icon")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="FeedbackLabel" type="Label" parent="Hud" unique_id=1054947509]
+visible = false
+offset_left = 420.0
+offset_top = 974.0
+offset_right = 1500.0
+offset_bottom = 1034.0
+theme_override_font_sizes/font_size = 28
+text = "Egg in the basket!"
+horizontal_alignment = 1
+
+[node name="CompletionPanel" type="Panel" parent="Hud" unique_id=1315900197]
+visible = false
+self_modulate = Color(1, 0.98, 0.86, 0.96)
+offset_left = 560.0
+offset_top = 364.0
+offset_right = 1360.0
+offset_bottom = 620.0
+
+[node name="CompletionLabel" type="Label" parent="Hud/CompletionPanel" unique_id=1463823811]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 76.0
+offset_right = 728.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 38
+text = "All the eggs are safe and snug!"
+horizontal_alignment = 1
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=1668517366]
+script = ExtResource("responsive_layout")
+fit_design_roots_to_viewport = true

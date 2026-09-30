@@ -1,0 +1,48 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/FarmNightTransition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/effects/firefly_glow.png" id="2"]
+[ext_resource type="AudioStream" path="res://sounds/night_crickets_clip_1.ogg" id="3"]
+[ext_resource type="AudioStream" path="res://sounds/owl_hoot_variant_1.ogg" id="4"]
+[ext_resource type="AudioStream" path="res://sounds/night_crickets_clip_1.ogg" id="5"]
+[ext_resource type="AudioStream" path="res://sounds/night_crickets_clip_2.ogg" id="6"]
+[ext_resource type="AudioStream" path="res://sounds/night_crickets_clip_3.ogg" id="7"]
+[ext_resource type="AudioStream" path="res://sounds/owl_hoot_variant_1.ogg" id="8"]
+[ext_resource type="AudioStream" path="res://sounds/owl_hoot_variant_2.ogg" id="9"]
+[ext_resource type="AudioStream" path="res://sounds/owl_hoot_variant_3.ogg" id="10"]
+
+[node name="FarmNightTransition" type="Control"]
+visible = false
+z_index = 100
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("1")
+overlay = NodePath("NightOverlay")
+firefly_texture = ExtResource("2")
+night_ambience = ExtResource("3")
+night_ambience_clips = Array[AudioStream]([ExtResource("5"), ExtResource("6"), ExtResource("7")])
+owl_sound = ExtResource("4")
+owl_sounds = Array[AudioStream]([ExtResource("8"), ExtResource("9"), ExtResource("10")])
+min_firefly_scale = 0.62
+max_firefly_scale = 0.95
+min_star_radius = 18.0
+max_star_radius = 30.0
+min_firefly_spacing = 110.0
+min_star_spacing = 92.0
+star_moon_exclusion_radius = 145.0
+placement_attempts = 18
+
+[node name="NightOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0470588, 0.0784314, 0.176471, 0)

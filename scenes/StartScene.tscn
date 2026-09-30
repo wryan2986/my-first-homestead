@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://caie72ixsykxs"]
+
+[ext_resource type="Script" uid="uid://b5775r2durwcw" path="res://scripts/StartScene.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dqq888fjlkuu2" path="res://scenes/FarmyardScene.tscn" id="2"]
+[ext_resource type="AudioStream" uid="uid://os6ra4le88xa" path="res://sounds/tap.wav" id="4"]
+[ext_resource type="Texture2D" uid="uid://dbm82rhnbctxx" path="res://art/backgrounds/start_background.png" id="4_2c117"]
+[ext_resource type="Texture2D" uid="uid://gwvqkfv8c5es" path="res://art/ui/settings_button.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cyvsuyui6mdwr" path="res://art/ui/Play_button.png" id="6_x36x8"]
+[ext_resource type="Texture2D" uid="uid://q6v4usmqf8no" path="res://art/ui/title_banner.png" id="11"]
+[ext_resource type="Script" uid="uid://ds0j4xf1ngtye" path="res://scripts/ui/ResponsiveCoverTextureRect.gd" id="cover_rect"]
+[ext_resource type="Script" uid="uid://cbhht3lo1l8le" path="res://scripts/ui/ResponsiveSceneLayout.gd" id="responsive_layout"]
+[ext_resource type="PackedScene" uid="uid://wqv64d1el1dy" path="res://scenes/settings_panel.tscn" id="settings_panel_scene"]
+
+[sub_resource type="StyleBoxFlat" id="StartButtonNormal"]
+bg_color = Color(0.501961, 0.788235, 0.388235, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(0.243137, 0.341176, 0.164706, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+shadow_color = Color(0.25098, 0.156863, 0.0941176, 0.28)
+shadow_size = 18
+shadow_offset = Vector2(0, 9)
+
+[sub_resource type="StyleBoxFlat" id="StartButtonPressed"]
+bg_color = Color(0.411765, 0.690196, 0.313725, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(0.243137, 0.341176, 0.164706, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+shadow_color = Color(0.25098, 0.156863, 0.0941176, 0.18)
+shadow_size = 10
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StartButtonHover"]
+bg_color = Color(0.568627, 0.85098, 0.439216, 1)
+border_width_left = 9
+border_width_top = 9
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color(0.243137, 0.341176, 0.164706, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+shadow_color = Color(0.25098, 0.156863, 0.0941176, 0.28)
+shadow_size = 18
+shadow_offset = Vector2(0, 9)
+
+[node name="StartScene" type="Control" unique_id=350256555]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+farmyard_scene = ExtResource("2")
+title_label = NodePath("TitleLabel")
+start_button = NodePath("StartButton")
+settings_button = NodePath("SettingsButton")
+settings_panel = NodePath("SettingsPanel")
+start_sound = ExtResource("4")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1158974983]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("4_2c117")
+script = ExtResource("cover_rect")
+
+[node name="TitleBanner" type="TextureRect" parent="." unique_id=987682857]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 16.0
+offset_right = 1641.0
+offset_bottom = 326.0
+mouse_filter = 2
+texture = ExtResource("11")
+stretch_mode = 5
+
+[node name="TitleLabel" type="Label" parent="." unique_id=880015275]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 125.0
+offset_right = 1531.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(0.43, 0.19, 0.1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.956863, 0.807843, 0.5)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_font_sizes/font_size = 82
+text = "My First Homestead"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="." unique_id=1773728121]
+layout_mode = 0
+offset_left = 709.0
+offset_top = 377.0
+offset_right = 1239.0
+offset_bottom = 907.0
+theme_override_colors/font_color = Color(0.2, 0.14, 0.09, 1)
+theme_override_colors/font_pressed_color = Color(0.2, 0.14, 0.09, 1)
+theme_override_colors/font_hover_color = Color(0.2, 0.14, 0.09, 1)
+theme_override_constants/h_separation = 18
+theme_override_font_sizes/font_size = 58
+theme_override_styles/normal = SubResource("StartButtonNormal")
+theme_override_styles/pressed = SubResource("StartButtonPressed")
+theme_override_styles/hover = SubResource("StartButtonHover")
+theme_override_styles/focus = SubResource("StartButtonNormal")
+icon = ExtResource("6_x36x8")
+flat = true
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1624540946]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.058333334
+anchor_top = -0.08425926
+anchor_right = 0.0890625
+anchor_bottom = 0.14166667
+offset_left = 48.0
+offset_top = 48.0
+offset_right = 184.0
+offset_bottom = 184.0
+tooltip_text = "Settings"
+icon = ExtResource("6")
+flat = true
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="SettingsPanel" parent="." unique_id=934243345 instance=ExtResource("settings_panel_scene")]
+visible = false
+layout_mode = 0
+
+[node name="ResponsiveLayout" type="Node" parent="." unique_id=1129296740]
+script = ExtResource("responsive_layout")
+hud_canvas_path = NodePath("..")
+anchor_top_right_buttons = false

@@ -1,0 +1,1427 @@
+{
+  "version": 1,
+  "source_catalog": "sounds/voice_over/voice_lines.json",
+  "review": "Manual review by Codex on 2026-07-04. Each entry compares the English toddler prompt to the localized text and is approved for TTS generation.",
+  "reviewed": {
+    "es": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "4fa9d11520f01cab8f9e36bb5ce5e67f971d9d780313452d1dc223385ac90f00"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "e818142ca47510936bea4e77b3b1cc6a3888a863ad2160c214080346104bb51b"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "e6739ed07d035c52c8ad74e21ae06d23d865452ad0d829e9da3d1bdfdc7b76e1"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "c3aedf658681b975107ebb1c420ea9aa2227e70dad8fdb724c0396536993d279"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "e18307f3bdb0c474cbb87c63ceca9871d4024338e529bdc4deb2d2b738f3b259"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "f8f2885cd361844535585d428e5f56e35ed38e619893cacffd925f3a0fb2b421"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "a52cbb34da8d3977723d12417409517df5054e2e2e82d38a458d5de7c306ae81"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "fde1de2838ccf469a3e88597d7c845b28231c705059322033a50a570f7479851"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "b3834b969d041c22c96abd1fa56267130a1e6a69c7cad50198fd6cea233b390f"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "4c2feeeb1e598bab800bd2199758c766c4c390e8d0e72cbb1177ae91f38d5617"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "33cb83378b055fd28abd61eeb24c931da05262b0b7afefed2505e6cf3991fa7a"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "334451d6ef3592a8b1061dd86d248e0bb670ff52a81a98f0da05c8595954883d"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "aa81163d6177853c5fd0acae112fdc1558524b240f5c6e4abac4e849494519ca"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "57e6af958460f44edba562172bc2165630ff0fb2ad131195b2a0eb15db296b50"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "658f9110052c1b7e65cd1ccc4843491798dfc586fdb8243ade059c80f2798b59"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "46b36b38d6cd96ba14b2ee587b1239c610471d682c758adc941d13e81be2935b"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "bfae111152bd4ee3d5159cb0856e3f610cb118e4105fadfc633bc84933b612e0"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "cf8203cf4091f81bedeab41bb2c1efe7ef81211c27ef6c048f07bab8d2934755"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "50ca96331d0c0f7e782df4cd5c5edb7da8cd2e6012936ae718b3f9d1dd11d511"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "3668ac54210427f11bd1eadfed66753bcf91633077ded5b4dcd0ca205365fefe"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "8e65066d846c9043ffc33cf8da61fcbc220560e58cc3527ad0e5d94ff5f65a2c"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "d4c983d5354b48e9e35fafee45d8dddf902f4a4465e835eeeb7d87dacb344284"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "789f86e48e7cdf53669ba05c70fb90a6990319153382e222c3212b1c20de9b37"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "c222d6c87780d66f437c18c2a64a7eea78a25e4a7999aa63d730b931bcb8d9ad"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "a8ec0ca86b165114601450da1a90c12e5f94d05bbaecedf7ca74f0e1dddfc25b"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "dbd5b703f52d2f6417e035e262feea34472729b732100b4287a246e8aa4de3d9"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "44927922da8f37c92100c4a40ce7b1b7e0740b4467a3b2a254ea289856331a82"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "fb7f0cf2d83142d91983e50049985484b4355d25036344b96e7eaeb18cb93c7e"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "ee73b145063b807bf85f398b5ec4975a64eb7782355349c4c1094f8f791fdf0c"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "0155601d173620805926107dc8b1e43170486babe11e16a3645d28817013e1a3"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "59a03e54752e0bde37b1db0c4bb2e118bd4f260f6b41e7e16ce345538042d59b"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "501c992795dd2b72934ef27361d2378d1ba3d05224ad650e6010ab2af2d98579"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "edcce4422f14b3f400b2364e013c37574c027ceba39659e2c9de2518d42b4e32"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "b7d3359ee87eb23b55273aac63c3bf3d25a579c02ee53682c1f21a2cc16c4792"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "0e86aba48c4eda76dcfd18da4f9114a2a7ab538b9d54812550334bf4e869dbfe"
+      }
+    },
+    "fr": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "91b7f01cb6fb666b389fc20f6fe23488bbf4ef50ad1d88cd80a33e47a23d962f"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "3548607679e2f51f88cd54f093724c11ec99746de50c2b6a5a2b623000cb9456"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "514ad6522b980b9d73c55b9dee616224166674a3379fca8f258e3a4ded8e5fed"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "ebdaa02a775ec6de46b7997fc34966996a317bcbaac29a48f5039a5c4e8ecd3e"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "474eb2f2ae0f2911b499c09a48f62c7621df72cd8c12bbede9e36c846b947f22"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "18f662976a7113b37e1e27588c99dc0e9ab52815342471bff4bb2679d3d0b4c1"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "6ebbca3e80bee36057bb21fd2da1d1b8b100c8284feeee83c93f60d1c35d2c33"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "18975d21b305b9a8e0c037cf3674735a710d6b83585d3023fd05b92461e1d87f"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "7a869fff78f3facd687da2ed815f3f51d1c390cd9a75e84e2950f4fadfa3eb17"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "12cd68c8b8691aa91c6378e786037821fe5bd4e0bec6149129e8995baa736ae1"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "28b97ab773769463dc1c06f6daeee2ce9ef6a4d27de55e90e8cf5d1f7ca2b520"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "59a6f4c895db55d3e2e7da14e8ba662539b5424493389eae65c8378c8b45eb2f"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "ede0bdbcd5f2a72d96dcb1d333afc85986100072df5c8b56fd67c4bafbc74dbd"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "f396a8de9be41b5add995af09502a2f6a6354fbf74dc3a902f995c0660109ee1"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "511fe71450c34c9c4c6999bf52c5cdb6795644fcbf09ed54f80bb0cde87b59dd"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "0a7d8e2922ab22be44bb85457db55c83bb558d2f7aa45c6be6a4981ff15bf218"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "aa2d63f04e61c9d782c06b833692471ab3d4fbffd08f7f75ec6c2d6dab2fd7fb"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "09609532f9876899e542aa6d6aaa664baaa89c0150ce8149467cee7cc960a24a"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "a6a1a1da1b1a4d6ee1629586b768ee7516756ab0ce5c49d9668b888345d5f87f"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "81d75077d373a816e84e6634672b0a9be0264436596ad3acca117b7cfbe6efd2"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "d2a844e871eefb044313af0d78e281508774c6dd8eb87ffc3c1890412c28792b"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "e1c437cba5caad824dc592b45933ecc0ce99dee5baa38edc89ddc3cc70ed5178"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "df668a6c04d678530d4366dd3275a9fe04613a14479c2e6990c07186cd4dbf48"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "06a4867e38f3055b7dd801ee4c070d1c2dbc6e6ef4a34e593b1c48ae86bfb439"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "61ea4d85294d11f442373549fd6f32492793a731f0cbd91336838c5c57406ae6"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "02dd7fc57340384bf36516b9e724e37c8c357efb668dd616334e70676eeae863"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "c5f1f782469dad59ab2f63e9a77569836c763b4ec9c63287c207af43bdf31834"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "311e02e04d35b3f0b3486f6a9e4ee49d2b08fd1972ec6f58a27c614b66a37e98"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "1beaac4400eb1d8f0a55995782a307b9e489fb7f5859db4f07a2d6faf6c77e63"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "06d818eabc1f8e068fc2c5b74459a28d04810f685e05717c708d1528ba81ee2d"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "95eafd925a429ba0b33e5ee55d9a0b292ab19a7db1414081146904e59251f876"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "cccf5d7a8b7c0812187b0ad77732dacba14bd3b2c4ef8a15429456d61b427a78"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "de199a1814a59c226cc8fc49a220cd4222e697521c52cb6997089b309e18c948"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "80a05e8ee81b933753a99e9ac0aced3f7bcdcfffcce7db58f0c2194201fbfc0e"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "32d2c0dd9dcfde10d4aa47de51d2e0a18ea9a4aa455cfe783958d01b445fd623"
+      }
+    },
+    "pt-BR": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "1add856f1a310fb777c0c7b1470345117720b7447cb4373428ede35287dabacf"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "02919dd9f5ad0d4619b6bbbd5385aa0730a1f365662e650c6941c4871883e4a9"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "e451e237b25080ddb879dce60cf168daaec2baa97aa28a8f76dc6dbec3939c84"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "71b265ea5fc0bc4b1bc1baaa783ea46e37462561076adcec4b7427be0c049248"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "2f56f8bc78636c7b74a3342020ca62da4d85155ff735695c1ec3db16d2de9c5c"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "31b32bcfcd47d2275290085a58d0bd39681ccf506901c4e45fec08f3417632d1"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "83a4e4ac9f07463c0450098eff7a9c4d8c5eafd53bb8069152245cbd0b8f229d"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "24bf3b958f8e1046660e384937c311c22b234e12eed90dc1c1ade678a9d2ef0f"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "d3550c7cd93fa371cfd1e18a525c319a3267ca513fcac1729675a7b533887748"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "c496f5d111b946095101feb2fd03420709814431f92f00c1bed34d650becddd5"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "f3b166ca6a534078ad39e3cd6631c71b1c870e9fad755997bb5a685841f83087"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "24c2f2c15b92d33cea10d0fb3fcb4d9c61f55301b5875cc72f8bfce86354bed0"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "68c830b1263b850d6245e7e0f0e8152b52e1c0b4f29bca76b6349fc3483ca217"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "90a66dd73ba25317dff7073882d675b43277358338c03219875a69f80b274cb8"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "d88f4701feb3444fb629c248bac7d6d2746c0e0c5ff0ed72ac64cc2e13a16b50"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "906f4330ea07cf6a128a7208a8aacadb49d87783195e6ddd9d1670544a25fb28"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "93e589b1fc060658760995386ffe194af3a3e0d2c1a1d6d17d8e59086ddd7f0f"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "991b8058cdd5146bb77ca7a122e6a85623f7a5e553eccb72ccb410a315e72d33"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "66a4ed1e50965f9fc98dad363adb7029fd856b024babf457d63fc812f92292ac"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "3f4d0cd633099099825ab4badc9beb6d1d7bd4ed83d8cd9fc4001210ea7fc341"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "9c577de23c814e9a58b0da36146cf25246eab6af843393c98c2ec03ab0059a25"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "bdd4c7460d671b508a504f182b82a527f0fc6eec89687c530494091f2cb83ed2"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "08986d22fdd69917353014b5a164d9bee722059331cea7b57ae53161d5a61b8b"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "2151cf126788d35537966006141185a667950bfd6328c6f341c149367d4bb7a6"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "1ef2ce015cbfea83aedbde8ac0f456284174f6c27fe478936358a5d866d38061"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "9e81de9e907b83a61a6ce1d0de7731352223a9034c7573840f8fcd76edea8da0"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "e235dde01d6634789d952680e859eed6494794ce400a00fdd5ff9b7da803f27d"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "8c4402fcaddeb7ab20321605f9dc5641f3846e9078c637f7ac5e9bfdc1e4bf70"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "c4a1b24398faa532eb675b4f55da25aee94c9ebf44e58fa9c436c89aba7cd0ff"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "835202eea43e5a031e0389a7faf82ec918d534295905bf17047b81bcc77d1027"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "cbd6b11dc0581774c44cc5cd414d1b7552025573edd5359c8c083ed2dcd4c808"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "1b03a2176d169224bf0915c109edd44cb5267009a2f78fea02b3c40a79f16653"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "3ac51b9dd3c41fcf89aeac7d98399be039f0bf372e7d0cda11192d880baa9103"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "e9b6b90c421abf737b6c9073edcbabab4d354b505074aeb75cf32464c8624c03"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "a9148452faf6b71ada397499e3c3072b23bb049c91ece122e751bbc23aeb4d8f"
+      }
+    },
+    "de": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "4737f9ae687ef3fe0b31007043a61fde10a247ea3521877c5f5efbccf5bd19e0"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "a14202bdcc579799c9f6f007dcc0915a07417306232f3e7d03966b1bb71db57d"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "879f5c2f9d3c036c72c295dac62536f02252bf7f128a58680ed281d7f9c8ce9f"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "b36dfb0dcc8362766dbb42ce5f6a1ac5a555056b2a730fc24593f475bb876394"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "7fea050e02a9c777d6080a054c397e531f0579fe4a690d8f9671661b9e143bb6"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "65ba7b0d9e6ee272e2154c3ec284f9024e77d06f431a9aa5b4152237c52a8a7d"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "02bf38cdaf6650da396687bb14b3a64ccf82c86b60348fb157635f28756603a8"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "00178f47a1d19216b8c026aaf748c9f4a39cc0aa29068b009bb00efc6ed8887e"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "1025ab0f75e1d1e7305e5d9da860ce46a252e315682279dcc3666cf18e66c438"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "84cde7372b9361dd548c0dd38bffb0fc50ad625e7eba93d5eafca7058e977c0e"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "457e38e7afb19785376e6319f57b5165ba7038cf5dcd7c602d59e2ec1257038d"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "a8fc2be81b941b82106e2e2c59eb33a40edcd7519de1eb52758c5807c2e5092b"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "261f2a3eb299d01af7b4a883f592bd7bed58ab6d0e95d809be87f070ab110a59"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "a28a6ad568b43dfa2aff8c4c05969f54bdd0718f06e5f69874c685236a73ee0a"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "714ff8105483ae2f1675305f2282be47bfcad13e422e86b2ad06645862e68921"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "a2696fc6ee984c6c998c9480ed67fcb42659d8eaee010fad5780ee1856e5a7bc"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "ab978a3fe488617b153ecf6d21c5fa3073cfecc25984c315c781ef9a52acf545"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "a74482642c90a5b8c24e80d9f46066bed993ffddb7142cb03356cde63cafea36"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "f6f20873fc5308a48da6239b2aa22c23e45abcf391e1c2f84072ac6a41bb9379"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "2699f888160f4985cf8ac51ee4ba6813130876cb655f7c7e629aee9b7787129c"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "e8bbe6f9024951393c3c985632f93e14de4f26338558adb2e1bbdcd452881ceb"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "31746ce91ccb9ff1907ab22262d241364d95128bd8b943e0a01f5b7302dfdb54"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "daa2612f3be3ca3cde26da16a04a75cb197fe588f736b098a9fcd822387fa96f"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "02233911734a1771a67488116429906ada978d4878ef238c071d681493d38592"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "45efb59f13ea4e3c3ccdfd7b7ffbfc95c358b878b266824d936a104641f5e0e3"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "c067bdc02eef6cb292fcffbc56702dbf8f2b5e8c7e9e04ab09c4a3bb12c7899a"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "f61cc1d080f99025adbc388f21a8a8fa17a44f42fecd1cc15c4e5274b686b459"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "2eae06fe2ddb5da91a1c938ca6fc3748b4bfe267369770be6e2ff9b5344e19eb"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "b4bd8ba4cb357279fecee9f2ed04e39808eda1d239449cbef0db227dd0c7253d"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "1c4e80ad2d3e4d8d798180acd9e9987eb00896358b6eacbef6d6689dbd7f2874"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "79d790cccae7fb9b2975c934b32bb932f6417f2e7f179488e043f13bb341ae0b"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "5eaae58b2ec4452d2ad32de0591195046cde5004bedd57059f8437fe86826f9b"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "8862c16fa86610fb187b416e0201d4e58ec4c259a4e16150d198e8fe633ea2fe"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "2ad0397e2f1f7bd2d307e60e4ded287daf3dec30ed31ab955689fe9da3bc354e"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "55a400a0c35c038d260343cebe209bafb050f9c5c029b45292cba306a4583984"
+      }
+    },
+    "it": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "f4fac0de0f48ba3c1c71fa6e5dca0d9fe21e1b7f6aa3731a1dec7e68cead0492"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "92e1eea0c5c8ead4693a24394d0ce1726e9cf341fa6a47537e7b61242ae9ba5b"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "a1290b1921f65fde02dbfd26c93cdd1764b86a293da9179e5bcc5c55e1c63608"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "58b80a3562b2a3576411ba4ad1a797ad0db0babb6fa5ff5abbb94e3351dd4ddd"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "26cac3a814b48c085bccab47c067a16edf07d77939865b9228b1ea8b000197f1"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "87f8b2e55df3ab3f927a59603d972dfe38dd7b9f769c3178c0155534ec5a0d89"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "c80ffca5c036327cecf93340c8db465ebb96b519e71aad2923e88749b7270035"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "03f0889b40a3065cc9347d0cf1db1bb6c461b18b3b4e8a029d13d2350676d9a7"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "c845def940e3f70740967b44a2c323fc61d652b86a97439bd151f3ff576e5998"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "909de56133d8b078c4ecadbd9f3c98f24ca625b337807bef4b53ff00f85ade9a"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "e0deced2aa5fcb7ec3d583846d24f09528b4fc39c44412b5ca5c2554f65976cd"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "f4fdb429657688452c4e2cb3271db5c83bbea62ae2e4e02d53ede0ea3a885f26"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "3314b07730fbb043a96168a1e479d367a25f5c86a5465a43700a4cada8394fee"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "33d9d50adeec7dcd47a9dc15ff77a1d4338ff15365f6f629ec11f3ea4c81832c"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "f7d34941fd4f2c6d97d9a45d863708a161eea16ff0009d07797fd1760a074182"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "95225c21e9c6e469329465014121d8e65bafcb454538501d1158174f30ac552c"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "2fa9deebc38cded6d3357746656dc1436e92c5fb296243f83dbee1322c71f0ce"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "b0fd4b4b3052d3d78dca71d75ead3186d5aaf69a60bb6efb196855decd12d3cd"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "b6fc99d82ca3ba072a09dfd35fc0b163826b289c59e4ee928b721dab160d0d94"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "786cc5b3cad292befb9dabaa6958c476a2cdf1d91e3f929002f3720b53da7cf2"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "4c410349e40a3752f0fb1a6a1bad5a64b4740e2d3abd23af65e004664d318bec"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "0bbfac1386488573fbef8ce63372c64815b621e4bcc1c7b96f46c020f424b925"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "410d37c2a4396ae04c4d2002af1e2f7a6e425d3426ff84b994c33df4acb99e4e"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "f304a2f546348b6ed91a2166909199fea16efbb5ebc001feb34eb6042a5a0d12"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "76db73ddeedfdaba62b39334a524766dff1373e7475a0e1c49c4daf98fbbaca0"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "1d85b10324613f8c4a2c35275f47df27bb2177d0cf54e6413999141c015f0db5"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "286b3e07096e337f36c8e2c73fa84f208635337d3be94d63c6e7bf319decdc13"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "b8df335429769c75fbc6b6ac713f65c41d4f74ccfefb7fd76345ec2a4ca27a2d"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "3bbe276e3c506fd4d2aa02e98a044ef57f851338281f0ab08bfc128fc317a5b3"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "7f0ccf62f9570023dfaa03d33949805666ab03b7161076c97f688eb46583d357"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "f3999c23b9fad18d7a6268359ed02b68c6e6b5a51c9d88b0d19aa3a8f35b0ca7"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "50bb0bbf8cf38a1060b35b8ad530478d8a9fbc49ba8bc375d428df33c40bff4d"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "7f1a4f4f43c3f1195e5f2d8c03ad0ffceccfd485f416cc1461ce12b96a0f70dd"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "2198fb87ad13ec12f12960e8f0954939b6b442dbc4b2abbba355e9207859cac7"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "d5ccb0271e2f900fa82961a28c08f1f907e9165eede9d363cc03738ed692ea9e"
+      }
+    },
+    "zh-CN": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "044edf8a8eced7e11f07fade59a266fbe40bd62d3547967a61f1953c0559d099"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "04c0872cc4f9d6289407f006d5eba153d6aebe4973ff8b61f136b4f6dea78be1"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "6beb76c57ef3918b3bff652b1fbe4bfd466ad6cb327249eb88023208535ad9ae"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "1d5809bf97fada7040606230767db5e0840c506b2103490271f9243cca427fb5"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "45bc70693a2ee39a593671105ab48b925f2165a44f67a1ffb85a0f7d6e171e45"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "a8773cc7367686acb0899fdbb4d5726eae444d1fcaa41e31a2f26aa65b31ab44"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "d96d7f4e68158ae0ff309c3c2b9d4f55f38ff8fff263af78c39214df8a479d6e"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "d0af5417e7f57fef7be7a0fb76a626386b5e01c24e3d98703dd1a3fb4056d5dd"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "600e295b30ef21732e24a337132b5229ddd583e56f77ada9677639a44bcbd8fd"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "b0c5d4742b2167f6ee8b7fbf32e851fc31b5ccd7699b44e9f5a8047dc2bb516c"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "bf7788be601bfc721b3ce20e299a196410c7da2a7b3e50b392000eccef4e5f09"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "d2fba6c41f914298f66b8fed58e9d65f7b05a8a87ae7e1962cc7d55eb388c31e"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "bcaf3ce3ca4ea18a4ee8a548084718ee445571dc9db668529d5bf4ff26b0daf4"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "ab8eddbb20e5265f4448f9c3f53a4d97945310967b85731f5b04e167e94ec69b"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "ba3d827ce6b48fe9bf51b895c265e887aee34ee1fd2a110ecbe54340ad9ca8d3"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "170f0e0b22daa687390a577d5e2943a6272655df30b764643870baffb0050c9b"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "7dbbc5ba7988604e4e502ab59cd61fe34edb1e3bbc66418bdff90d2488c7a151"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "eb7b18dddf6fa200debef172701579e6e77bf72b0e54934ec1c231e77238c7b1"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "059e0ae80bb4e72ffa690f931e70052bfbd6a06c1be2eb618d34561c66f4cf2d"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "4521a52b1151fbcb7f58f8edf33878e7f251904d392d330957bb2f700bfe8b51"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "d9443dc603d70d1ebf02d0d118380164c5ef610c2a85fb443464f1f70c46fdaa"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "d9e7725d1893d911950d89c6a6894cdfd8ffac37cc7582c48312245a408e8553"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "7777da4dce9160d3aced2b8193b7eaf88b72055570e3db23dafc53b5d96fbb95"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "ba5348831c324e0687492e8536fc796d9ea17e761ef76166868562ca2850dff2"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "d8947b2a26befbe2a2fadab33875e398cdda35d6f50250bc281e4420905a5555"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "745db8ef65b2d568d18a14f9c4eb0ac706c6037b42d63b56de51d9ecf965249b"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "b5b2e5dd30378b0e8c48d07168b7e27c95bc60fa9c5148ff5b3d9bedc6970726"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "68f4e1f1f4e42742a92b1618d0bfc648ae79f99d1e6572c78e34083a17e6057c"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "6433798ddffdb548c1fe73f3ac8ae03fd7b26213626436f494713d3049652bce"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "c0823b6a9be9706c0e8382b195997e7d2ca9cb81b961e0aec76e9a5c53bf9a92"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "f67dc7391572acdf7b1594c308110a844c68a5e50f26d516e6fc74c8b461d3cb"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "5b378f4f5ab4a63b96b71c9ffe492b03196aefb8d1e223173cd4f1ebba3d367d"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "01f80e0cb105ca8436feef2c5eb7f1652e874d2c350e352a7a0fbebef905f07b"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "c5c6114fc836b84773ada6402f3d34dbb8839cb7867f0d964c183b7f742cc107"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "296a99e1eb37a9261f320c9311c4dc8ce67dc11cf70b6b79476695909cd8c799"
+      }
+    },
+    "ja": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "e7bb2c7747cc52fbf8d5b17124d4fb4589737216438083be7c226e8f44007744"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "86759bc47b867f08f0a389f2842127de0d9528549738a05f86027503b3ae8cbf"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "3bb9882141088f705e06966f4e6e44fbf79f2689d07ab7ec2f777a1dafc10992"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "8511e35e143f10e14fa5d3450bb8c664587834db9e6743650fea46ce491f195d"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "45369ce2f3a57bc62a1ff1594ea51b4552a8e5db469414f83ba0fe30152eeba7"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "f2cecf3855b437e4de72e59b6515b589bc1673de1ed85388add6126d97bccb4d"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "7c603696fb57e15ea30e3d321c33b5ff8890829d3d34c47aaaf9369a18bea8aa"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "2796628422de7889f071410dbe236bebae1938a1a1c863cbabc78ba389747a83"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "042a09ca1d60778d601b9a44911e243e4b880ecd02bf5defa7e0ef55b53116bd"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "25babdfac94c3ba338bb6c01683345f5141235190ed9e00e23a6fde57cf6caf9"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "6fc79d9b0fe93c4b2307b9603a37f294d57cfae4a6e8c356b06ffdb7512b2b05"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "4a810198a28123322d0fb027b8350ed0ac498ec636cc4659237bd1551a962b90"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "ead81e2ac3d295f25ead1aa46c7ea21a3930d5fe99303f84be0890b76854310e"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "7a68d83c5f1b10afbc63af6ff63fbf2ca993d29a2d365a8d8c5e7d97f4df2f68"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "a9077d76374dc7de8fce71fdb35f7b90a66a6f7e18f25cec1be4e7c956c0a151"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "9e054d893f7fe2bf0323ce41538ec172a56f2a3f305756c6afb9e81c0cf4522d"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "ae559702c8df1d1cf45371e7a4e0d9effc7d76a452e77deebce37a81a5c412eb"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "69a6b433311264ead0b394f2a758ea6030d82518259e942afb853df08e73241b"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "a8f2274a87fb7e2570f0b381480811ab608b5587d664e68c54363155ee6af6ed"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "673b4e62bb7c0597ea3f5f8f5137de8ffcf89d4d696d3a83affe780c4bf71084"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "24bf6d73660db47eac084e9677aec8e07d1f6fcdd3d1e6935e450a59756e7358"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "b35e553880dcede9477877a0ff30999a2d0533e11be33da77e57b438a5322276"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "9fd75234f88863fcd6e474d5f7e1b00bad007ba8176b536c839e0c3cf77db1c1"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "5aefb117696cda71e9cfd52d49b237ccd030e5823e5f637857ed3ec33ab0cec1"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "fea30fb7c51d73d978acafeba5cfdeec26c78c88731a90aee57ebe92fb1ea6c1"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "e1e074338e3d0387a21ec8602f64e400247c9e6d823cfe79e05c7cfe28089e56"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "d126e376dd9a69afa46bbf255d392d9b4d548f93ef841c556a5d2006fd3e362d"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "bcf85ff1a198fa51e2acbba8841d4351cafe409b6c8630eb5ebd14b9a1aef1a3"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "1702ce88d9296d7d61c6d03dd9d3ef8a31c3a32673ef494b5eb1e2da7b076c2d"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "cd9f3f82a2b4a3f5be7d63563a5a111b9a306fc60b7b9a80ebea398dd97bae56"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "acc9c06722838e6c350724235ef2ebf8951f3d7546a51b5f664fb23e49dc0a63"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "ab7be7651172121261cd6738e4c85232bfeea1c7f2893dbc5c604dcd311a22db"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "2aadf85b4ee2b1c74a1715e5d1c0e38df00570d37a7fadca13e0852954e2d531"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "935bf1079faa1bd20eb175ebeee76d1e93ba2069b8f72bd7e6feffcc73419b1d"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "ee4dff7abe80e079958e3607bc6f2a540d3bc53362983bca118bb0a8ad5074a4"
+      }
+    },
+    "ko": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "e76561242a67e866e9bf4a4a156b9f6dbc4b635a06ecdc18c44d30294c86311e"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "87ebe60ec3b7517725177a9b8489e581fef2dfdebb346e2a32409b73923a8700"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "1ee15f423298416d6cf01c07e9a25fcdcd48bcc2d608b9c61b3f2008e8cc525d"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "29d5bd54382b99e664f4bf4b4ed92025c1b40b481d9fbd4e4a38e57704eabc77"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "dd7f7537a8bedc39aff2b906d6aed5f6f42f5064a96cac9723a526acec91e805"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "50deec4b9c44d08a7d0316d7e64574872c09f2bcd0f6a7a19263d14c229508c8"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "437d961d57f494adee357a180f3b75485794ca575cbaf271543486abef4ae9fd"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "07a898e4cd97f2b3d4fea42bda595bafe4e0b74b47689138b86ea08ae08c8b55"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "af75246bf9a5f23c81e5ce9d1c9303d41617fda9e0db3970eda9459db5823872"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "4cc8d9ec42c379784f795e585a9ae1fdfee9de5263225b08428b510de95368f5"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "373db71b60ec100fd9d7fbb9ed72ee64641e3f83fa021e6444fa1117f070b961"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "0b405fe45e35e9c63d2896a23bf13e8ca8326291afc84e898db6acb8d7565618"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "16c891cae781212852a8893822ca9fd78124a25e8833aefd979a0d8ab3f53e78"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "f65b5b9e6276c5ef3a55eb453a30c6bcf08f0a3323ca640e1331387bf1fca1ad"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "114242e1387be25895c4b8d941a9b25aaed109a2b9f91d184329d9a274e16a5f"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "4dec9172699cc0475b827f684ae0cd413b34735f57c6121b5cdcb7a3f830f8b9"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "c0633080e448c807b5f557c7e59303a9401c7b2a0270ba65de00aeea203c1c7c"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "aa98cac022e6668914dc64663d75af79d7d0eede66bd2ac03680afdb241cd353"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "b27de7dfecd519429ce791fef9d96acce2127b3f20987bb6f0227cc84aa8de52"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "85482695d0b6a43024447a77df1e29046fb52515011bb90f23265e2cba677617"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "d9e567892ae26c18201d181202a2de19edac717bc42da72e8d13122a5a958cbd"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "0088995b87b162ba47ba438a24a2e95152fd91e6da4087e4266298fe380d13c3"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "965802b05ae092d7fe4c1540f70193c599baa057f4fd6b907e35a4310af76d52"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "4b4a2571466f4cf5c686dbe272ddb67bb8e5cb8378b4f043506482e8e5821045"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "ba8e17533c1561824589442cdabc50c079fc16cd9dd44281171f54234fdc5a50"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "d42a50931a07e2f2d99fe8db040f43d61450e64494c5e77764d45aefdd7ee935"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "ee71ca9fef1bdb53381540b66dc7ac94e74ddda677386014bead5c82c8bf2679"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "13d41e56b18a6019c010abfb434af86b4af828f9778dfc7338617837e1ebf5e3"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "53f2e9863e011a9120f038d1162484153227c0a338ab4e6130a25a37aed72c03"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "075cd00cb08d0bbaeb90e33c8ba0455c1041e6ad1e003e7c5e306a37c2d4963f"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "892ac5899060aa34a973dcfbaf576fda18e044a53bdc8752e8fb74caf0130752"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "8341a9167489ea2a21a26bbe88aebd443194ef39d5e6ea41f0781d2e9b333668"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "cd9f7a021418cef52e9391596a2f6d0b2c695314ef0b279c71ec312e52358b9b"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "e21cd4d72b62cac1c036c6ba0e3a3a36128affaf0547aa0e27219f38ef8b991b"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "29f58d9b0a5d573c1a66705d3228a59318a192282fca96c87e6d443ae870253d"
+      }
+    },
+    "ar": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "c6bde70c2a0540690516a4aa5ff584e00eda8a5fb1ab4480c1e29149da9251b2"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "229b1634496c91eb179ef6a5cad0b8b45caf7a94daba2614ccace4700f44d3b1"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "a8184054bd11f1a82d0c678a9b2b7c54d69df0fc14462f43463f44fb78922d6a"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "5ff86b5a9475970dfa89560fb9cdf27f84cc7a5279c20bb459f94ed037d729cb"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "b136a97606c9a522e29f213b115d4b6a4e5579d3e40d5f3d613ceccda03c8476"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "a6cdeeb98a8985994144007d5b3cc9af7eafde3145dd2711681316c4c600423f"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "815fbfa4a33988f2f291dfef40556caead3bac60707410525c13795433293121"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "ecd74fa79355b7e6ef26a55b283146a751fdefdd4f5c7dc5b25d6e8eeb400737"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "e07d6685d40cc4d0491483efe220f22163bae10fd6d5802e56e4d1b1808645e3"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "4b53d553965611fadf329ec6a517da9f4b178fbafb7be4b26e938497e2eca057"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "06550845332a9c66c929730d796211987719a9775e03da6d514af44592255c1a"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "f9115363a52445ab5c3eebe34d88a9f0c161e82ea53e40ed689905fb289bd322"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "76f5e0d039bad26d60ee914e7961a8c93de053619f8ce0dfbfeab730dcd3f57d"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "548471d307e12db7942068bc77e99b7ecf87d25cf9dbbe5f042b22a84ba5d845"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "362cb964c15174865cee3bfe14a5b2b85341f8bbb7d758ef16778a49918c5a56"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "229e5213e487ae003e80b0d2af1102d5e9593d5aa37f90116da636647b1ab89f"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "0c57ed251089631f7cae4a85099d03f1b5c467467ef31f968ede2c6887d8a8f8"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "8484f13577fc62c55b7e6cf121ad091986bee331161437f2b05234e8a49b32b4"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "2948f5fc17ac69c63fc267b95868b0c865e3ee6ed4ad1afd569620865f2b9232"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "a9c7ce64af7f44096c71112d270540e3247c8836a9124c555a2c626e04c886dc"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "592b044dc6ccfed8cb96b5fab2cfc8d40e8a4e4a64d4531c21ef06482958d0b3"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "76e3d77045df124b62eb6eb4fdeaa3fb8b25e69ab8f14e02c39c017330bcf270"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "1f529f95ce0c0e9746d76b242065ade2f8a6515039faf086305f79733baf1803"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "ce1311d05967955d162f83a4a70c71f88850b256cfd1721d5a44ff5ff1a5534c"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "9749c630f8f4b35a7e9750ff53f75208d70d17781994220a95169f1d79bc8e2d"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "f3690b7da2ea1015983083f61d1a73a077a3c1cdf8847fdb32788c9e0ed9b4e1"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "58ead4a70e603b5a60e20743744a9e1de38b8e764e410b65207931d5e08d2939"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "d15049a492b2859dc0190b356b72696266ebbf5c0b0f86f5230a05c7b6fe304d"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "d0647671a8c0032a24b5e8e392c8c284310c515030b2f4e0263f4ed509701ffa"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "c49038691e8e225a01a1ed5c8c0cf2384ee135db09d751cc641e7f43aa4a42a1"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "0fcfbd1a5d04a026446d6e0cd7de9f82bc610b275a538bbdcd8008f0a91d10bd"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "a0bcaf80efebd89a5b0fc956258006022766a49edf183c5cb363570a526ca2c3"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "345b61d787997cb57b46393594d4fb1192c83b1b71ec1928e559049f8abc0b2d"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "ec7dfddd28a0d5479b04ba0d44735be9c79c61477711823e13bff8fd8256f026"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "922795d2718181e7d11f684a02f4dd1b659b45e11739850e4508ba7b57fa0433"
+      }
+    },
+    "hi": {
+      "Tap the egg in the nest.": {
+        "status": "manually_verified",
+        "digest": "c0b84a32d6215351b82b9ad1ee25719ee79c063f2226528d96aa178b06e7939b"
+      },
+      "The eggs go in the basket.": {
+        "status": "manually_verified",
+        "digest": "b46ce73b59ca4d41821131dc0b74d5a5e98b53689e1cd8318408ddfd4dc7273e"
+      },
+      "Tap the udder to help fill the bucket.": {
+        "status": "manually_verified",
+        "digest": "93d528fb61d3f636fb025fc9f50a7888332abdfa270412e163b6e79bce3a8abf"
+      },
+      "Tap near the cow to help with milking.": {
+        "status": "manually_verified",
+        "digest": "942782cb9e6f8be70525cf61e2a627bc4005f2a4838c9ecb152f6d0374d516d7"
+      },
+      "Tap this animal to give it food.": {
+        "status": "manually_verified",
+        "digest": "d3a0653dd901b58cdd4b93630615e4f61e090c67c28b0cc3c69a4af2f477b283"
+      },
+      "Tap this animal to brush it.": {
+        "status": "manually_verified",
+        "digest": "527ae7d6dd1a670b93976b5deeab50b53c2afa20ad6fe45ec25f3e8f4ad8da4a"
+      },
+      "Tap an animal and the brush will help.": {
+        "status": "manually_verified",
+        "digest": "6bb2c8313e56b0b98e0835ae33a40c30755fbeceb631e1d7a8f9829e95163f80"
+      },
+      "Tap this garden plot to care for the plants.": {
+        "status": "manually_verified",
+        "digest": "298f91e949e2625daf0683ce0f6258298d0bba88290e259e3eeadb89153e3a98"
+      },
+      "Tap the cold frame to care for the winter lettuce.": {
+        "status": "manually_verified",
+        "digest": "14b2d32285d647b048546efffe411addcce23e7c39e27aa8e15b1212e32bef03"
+      },
+      "Great helping! The chickens are happy.": {
+        "status": "manually_verified",
+        "digest": "b83950696718b6b51a80a54470eea42ece2b7fade7d6eeba0b0e23358f0ddbed"
+      },
+      "Nice work! The eggs are safe.": {
+        "status": "manually_verified",
+        "digest": "547f0b95a1d36d33c7b05c146ca6db28ac88360745df222c500eb2a68909a41f"
+      },
+      "Thank you! The coop feels cozy.": {
+        "status": "manually_verified",
+        "digest": "c388e1a59aeac93c5354a535eff73f429dbfb158c46dfbb2d2ca587565494beb"
+      },
+      "Good job! The basket is full.": {
+        "status": "manually_verified",
+        "digest": "e1a187b8c8b2fb8ad02691e10d8d5fda1efbb489fb1caaccbdf6784521a8aa59"
+      },
+      "Happy hens! You helped so much.": {
+        "status": "manually_verified",
+        "digest": "e01640242fe89b047d200d7526b3a8866ee7b057a74ce17434a9e3829d23e3d7"
+      },
+      "Nice work! The cow feels cared for.": {
+        "status": "manually_verified",
+        "digest": "6b7c0faf1913d0e1206370943c2ad74648b8ba5ec80d57b4dea068e0337a1c66"
+      },
+      "Great helping! The milk bucket is full.": {
+        "status": "manually_verified",
+        "digest": "0b271ff67d4340b9b36b457aa34ded6fe8d8a1382f2a4e8fb9ec4b73dd907006"
+      },
+      "Thank you! The cow is happy.": {
+        "status": "manually_verified",
+        "digest": "4fd7131bd77d0a2ccfacfa8fc02072aae320104d922a841ed9265d7892147641"
+      },
+      "Good job! Fresh milk is ready.": {
+        "status": "manually_verified",
+        "digest": "0346501faaecf64a2eb8b82c0820cf518353403cf96b457381f0c07705778f74"
+      },
+      "Lovely helping! The barn feels calm.": {
+        "status": "manually_verified",
+        "digest": "a1441ea5b59a7653742d29d856ae01f52cf752d0586c89bd8ee9bda6f680fad9"
+      },
+      "Yum! The animals loved their snack.": {
+        "status": "manually_verified",
+        "digest": "0412297aae70aa0459316827878404480a266d7c454d10aec7a26ed242f23cbc"
+      },
+      "Great helping! Every animal had food.": {
+        "status": "manually_verified",
+        "digest": "e559e5bf0a6463787e17f0a71e16c92b53d5ad0133f9f62000889501f1ac3ddb"
+      },
+      "Nice work! Happy munching time.": {
+        "status": "manually_verified",
+        "digest": "bd183e1d0771c2769cbc55644a89673f61f7c1cb520c105eb95babc15d9810a6"
+      },
+      "Thank you! The animals are full.": {
+        "status": "manually_verified",
+        "digest": "54d9870177110c5dbc280aaf9dff84332cde32b8c74f33648e6bbb516e143f09"
+      },
+      "Good job! The pen feels happy.": {
+        "status": "manually_verified",
+        "digest": "d166cd3dd2d9af8cf1cc6bb4fd90bf4d5438ea2ba1d8f29f8147e36230d21fde"
+      },
+      "All clean! The animals feel better.": {
+        "status": "manually_verified",
+        "digest": "9524d1c1de524f0d774be73755059a86a2cbf4f16ba83854db81faff34f1d5a4"
+      },
+      "Nice work! Everyone is brushed.": {
+        "status": "manually_verified",
+        "digest": "b69c3c558af365d2db6b742cf801688afa7dc7be796c38f30433c91da35fa48d"
+      },
+      "Great helping! Soft and shiny coats.": {
+        "status": "manually_verified",
+        "digest": "a3287d2347c83aca9f746bc160b411e0931ef019da5a44c213cdd6a35ad8e499"
+      },
+      "Thank you! The animals feel cozy.": {
+        "status": "manually_verified",
+        "digest": "1ad6451c7f439531e539e832c1127fda515eda659f7f3ecdd02481dfc5e327a1"
+      },
+      "Good job! The barn friends are clean.": {
+        "status": "manually_verified",
+        "digest": "d505ed57d7beb3e2d3d2fa24cce28410c46d748d3bb2f6a99ed4bef4f206df1d"
+      },
+      "Great gardening! The plants are cared for.": {
+        "status": "manually_verified",
+        "digest": "ab52d9119edd9cedcf3b2350b4c9cf2730855a191a2abb3ad148d91f8109901a"
+      },
+      "Nice work! The garden feels happy.": {
+        "status": "manually_verified",
+        "digest": "ab2ebd2533e90401edd96731a0a750ab32c484bb819fbc46ae2ad9a267de4349"
+      },
+      "Thank you! Every plot got care.": {
+        "status": "manually_verified",
+        "digest": "076f997d1700e719eb3e40166839be0647ed952409de00e9c96a434cac6a8247"
+      },
+      "Good job! The plants look bright.": {
+        "status": "manually_verified",
+        "digest": "39b1e3661d28fa2f121581e4379e0b825038efb472ac4617b5716af1dfeb0d0f"
+      },
+      "Lovely helping! The garden is cozy.": {
+        "status": "manually_verified",
+        "digest": "bed7270d41080a20f116115b76b81377e32514fbd67aa996e84f0af7fd824d5e"
+      },
+      "Tap the cow to give her a gentle pat.": {
+        "status": "manually_verified",
+        "digest": "98282794acc2530b09f28b5c852d0804a9b367700433cba982a644a31f48c7e2"
+      }
+    }
+  }
+}

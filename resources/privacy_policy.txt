@@ -1,0 +1,74 @@
+PRIVACY POLICY FOR MY FIRST HOMESTEAD
+
+Effective date: June 24, 2026
+
+My First Homestead is a children's farm game developed and published by Cozy Sprout Games. The game is designed for young children and their families.
+
+INFORMATION WE COLLECT
+
+My First Homestead does not collect, transmit, store on external servers, or share personal information.
+
+The game does not collect:
+- Names or email addresses
+- Location information
+- Photos, videos, contacts, or files
+- Advertising identifiers
+- Device identifiers
+- Usage analytics
+- Purchase or payment information
+- Information entered by children
+- Account or login information
+
+The game does not contain advertising, behavioral tracking, social features, or third-party analytics.
+
+LOCAL GAME DATA
+
+My First Homestead stores limited game information locally on the player's device, including farm progress, completed activities, game settings, and music, sound, and voice-guidance preferences.
+
+This information remains on the device and is not transmitted to Cozy Sprout Games or any third party.
+
+Players can delete this information by clearing the app's storage through their device settings or by uninstalling the app.
+
+VOICE GUIDANCE
+
+The game may use the device's built-in text-to-speech functionality to read fixed in-game instructions and encouragement. The game does not send user-entered text or personal information to this feature.
+
+CHILDREN'S PRIVACY
+
+My First Homestead is designed for children, but it does not knowingly collect personal information from children or adults.
+
+The game does not allow children to create accounts, communicate with other users, submit content, or share personal information.
+
+THIRD-PARTY SERVICES
+
+The game is distributed through Google Play. Google may process information related to downloading, purchasing, installing, or maintaining the app according to Google's own privacy policies.
+
+My First Homestead does not include third-party advertising, analytics, social-media, or tracking SDKs.
+
+DATA SHARING
+
+Cozy Sprout Games does not sell, rent, disclose, or share personal information because the game does not collect personal information.
+
+DATA RETENTION AND DELETION
+
+Cozy Sprout Games does not retain user data on external servers. Locally stored game progress and settings remain on the device until the app's storage is cleared or the app is uninstalled.
+
+Because the game does not provide user accounts, there is no account information to delete.
+
+SECURITY
+
+The game minimizes privacy risks by avoiding the collection and transmission of personal information. Game progress and settings are stored locally using the device's application storage.
+
+CHANGES TO THIS PRIVACY POLICY
+
+This policy may be updated if the game's features or data practices change. Updates will be posted on the public policy page with a revised effective date.
+
+CONTACT
+
+For privacy questions concerning My First Homestead, contact:
+
+Cozy Sprout Games
+wryan2986@gmail.com
+
+PUBLIC POLICY PAGE
+https://github.com/wryan2986/my-first-homestead-privacy

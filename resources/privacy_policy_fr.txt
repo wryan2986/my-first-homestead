@@ -1,0 +1,57 @@
+POLITIQUE DE CONFIDENTIALITÉ DE MY FIRST HOMESTEAD
+
+Date d'entrée en vigueur : 24 juin 2026
+
+My First Homestead est un jeu de ferme pour enfants développé et publié par Cozy Sprout Games. Il est conçu pour les jeunes enfants et leur famille.
+
+INFORMATIONS QUE NOUS RECUEILLONS
+
+My First Homestead ne recueille, ne transmet, ne stocke sur des serveurs externes et ne partage aucune information personnelle.
+
+Le jeu ne recueille ni nom, ni adresse e-mail, ni localisation, ni photo, vidéo, contact ou fichier, ni identifiant publicitaire ou d'appareil, ni donnée d'utilisation, ni information d'achat ou de paiement, ni information saisie par un enfant, ni information de compte ou de connexion.
+
+Le jeu ne contient aucune publicité, aucun suivi comportemental, aucune fonction sociale et aucun outil d'analyse tiers.
+
+DONNÉES LOCALES DU JEU
+
+My First Homestead enregistre uniquement sur l'appareil des informations limitées, notamment la progression de la ferme, les activités terminées, les réglages et les préférences de musique, de son et de guidage vocal.
+
+Ces informations restent sur l'appareil et ne sont transmises ni à Cozy Sprout Games ni à un tiers. Elles peuvent être supprimées en effaçant les données de l'application dans les réglages de l'appareil ou en désinstallant l'application.
+
+GUIDAGE VOCAL
+
+Le jeu peut utiliser la synthèse vocale intégrée à l'appareil pour lire des instructions et encouragements prédéfinis. Aucun texte saisi par l'utilisateur ni aucune information personnelle n'est envoyé à cette fonction.
+
+CONFIDENTIALITÉ DES ENFANTS
+
+My First Homestead est conçu pour les enfants, mais ne recueille sciemment aucune information personnelle concernant un enfant ou un adulte. Le jeu ne permet pas de créer un compte, de communiquer avec d'autres utilisateurs, d'envoyer du contenu ou de partager des informations personnelles.
+
+SERVICES TIERS
+
+Le jeu est distribué via Google Play. Google peut traiter des informations liées au téléchargement, à l'achat, à l'installation ou à la maintenance de l'application conformément à ses propres politiques de confidentialité.
+
+My First Homestead n'intègre aucun SDK tiers de publicité, d'analyse, de réseau social ou de suivi.
+
+PARTAGE, CONSERVATION ET SUPPRESSION DES DONNÉES
+
+Cozy Sprout Games ne vend, ne loue, ne divulgue et ne partage aucune information personnelle, car le jeu n'en recueille pas. Aucune donnée utilisateur n'est conservée sur des serveurs externes. La progression et les réglages locaux restent sur l'appareil jusqu'à l'effacement des données de l'application ou sa désinstallation.
+
+Le jeu ne proposant aucun compte, il n'existe aucune information de compte à supprimer.
+
+SÉCURITÉ
+
+Le jeu réduit les risques liés à la confidentialité en évitant la collecte et la transmission d'informations personnelles. La progression et les réglages sont enregistrés localement dans l'espace de stockage de l'application.
+
+MODIFICATIONS DE CETTE POLITIQUE
+
+Cette politique pourra être mise à jour si les fonctions ou les pratiques de traitement des données du jeu changent. Les mises à jour seront publiées sur la page publique de la politique avec une nouvelle date d'entrée en vigueur.
+
+CONTACT
+
+Pour toute question relative à la confidentialité de My First Homestead :
+
+Cozy Sprout Games
+wryan2986@gmail.com
+
+PAGE PUBLIQUE DE LA POLITIQUE
+https://github.com/wryan2986/my-first-homestead-privacy

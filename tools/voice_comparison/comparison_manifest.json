@@ -1,0 +1,28 @@
+{
+  "samples": [
+    {
+      "id": "welcome_to_the_farm",
+      "text": "Welcome to the farm! Let's take care of the animals."
+    },
+    {
+      "id": "collect_the_eggs",
+      "text": "Can you help the chickens by collecting their eggs?"
+    },
+    {
+      "id": "feed_the_chickens",
+      "text": "Tap the feed to give the chickens their breakfast."
+    },
+    {
+      "id": "gentle_hint",
+      "text": "Try tapping the sparkling egg."
+    },
+    {
+      "id": "chore_complete",
+      "text": "Great job! The chickens are happy and their coop is all clean."
+    },
+    {
+      "id": "return_to_farm",
+      "text": "Let's head back to the farm."
+    }
+  ]
+}
